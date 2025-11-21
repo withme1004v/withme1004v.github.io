@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+/* ----------- sub시작 ----------- */
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+  border-radius: 0 0 5rem 5rem;
+  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.2)
+}
+
+.activities {
+  background: url(../images/subpage/title01.jpg) center 70%/cover no-repeat;
+}
+
+.places {
+  background: url(../images/subpage/title02.jpg) center 60%/cover no-repeat;
+}
+
+.boardpage {
+  background: url(../images/subpage/title03.jpg) center 25%/cover no-repeat;
+}
+
+.loginpage {
+  background: url(../images/subpage/title04.jpg) center 25%/cover no-repeat;
+}
+
+
+.title h1 {
+  text-align: center;
+  line-height: 50rem;
+  color: #fff;
+  font-size: 4rem;
+}
+
+main {
+  margin: 55rem 0 18rem;
+  font-family: Pretendard, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Pretendard, sans-serif !important;
+}
+
+.sub1 .section1 ul,
+.sub3 .section1 ul,
+.sub4 .section1>ul,
+.sub4 .section2>ul {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ************sub1 액티비티 *********** */
+.sub1 .top {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+
+.sub1 .top h1,
+.sub3 .section1 h1 {
+  font-size: 3rem;
+  text-shadow: 1rem 1rem 4rem rgba(00, 00, 00, 0.4)
+}
+
+.sub1 .top p {
+  margin-top: 2rem;
+}
+
+.sub1 .top p,
+.sub1 .section1 .down p,
+.sub3 .modal .down p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+.sub1 .section1 ul,
+.sub3 .section1 ul {
+  margin: 10rem auto 5rem;
+  gap: 4rem 3rem;
+}
+
+.sub1 .section1 ul li,
+.sub3 .section1 ul li {
+  height: 50rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.sub1 .section1 ul li {
+  width: calc(50% - 1.5rem);
+  box-sizing: border-box;
+}
+
+.sub1 .section1 .down,
+.sub3 .modal .down {
+  justify-content: center;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+.sub1 .section1 .down {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.sub1 .section1 .down h2,
+.sub3 .modal .down h2 {
+  font-size: 2.5rem;
+  color: #111;
+}
+
+.sub1 .section1 .down a,
+.sub3 .modal .down a {
+  display: inline-block;
+  border: 1px solid #888;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #222;
+  transition: .3s;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.12);
+}
+
+.sub1 .section1 .down a:hover,
+.sub3 .modal .down a:hover {
+  background: #666;
+  color: #fff;
+}
+
+.sub1 .section1 .down a {
+  width: 11rem;
+  margin: 3rem auto 0;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+
+
+.sub1 .section1 ul li>p:first-child {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.sub1 .section1 ul li a p:first-child {
+  position: relative;
+  width: 22rem;
+  height: 20rem;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+.sub1 .section1 ul li a p:first-child img {
+  filter: brightness(70%);
+  transform: scale(1);
+  transition: .5s;
+}
+
+.sub1 .section1 ul li:hover a p:first-child img {
+  filter: brightness(50%);
+  transform: scale(1.2);
+}
+
+.sub1 .section1 ul li a p:first-child span {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+.sub1 .section1 ul li a p:last-child {
+  flex: 1;
+  font-size: 1.8rem;
+}
+
+.sub1 .section1 .more,
+.sub3 .section1 .more {
+  text-align: center;
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 2rem;
+  transition: transform .5s;
+  text-shadow: 1rem 1rem 2rem rgba(00, 00, 00, 0.5)
+}
+
+.sub1 .section1 .more {
+  background: url(../images/subpage/sub1/bg.jpg) center 40%/cover no-repeat;
+}
+
+/* ************ sub3 명소 *********** */
+
+.sub3 .section1 {
+  text-align: center;
+}
+
+
+.sub3 .section1 ul li {
+  width: calc((100% - 6rem) / 3);
+  height: 40rem;
+  transition: .5s;
+}
+
+.sub1 .section1 .more:hover,
+.sub3 .section1 ul li:hover,
+.sub3 .section1 .more:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.12);
+}
+
+.sub3 .section1 ul li>p {
+  width: 100%;
+  height: 33rem;
+}
+
+.sub3 .section1 ul li h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  word-break: keep-all;
+}
+
+.sub3 .section1 .more {
+  background: url(../images/subpage/sub3/divbg.jpg) center/cover no-repeat;
+}
+
+.sub3 .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000009a;
+  z-index: 999;
+}
+
+.sub3 .modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub3 .modal .modalWrap {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 80rem;
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+.sub3 .modal .modalWrap .mClose {
+  color: #000;
+  display: flex;
+  font-size: 2rem;
+  background: #fff;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.sub3 .modal .up {
+  width: 100%;
+  height: 30rem;
+  background: #000;
+  overflow: hidden;
+}
+
+.sub3 .sub3swiper,
+.sub3 .sub3swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sub3 .sub3swiper .swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #000;
+}
+
+.sub3 #control .swiper-button-prev:after {
+  left: 1rem;
+}
+
+.sub3 #control .swiper-button-next:after {
+  right: 1rem;
+}
+
+.sub3 #control .swiper-button-next:after,
+.sub3 #control .swiper-button-prev:after {
+  position: absolute;
+  /* color: var(--maincolor); */
+  color: #fff;
+  background: #ffffff60;
+  padding: 1.7rem 2.3rem;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 3rem;
+  box-shadow: 3px 2px 8px rgba(0, 00, 00, .3);
+}
+
+.sub3 #control .swiper-pagination-bullet-active {
+  background: var(--maincolor);
+}
+
+
+.sub3 .modal .down {
+  padding: 2rem 10rem;
+}
+
+.sub3 .modal .down p {
+  padding: 1.5rem 0;
+}
+
+.sub3 .mClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sub3 .modal .down a {
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+}
+
+
+/* ************ sub4 칼루린 *********** */
+
+.sub4 .section1>ul {
+  gap: 7rem 6rem;
+  word-break: keep-all;
+}
+
+.sub4 .section1>ul>li {
+  box-sizing: border-box;
+}
+
+.sub4 .section1>ul li:nth-child(odd) {
+  width: 40%;
+}
+
+.sub4 .section1>ul li:nth-child(even) {
+  width: calc(60% - 6rem);
+}
+
+.sub4 .section1>ul li:first-child h1 {
+  font-size: 4rem;
+  line-height: 0;
+}
+
+.sub4 .section1>ul li:first-child div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub4 .section1>ul li:first-child div .btns span {
+  color: #888;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: .5rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  transition: border .5s ease;
+}
+
+.sub4 .section1>ul li:first-child div .btns span:hover {
+  border: 1px solid #777;
+}
+
+.sub4 .section1>ul li:first-child h2 {
+  font-size: 2rem;
+  margin: 10rem 0 2rem;
+}
+
+.sub4 .section1>ul>li:first-child>p,
+.sub4 .section1>ul li:last-child .desc {
+  font-size: 1.6rem;
+  width: 85%;
+  letter-spacing: -.5px;
+}
+
+.sub4 .section1>ul img {
+  width: 100%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub4 .section1>ul li:nth-child(2) img {
+  height: 50rem;
+}
+
+.sub4 .section1>ul li:nth-child(2) {
+  position: relative;
+}
+
+.sub4 .section1>ul li:nth-child(2) .imgTitle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  justify-content: space-between;
+  bottom: -2rem;
+  background: linear-gradient(90deg, rgba(80, 131, 176, 1) 0%, rgba(132, 188, 248, 1) 33%, rgba(150, 162, 82, 1) 62%, rgba(222, 224, 143, 1) 100%);
+}
+
+.sub4 .section1>ul li:nth-child(2) .imgTitle p {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.sub4 .section1>ul li:nth-child(2) .imgTitle p span:first-child {
+  margin-right: .3rem;
+}
+
+.sub4 .section1>ul li:nth-child(2) .imgTitle p span:last-child {
+  line-height: 1.6rem;
+}
+
+.sub4 .section1>ul li h4 {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.sub4 .section1>ul li:last-child .addr {
+  margin: 4rem 0 0 3rem;
+}
+
+.sub4 .section1>ul li:last-child .addr h4 {
+  color: #4e4e4e;
+}
+
+.sub4 .section1>ul li:last-child .addr>li:nth-child(even) {
+  font-size: 1.5rem;
+}
+
+.sub4 .section1>ul li:last-child .addr li:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+
+/* section2 */
+.sub4 .section2 {
+  margin-top: 15rem;
+}
+
+.sub4 .section2 ul {
+  gap: 4rem;
+}
+
+.sub4 .section2 ul li {
+  width: calc(50% - 2rem);
+  box-sizing: border-box;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub4 .section2 ul li:nth-child(odd) {
+  margin-bottom: 3rem;
+}
+
+.sub4 .section2 ul li:nth-child(even) {
+  margin-top: 3rem;
+}
+
+.sub4 .section2 p {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ************ 자유게시판 *********** */
+#freeboard {
+  width: 70vw;
+  margin: 5rem auto;
+}
+
+
+
+@keyframes after {
+  0% {
+    transform: translateX(0) scaleX(0)
+  }
+
+  100% {
+    transform: translateX(50%) scaleX(1)
+  }
+}
