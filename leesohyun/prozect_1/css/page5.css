@@ -1,0 +1,321 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3a0000;
+}
+body {
+  font-family: nanum, namyang, Arial, Helvetica;
+  background-image: url(../imges/floor-tile.png);
+}
+@font-face {
+  font-family: nanum;
+  src: url(../font/NanumBarunGothic.ttf);
+}
+@font-face {
+  font-family: namyang;
+  src: url(../font/NanumMyeongjoBold.ttf);
+}
+@font-face {
+  font-family: sangju;
+  src: url(../font/SANGJU\ Gyeongcheon\ Island.ttf);
+}
+@font-face {
+  font-family: gana;
+  src: url(../font/Ghanachocolate.ttf);
+}
+/*헤더시작*/
+header {
+  position: static;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+header .headm {
+  width: 1240px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headm .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headm ul {
+  flex-grow: 1;
+  display: flex;
+}
+
+header .headm ul li a {
+  padding-left: 130px;
+  font-weight: bold;
+  font-size: 16px;
+}
+header .headm ul li a:hover {
+  color: #dea57b;
+}
+/*헤더끝*/
+.navi {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+.navi p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px 10px;
+}
+.navi p a {
+  font-size: 12px;
+}
+.navi p a:hover {
+  text-decoration: underline;
+}
+/*내비게이션 끝*/
+.parcel {
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.parcel > ul {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../imges/page5/dil_11.png) top left no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.parcel ul .one img {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+.parcel ul .one .textbox {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px 50px 20px 170px;
+  margin-left: 80px;
+  margin-top: 200px;
+}
+.parcel ul .one .textbox li {
+  padding: 10px;
+}
+.parcel ul .box {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  align-content: flex-end;
+  margin-right: 20px;
+  margin-top: 240px;
+}
+.parcel ul .box img {
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+.parcel ul .box:hover img {
+  transform: scale(1.1);
+}
+/*1단 끝*/
+.parcel_2 {
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 70px 0;
+}
+.parcel_2 > ul {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../imges/page5/dil_39.png) top left no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.parcel_2 ul .two img {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+.parcel_2 ul .two .textbox {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px 50px 20px 170px;
+  margin-left: 80px;
+  margin-top: 200px;
+}
+.parcel_2 ul .two .textbox li {
+  padding: 10px;
+}
+.parcel_2 ul .box {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  align-content: flex-end;
+  margin-right: 20px;
+  margin-top: 240px;
+}
+.parcel_2 ul .box img {
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+.parcel_2 ul .box:hover img {
+  transform: scale(1.1);
+}
+/*2단 끝*/
+.parcel_3 {
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 50px 0;
+}
+.parcel_3 > ul {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../imges/page5/dil_62.png) top left no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.parcel_3 ul .three img {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+.parcel_3 ul .three .textbox {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px 50px 20px 170px;
+  margin-left: 80px;
+  margin-top: 200px;
+}
+.parcel_3 ul .three .textbox li {
+  padding: 10px;
+}
+.parcel_3 ul .box {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  align-content: flex-end;
+  margin-right: 20px;
+  margin-top: 240px;
+}
+
+.parcel_3 ul .box img {
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+.parcel_3 ul .box:hover img {
+  transform: scale(1.1);
+}
+/*footer 시작*/
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  width: 100%;
+  padding: 25px 0 0px;
+  background: #ffffff;
+}
+.foot {
+  width: 1240px;
+  margin: 0 auto;
+  color: #aaa;
+  font-size: 14px;
+}
+.foot .top li {
+  cursor: pointer;
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.foot .top li::after {
+  content: "|";
+  padding-left: 10px;
+}
+.foot .top li:last-of-type::after {
+  content: "";
+}
+.foot .top li:hover {
+  text-decoration: underline;
+}
+.foot hr {
+  clear: both;
+}
+footer .foot .bottom {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+}
+.foot .left {
+  display: flex;
+  align-items: center;
+}
+.foot .left li:first-child {
+  font-size: 24px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.foot .left li:last-child {
+  line-height: 16px;
+}
+.foot .center {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+.foot .center {
+  padding: 5px;
+}
+.foot .center li img {
+  padding: 5px;
+  width: 40px;
+}
+.foot .center span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.foot .center li:last-of-type {
+  margin-left: 5px;
+}
+.foot .right {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+.foot .right li img {
+  padding: 5px;
+}
+.foot .right li:last-of-type {
+  margin-left: 5px;
+}
+.foot .right span {
+  font-size: 20px;
+  font-weight: bold;
+}

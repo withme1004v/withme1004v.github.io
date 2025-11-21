@@ -1,0 +1,743 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    font-family: robo, nanum, ibml,sans-serif;
+    word-spacing: -3px
+}
+@font-face {
+    font-family: robo;
+    src: url(../font/RobotoMono-Regular.woff);
+}
+@font-face {
+    font-family: ibml;
+    src: url(../font/IBMPlexSansKR-Light.woff);
+}
+@font-face {
+    font-family: nanum;
+    src: url(../font/NanumSquareB.woff);
+}
+@font-face {
+    font-family: nanum2;
+    src: url(../font/KoPubWorld\ Dotum\ Medium.woff);
+}
+.remocon2 {
+    position: fixed;
+    z-index: 5;
+    left: 30px;
+    bottom: 60px;
+    width: 40px;
+    padding: 10px;
+}
+.remocon2  ul li {
+    position: relative;
+    margin-bottom: 20px;
+}
+.remocon2 img {
+    width: 25px;
+}
+.remocon2 li a::after {
+    position: absolute;
+    bottom: 18px;
+    right: -40px;
+    content: "";
+    width: 0px;
+    height: 8px;
+    background: #000;
+    transition: width 0.5s;
+}
+.remocon2 li:hover a::after {
+    width: 40px;
+}
+div.remocon {
+    cursor: pointer;
+    position: fixed;
+    z-index: 5;
+    right: 50px;
+    bottom: 60px;
+    width: 60px;
+    height: 65px;
+    background: #000;
+}
+div.remocon img {
+    width: 40px;
+    margin: 10px 10px;
+}
+/*기본설정, 헤더시작*/
+header {
+    width: 1400px;
+    margin: 0 auto;
+}
+header .head {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header .head img {
+   width: 260px;
+   height: 50px;
+}
+header .head ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head ul li a {
+    position:relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+header .head ul li a:hover::after, header .head ul li:first-of-type a::after {
+    width: 100%;
+    opacity: 100%;
+}
+header .head ul li a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    opacity: 0%;
+    height: 3px;
+    background: #000;
+    transition: all 0.5s;
+}
+header .head ul .button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+header .head ul .button .line {
+    width: 100%;
+    height: 3px;
+    background: #aaa;
+}
+header .head ul .button .line2 {
+    width: 40%;
+    height: 3px;
+    background: #aaa;
+    transition: width 0.5s;
+}
+header .head ul .button:hover .line2 {
+    width: 100%;
+}
+/*헤더끝, 모달팝업 시작*/
+#modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+#modal .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: #eee;
+}
+#modal .inner .modaltop {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#modal .inner .modaltop img {
+    height: 60px;
+}
+#modal .inner .modaltop span {
+    font-family: ibml;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+#modal .inner .modalmeun {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px;
+}
+.modalRight li a {
+    position: relative;
+    font-size: 80px;
+    line-height: 120px;
+    font-weight: bold;
+    color: #aaa;
+}
+.modalRight li a::after {
+    position: absolute;
+    bottom: 18px;
+    right: -40px;
+    content: "";
+    width: 0px;
+    height: 8px;
+    background: #000;
+    transition: width 0.5s;
+}
+.modalRight li a:hover, .modalRight li:hover a::after, .modalRight li:first-child a::after {
+    color: #000;
+    width: 40px;
+}
+.modalRight li:first-child a {
+    color: #000;
+}
+.modalLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modalLeft p {
+    position: relative;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: right;
+}
+.modalLeft p span::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+.modalLeft .sns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.modalLeft .sns li {
+    overflow: hidden;
+}
+.modalLeft .sns li a {
+    transition: all 0.3s;
+}
+.modalLeft .sns li a img {
+    width: 30px;
+}
+.modalLeft .sns li a:hover {
+    background: #aaa;
+    border-radius: 50%;
+}
+/*모달팝업 끝*/
+.toptxt {
+    width: 1200px;
+    margin: 140px auto 120px;
+}
+.toptxt h1 {
+    font-family: nanum;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 60px;
+}
+.toptxt p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.toptxt p span {
+      font-weight: bold;
+      line-height: 20px;
+      font-size: 18px;
+}
+.toptxt p::after {
+    font-family: nanum;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: -165px;
+    content: "COMPANY";
+    color: #eee;
+    font-size: 180px;
+    font-weight: bold;
+    word-spacing: -20px
+}
+/*탑 텍스트 끝*/
+.about {
+    width: 100%;
+    background: #eee;
+}
+.aboutWrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+}
+.aboutWrap .left p {
+    font-family: nanum;
+    font-size: 32px;
+    font-weight: bold;
+    padding-right: 120px;
+}
+.aboutWrap .left p span {
+    position: relative;
+}
+.aboutWrap .left p span::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+.aboutWrap  .rigth {
+    width: 80%;
+    font-family: nanum2;
+    font-size: 22px;
+    line-height: 35px;
+    word-spacing: 0px
+}
+.aboutWrap  .rigth p span {
+    font-weight: bold;
+}
+.aboutWrap  .rigth .batoom {
+    font-family: nanum2;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutWrap  .rigth .batoom li table {
+    font-size: 14px;
+    border-collapse: collapse;
+}
+.aboutWrap  .rigth .batoom li table tr td {
+    border: 1px solid #aaa;
+    border-left: none;
+    border-right: none;
+    padding: 10px 50px 5px 10px;
+}
+.aboutWrap  .rigth .batoom li table tr td:first-of-type {
+    font-weight: bold;
+}
+.aboutWrap  .rigth .batoom li table tr td {
+    padding-right: 50px;
+}
+.aboutWrap  .rigth .batoom li img {
+    width: 400px;
+}
+/*about끝*/
+.history {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+}
+.history .Hleft {
+    width:15%;
+    font-family: nanum;
+    font-size: 32px;
+    font-weight: bold;
+    padding-right: 80px;
+}
+.history .Hleft span {
+    position: relative;
+}
+.history .Hleft span::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+.history .Hright {
+    width: 75%;
+    word-spacing: 0px;
+}
+.history .Hright p {
+    font-family: nanum2;
+    font-size: 22px;
+    line-height: 35px;
+    word-spacing: 0px;
+    margin-bottom: 60px;
+}
+.history .Hright p span {
+    font-weight: bold;
+}
+.history .Hright ul {
+    position: relative;
+    margin-left: 180px;
+}
+.history .Hright ul::before {
+    position: absolute;
+    top: 0;
+    left: -17%;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+.history .Hright ul li {
+    margin-bottom: 40px;
+    line-height: 35px;
+}
+.history .Hright ul li span {
+    position: relative;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.history .Hright ul li span::before {
+    position: absolute;
+    top: 15px;
+    left: -127px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+.history .Hright ul li:first-of-type span::before{
+    background: #fff;
+    box-shadow: 0px 0px 0px 8px #000;
+}
+.visson {
+    width: 100%;
+    background: #eee;
+    padding: 120px 0px;
+}
+.vissonwrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.vissonwrap .Vleft {
+    font-family: nanum;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 80px;
+}
+.vissonwrap .Vleft span {
+    position: relative;
+}
+.vissonwrap .Vleft span::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+.vissonwrap .Vrigth {
+    width: 75%;
+    font-family: nanum;
+    word-spacing: 0px;
+}
+.vissonwrap .Vrigth p {
+    font-family: nanum2;
+    font-size: 21px;
+    line-height: 35px;
+    word-spacing: 0px;
+    margin-bottom: 60px;
+}
+.vissonwrap .Vrigth p span {
+    font-weight: bold;
+}
+.vissonwrap .Vrigth .in {
+    background: url(../image/jin.png) no-repeat;
+    padding: 130px 80px 20px;
+}
+.vissonwrap .Vrigth .in p {
+    font-family: ibml;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+}
+/*비전끝*/
+.business {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+}
+.business .Bleft {
+    font-family: nanum;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 80px;
+}
+.business .Bleft span {
+    position: relative;
+}
+.business .Bleft span::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+.business .Bright {
+    width: 75%;
+    font-family: nanum;
+    word-spacing: 0px;
+}
+.business .Bright .Btop {
+    font-family: nanum2;
+    font-size: 21px;
+    line-height: 35px;
+    word-spacing: 0px;
+    margin-bottom: 60px;
+}
+.business .Bright .Btop span {
+    font-weight: bold;
+}
+.business .Bright .plsu ul li img {
+    width: 80px;
+    opacity: 0.5;
+}
+.business .Bright .plsu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.business .Bright .plsu ul >li {
+    margin-bottom: 15px;
+}
+.business .Bright .plsu ul li {
+    cursor: pointer;
+    position: relative;
+    width: 49%;
+    color: #fff;
+    padding-top: 110px;
+    box-sizing: border-box;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+    overflow: hidden;
+}
+.business .Bright .plsu ul li > p {
+    text-align: left;
+    width: 80%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+#menu1 {
+    background: url(../image/shop.png) no-repeat bottom;
+}
+#menu2 {
+    background: url(../image/BRAND.png) no-repeat bottom;
+}
+#menu3 {
+    background: url(../image/aria.png) no-repeat bottom;
+}
+#menu4 {
+    background: url(../image/onlain.png) no-repeat bottom;
+}
+.over {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 80px 40px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 25px;
+}
+.over h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.over h6 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*비전 끝*/
+.notice {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 120px 0;
+}
+.promotion {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.promotion .Pleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.promotion .Pleft {
+    font-family: nanum;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 80px;
+}
+.promotion .Pleft span {
+    position: relative;
+}
+.promotion .Pleft img {
+    width: 50px;
+    transform: translateX(0px);
+    transition: transform 0.5s;
+}
+.promotion .Pleft img:hover {
+    transform: translateX(10px);
+}
+.promotion .Pleft span::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+.promotion .Pright {
+    width: 75%;
+}
+.promotion .Pright table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.promotion .Pright table tr:first-child {
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+}
+.promotion .Pright table tr {
+    border-bottom: 1px solid #eee;
+}
+.promotion .Pright table tr td {
+    padding: 20px 38px;
+}
+.promotion .Pright table tr:not(:first-child) td:nth-child(2) {
+    text-align: left;
+}
+.promotion .Pright table tr:not(:first-child) td:nth-child(2):hover {
+    text-decoration: underline;
+}
+/*홍보끝*/
+.notice2 {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.notice2 .Nleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.notice2 .Nleft {
+    font-family: nanum;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 80px;
+}
+.notice2 .Nleft span {
+    position: relative;
+}
+.notice2 .Nleft img {
+    width: 50px;
+    transform: translateX(0px);
+    transition: transform 0.5s;
+}
+.notice2 .Nleft img:hover {
+    transform: translateX(10px);
+}
+.notice2 .Nleft span::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+.notice2 .Nright {
+    width: 75%;
+}
+.notice2 .Nright table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.notice2 .Nright table tr:first-child {
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+}
+.notice2 .Nright table tr {
+    border-bottom: 1px solid #eee;
+}
+.notice2 .Nright table tr td {
+    padding: 20px 38px;
+    box-sizing: border-box;
+}
+.notice2 .Nright table tr:not(:first-child) td:nth-child(2) {
+    text-align: left;
+}
+.notice2 .Nright table tr:not(:first-child) td:nth-child(2):hover {
+    text-decoration: underline;
+} 
+/*공지사항 및 홍보 끝*/
+footer {
+    width: 100%;
+    background: #fff;
+    padding: 50px 0;
+}
+footer .foot {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .foot .footin {
+    width: 33.33%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+footer .foot .footin li ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer .foot .footin li ul li:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .foot li {
+    margin-bottom: 15px;
+}
+footer .foot .footin2 {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+footer .foot .footin2 li a:hover {
+    text-decoration: underline;
+}

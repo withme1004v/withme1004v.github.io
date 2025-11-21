@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+}
+.clearfix::after {
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3a0000;
+}
+body {
+  font-family: nanum, namyang, Arial, Helvetica;
+  background-image: url(../imges/floor-tile.png);
+}
+@font-face {
+  font-family: nanum;
+  src: url(../font/NanumBarunGothic.ttf);
+}
+@font-face {
+  font-family: namyang;
+  src: url(../font/NanumMyeongjoBold.ttf);
+}
+/*헤더시작*/
+header {
+  position: static;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+header .headm {
+  width: 1240px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headm .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headm ul {
+  flex-grow: 1;
+  display: flex;
+}
+
+header .headm ul li a {
+  padding-left: 130px;
+  font-weight: bold;
+  font-size: 16px;
+}
+header .headm ul li a:hover {
+  color: #dea57b;
+}
+/*헤더끝*/
+.navi {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+.navi p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px 10px;
+}
+.navi p a {
+  font-size: 12px;
+}
+.navi p a:hover {
+  text-decoration: underline;
+}
+/*내비게이션 끝*/
+.con_1 {
+  width: 100%;
+  background: #4a4a4a;
+  border-top: 10px solid #b4b4b4;
+  border-bottom: 10px solid #b4b4b4;
+}
+.con_1 > ul {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../imges/page1/page1_bg.png) right top no-repeat;
+  display: flex;
+}
+.con_1 ul li img {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.con_1 .text_1 {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.con_1 .text_1 li {
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.con_1 .text_1 li:first-child {
+  font-family: namyang;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+/*컨텐츠1 끝*/
+.con_2 {
+  width: 100%;
+  margin: 100px auto;
+  background: #3a0000;
+  border-top: 10px solid #985f5f;
+  border-bottom: 10px solid #985f5f;
+}
+.con_2 > ul {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  background: #3a0000;
+}
+.con_2 ul li img {
+  height: 510px;
+}
+.con_2 .text_2 {
+  margin-top: 70px;
+  margin-right: 50px;
+}
+.con_2 .text_2 > li {
+  color: #fff;
+  text-align: right;
+  margin-bottom: 18px;
+  line-height: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.con_2 .text_2 li:first-child {
+  font-family: namyang;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+/*소개페이지*/
+h2 {
+  width: 800px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 0 auto 20px;
+  text-align: center;
+  background: #3a0000;
+  color: #fff;
+  font-size: 24px;
+}
+#rap {
+  width: 1200px;
+  margin: 5px auto 100px;
+  background: url(../imges/page1/pattan.jpg);
+  border-radius: 50px;
+  padding: 30px;
+  box-shadow: 0 0 10px #000;
+}
+#rap ul {
+  display: flex;
+}
+li.scene {
+  width: 50%;
+  height: 600px;
+  perspective: 2000px;
+  cursor: pointer;
+}
+.movie {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  transform: translateZ(-200px);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  margin: 0 auto;
+}
+.poster {
+  transform: translateZ(200px);
+}
+.info {
+  transform: rotateY(90deg) translateZ(200px);
+}
+.poster,
+.info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.movie:hover {
+  transform: rotateY(-78deg) translateZ(20px);
+}
+li:first-child .poster {
+  background-image: url(../imges/page1/poster1.png);
+}
+li:nth-child(2) .poster {
+  background-image: url(../imges/page1/poster2.png);
+}
+.info .head {
+  width: 95%;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  padding: 5px 10px;
+}
+.info h1 {
+  margin: 10px 0 0 10px;
+  font-size: 24px;
+}
+.info p {
+  text-align: justify;
+  padding: 10px;
+  font-size: 16px;
+}
+li:nth-child(2) p {
+  line-height: 25px;
+}
+li:first-child .info .head {
+  background-image: url(../imges/page1/TXOBA4VI32BAU52MY3HQIT7T7E.jpg);
+}
+li:nth-child(2) .info .head {
+  background: url(../imges/page1/poster_bg.jpg) center;
+}
+/*성심당 이모저모끝*/
+.ted {
+  width: 100%;
+  height: 830px;
+  background: #000;
+}
+.ted h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  padding: 70px;
+  
+}
+.ted ul {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.ted ul iframe {
+  width: 780px;
+  height: 500px;
+}
+.ted ul li .tag_img li:first-child img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.ted ul li .tag_img {
+  display: block;
+  position: relative;
+  top: -20px;
+}
+.ted ul li .tag_img li:nth-of-type(2) img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+/*footer 시작*/
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 0 0px;
+  background: #ffffff;
+}
+.foot {
+  width: 1240px;
+  margin: 0 auto;
+  color: #aaa;
+  font-size: 14px;
+}
+.foot .top li {
+  cursor: pointer;
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.foot .top li::after {
+  content: "|";
+  padding-left: 10px;
+}
+.foot .top li:last-of-type::after {
+  content: "";
+}
+.foot .top li:hover {
+  text-decoration: underline;
+}
+.foot hr {
+  clear: both;
+}
+footer .foot .bottom {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot .bottom li {
+  font-size: 14px;
+}
+.foot .left {
+  display: flex;
+  align-items: center;
+}
+.foot .left li:first-child {
+  font-size: 24px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.foot .left li:last-child {
+  line-height: 16px;
+}
+.foot .center {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+.foot .center {
+  padding: 5px;
+}
+.foot .center li img {
+  padding: 5px;
+  width: 40px;
+}
+.foot .center span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.foot .center li:last-of-type {
+  margin-left: 5px;
+}
+.foot .right {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+.foot .right li img {
+  padding: 5px;
+}
+.foot .right li:last-of-type {
+  margin-left: 5px;
+}
+.foot .right span {
+  font-size: 20px;
+  font-weight: bold;
+}

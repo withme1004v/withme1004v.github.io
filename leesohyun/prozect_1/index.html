@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성심당 프로젝트</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="shortcut icon" href="./imges/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="headm">
+        <div class="log">
+          <a href="index.html"
+            ><img src="imges/prozect1_03.png" alt="logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="page_1.html">성심당</a></li>
+          <li><a href="page_2.html">튀김소보로</a></li>
+          <li><a href="page_3.html">메뉴소개</a></li>
+          <li><a href="page_4.html">오시는 길</a></li>
+          <li><a href="page_5.html">배송안내</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="sec">
+        <div class="visual">
+          <img class="slide1" src="imges/비주얼3.png" alt="text1" />
+          <img class="slide1" src="imges/비주얼1.PNG" alt="text1" />
+          <img class="slide1" src="imges/비주얼2.PNG" alt="text1" />
+        </div>
+        <script>
+        let i = 0;
+        let slides = document.getElementsByClassName("slide1");
+        slides[0].style.opacity="1";
+        function slide() {
+            slides[i].classList.remove("on");
+            i++;
+            if(i>2) {
+                i=0;
+            }
+            slides[i].classList.add("on");
+
+        }
+        setInterval(slide, 2000);
+        </script>
+        <ul class="text_top">
+          <li>나의 도시, 나의 성심당</li>
+          <li><img src="imges/logo2_10.png" alt="logo2" /></li>
+          <li>1956년부터 지금까지.</li>
+          <li>
+            아무리 매출이 오르고 성공한다 하더라도 <br />서로 미워하고
+            무관심하다면 성심당이 아니다.<br />
+            맛있는 빵, 경이로운 빵, 생명의 빵에 대한 <br />철학을 지니고 서로
+            사랑하며 빵을 만든다면 <br />당연히 최고의 빵이 될 것이다.
+          </li>
+          <li>
+            빵을 통해 사랑의 문화가 꽃피워세상 밖으로 나가 <br />
+            ‘가치 있는 기업’으로 우리의 몫을 해야한다.
+          </li>
+          <li>-임영진(성심당 2대 대표)</li>
+        </ul>
+      </div>
+    </section>
+    <!-- <article>
+          <div class="titlle"><p>빵, 그 이상으로 전하는 가치</p></div>
+          <ul class="menum">
+            <li>
+              <div class="menuT">성심당 <a href="page_1.html"><i class="fa-regular fa-circle-right"></i></a></div><img src="imges/menu (2).png" alt="menu1" />
+              </i>
+            </li>
+            <li>
+              <ul class="cloum">
+                <li><div class="menuT">매장안내 <a href="page_4.html"><i class="fa-regular fa-circle-right"></i></a></div> <img src="imges/menu (1).png" alt="menu2" /></li>
+                <li> <div class="menuT">메뉴소개<a href="page_3.html"><i class="fa-regular fa-circle-right"></i></a></div><img src="imges/menu (3).png" alt="menu3" /></li>
+                </div>
+              </ul>
+            </li>
+            <li><div class="menuT">배송안내<a href="page_5.html"><i class="fa-regular fa-circle-right"></i></a></div><img src="imges/menu (4).png" alt="menu4" /></li>
+          </ul>
+        </article> 2단째 메뉴 끝 -->
+    <input type="radio" name="map" id="maping1" checked />
+    <input type="radio" name="map" id="maping2" />
+    <input type="radio" name="map" id="maping3" />
+    <div class="com_txt"><h2>오시는 길</h2></div>
+    <ul class="frist">
+      <li class="flower"><img src="./imges/flower.png" alt="flower"></li>
+      <li class="innerF">
+        <div class="title_1">
+          <img src="imges/page4/font_1.png" alt="본점폰트" />
+          <p>대전광역시 중구 대종로 480번길 15</p>
+        </div>
+        <img src="./imges/page4/map_sungsinm.png" alt="본점" />
+      </li>
+      <li class="innerS">
+        <img src="./imges/page4/map_dcc.png" alt="DCC점" />
+        <div class="title_2">
+          <img src="imges/page4/font_2.png" alt="DCC폰트" />
+          <p>대전광역시 유성구 엑스포로 107 대전 컨벤션 센터</p>
+        </div>
+      </li>
+      <li class="innerT">
+        <div class="title_3">
+          <img src="imges/page4/font_3.png" alt="롯백폰트" />
+          <p>대전광역시 서구 괴정동 423-1</p>
+        </div>
+        <img src="./imges/page4/map_lotte.png" alt="롯백점" />
+      </li>
+    </ul>
+    <ul class="btn">
+      <li><label for="maping1">본점</label></li>
+      <li><label for="maping2">DCC점</label></li>
+      <li><label for="maping3">롯데백화점 대전점</label></li>
+    </ul>
+    <!--오시는길 끝-->
+    <div class="com_txt"><h2>배송 안내</h2></div>
+    <div class="parcel">
+      <ul>
+        <li class="one">
+          <img src="./imges/page5/one.png" alt="원" />
+          <ul class="textbox">
+            <li>
+              최소 주문 금액 15,000원 <br />
+              배송비 2,500원 <br />
+              (단, 3만원 이상 구매시 무료배송.)
+            </li>
+            <li>
+              발송일 포함 2일 소요. <br />
+              지정하는 날짜에 수령가능.
+            </li>
+            <li>과자류, 파운드류, 선물류 위주의 제품 발송 가능.</li>
+          </ul>
+        </li>
+        <li class="box"><a href="page_3.html"><img src="imges/page5/icon.png" alt="icon" /></a></li>
+      </ul>
+    </div>
+    <div class="parcel_2">
+      <ul>
+        <li class="two">
+          <img src="./imges/page5/two.png" alt="원" />
+          <ul class="textbox">
+            <li>
+              배송시간 <br />
+              (1차 혹은 2차중에서 선택가능)
+            </li>
+            <li>
+              - 1차 배송: 10시~13시<br />
+              - 2차 배송: 13시~18시.
+            </li>
+            <li>※ 배송물량이 많을 경우 조기마감될 수 있음</li>
+          </ul>
+        </li>
+        <li class="box"><a href="page_3.html"><img src="imges/page5/icon.png" alt="icon" /></a></li>
+      </ul>
+    </div>
+    <div class="parcel_3">
+      <ul>
+        <li class="three">
+          <img src="./imges/page5/three.png" alt="원" />
+          <ul class="textbox">
+            <li>대전역에서 발송.</li>
+            <li>
+              지정하신 날짜에 역사내 <br />
+              특송수화물 센터에서 수령가능
+            </li>
+            <li>
+              케이크류 제외하고 전제품 이용 가능합니다. <br />
+              (단, 하절기에는 크림류 및 초코 상품 일부 불가)
+            </li>
+          </ul>
+        </li>
+        <li class="box"><a href="page_3.html"><img src="imges/page5/icon.png" alt="icon" /></a></li>
+      </ul>
+    </div>
+    <div class="bottomM">
+      <!--마지막 메뉴 시작-->
+      <div class="btoomT">
+        <img src="imges/icon_br.png" alt="logo" />
+        <p>대표메뉴</p>
+      </div>
+      <ul>
+        <li class="leap"><img src="./imges/leap.png" alt="잎"></li>
+        <li>
+          <ul class="mini">
+            <li><img src="imges/bread (1).png" alt="braed" /></li>
+            <li>튀김소보로</li>
+            <li>1,700원</li>
+            <li><img src="imges/prozect1_06.png" alt="ribon" /></li>
+            <li>
+              <a href="menu_buy.html"
+                ><img src="imges/icon_shop.png" alt="shop"
+              /></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="mini">
+            <li><img src="imges/bread (2).png" alt="braed" /></li>
+            <li>튀소구마</li>
+            <li>1,700원</li>
+            <li><img src="imges/prozect1_06.png" alt="ribon" /></li>
+            <li><img src="imges/icon_shop.png" alt="shop" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="mini">
+            <li><img src="imges/bread (4).png" alt="braed" /></li>
+            <li>초코튀소</li>
+            <li>2,000원</li>
+            <li><img src="imges/prozect1_06.png" alt="ribon" /></li>
+            <li><img src="imges/icon_shop.png" alt="shop" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="mini">
+            <li><img src="imges/bread (3).png" alt="braed" /></li>
+            <li>판타롱 부추빵</li>
+            <li>2,000원</li>
+            <li><img src="imges/prozect1_06.png" alt="ribon" /></li>
+            <li><img src="imges/icon_shop.png" alt="shop" /></li>
+          </ul>
+        </li>
+
+      </ul>
+      
+    </div>
+    <!--메뉴끝-->
+
+    <div class="con_2">
+      <div class="con_inner">
+        <div class="btn">
+          <ul>
+            <li><a href="#">1:1문의하기 ></a></li>
+            <li><a href="#">FAQ바로가기 ></a></li>
+          </ul>
+        </div>
+        <h1>공지사항</h1>
+        <div class="notice">
+          <table>
+            <tr>
+              <td>2023 무료배송 안내</td>
+              <td>2023-03-10</td>
+            </tr>
+            <tr>
+              <td>방문 수령 예약관련 안내(픽업매출 확인)</td>
+              <td>2023-03-03</td>
+            </tr>
+            <tr>
+              <td>KTX특송 주문마감 및 수화물센터 변경안내</td>
+              <td>2023-03-01</td>
+            </tr>
+            <tr>
+              <td>아이스팩(보냉포장) 유료화 전환 안내</td>
+              <td>2023-02-27</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>2023 무료배송 안내</td>
+              <td>2023-03-10</td>
+            </tr>
+            <tr>
+              <td>방문 수령 예약관련 안내(픽업매출 확인)</td>
+              <td>2023-03-03</td>
+            </tr>
+            <tr>
+              <td>KTX특송 주문마감 및 수화물센터 변경안내</td>
+              <td>2023-03-01</td>
+            </tr>
+            <tr>
+              <td>아이스팩(보냉포장) 유료화 전환 안내</td>
+              <td>2023-02-27</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="foot">
+        <ul class="top">
+          <li>회사소개</li>
+          <li>매장안내</li>
+          <li>이용약관</li>
+          <li>고객센터</li>
+          <li>개인정보처리방침</li>
+        </ul>
+        <hr />
+        <div class="bottom">
+          <ul class="left">
+            <li>고객센터 1588-8069</li>
+            <li>
+              영업시간 <br />
+              AM 9:00~PM 17:00 (점심시간 11:00~12:00)
+            </li>
+          </ul>
+          <ul class="center">
+            <li><img src="imges/incon_fc.png" alt="is" /></li>
+            <li>
+              <span>페이스북</span> <br />
+              @sungsimdang_official
+            </li>
+          </ul>
+          <ul class="right">
+            <li><img src="imges/incon_is.png" alt="is" /></li>
+            <li>
+              <span>인스타그램</span> <br />
+              @sungsimdang_official
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
