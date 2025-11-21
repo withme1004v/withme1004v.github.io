@@ -1,0 +1,809 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: cocoB;
+  src: url(../webfonts/Coco-Sharp-Bold-trial.woff) format("woff");
+}
+@font-face {
+  font-family: cocoEB;
+  src: url(../webfonts/Coco-Sharp-Extrabold-trial.woff) format("woff");
+}
+@font-face {
+  font-family: notoR;
+  src: url(../webfonts/NotoSansKR-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: notoM;
+  src: url(../webfonts/NotoSansKR-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: notoB;
+  src: url(../webfonts/NotoSansKR-Bold.woff) format("woff");
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+#wrap{
+  width: 100%; margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+/* header 시작 */
+header{
+  width: 100%; height: 80px;
+  padding: 0 50px; box-sizing: border-box;
+  position: fixed; z-index: 999;
+  background-color: rgba(255, 255, 255, .3);
+  text-align: center;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+}
+header .head_bg{
+  position: absolute; top: 80px; left: 0;
+  width: 100%;
+  background-color: #fff; z-index: 98;
+  transition: .5s; height: 0;
+}
+header .logo{margin-top: 10px;}
+header ul.nav{
+  display: flex;
+  font-family: cocoB;
+  position: relative;
+  height: 100%;
+}
+header ul.nav > li{
+  position: relative;
+  font-size: 19px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  padding: 0 70px;
+}
+header ul.nav > li:hover>a{
+  color: #FF7700;
+}
+header ul.nav ul.sub{
+  position: absolute; z-index: 99;
+  top: 82px; left: 50%;
+  transform: translateX(-50%);
+  height: 0; overflow: hidden;
+  transition: .4s;
+}
+header ul.nav:hover > li ul.sub{
+  height: 150px;
+  padding: 20px 0;
+}
+header ul.nav ul.sub li{
+  line-height: 35px;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+header ul.nav ul.sub li:hover{
+  text-decoration:underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+header ul.right{
+  display: flex;
+  font-size: 22px; gap: 40px;
+}
+header ul.right > li:hover>a{
+  color: #FF7700;
+}
+
+
+
+/* s0 시작 */
+.s0{
+  width: 100%; height: 100vh;
+  position: relative;
+}
+.s0 .swiper-slide{
+  display: flex; align-items: center;
+  width: 100%; height: 100%;
+}
+.s0 p{
+  width: 70%; height: 70%;
+  position: relative;
+  margin: 0 auto;
+}
+.s0 .swiper-slide>img:nth-child(1){height: 100%;}
+.s0 img{
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+}
+.s0 p img{top: 55%;}
+.s0 img.txtM{display: none;}
+.mySwiper .swiper-slide p{
+  transform: scale(0.2);
+  transition: 2.5s;
+}
+.mySwiper .swiper-slide p.on{
+  transform: scale(1);
+}
+
+.mySwiper #btn{
+  position: absolute; width: 95%; height: 50px;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.mySwiper #btn .swiper-button-next,
+.mySwiper #btn .swiper-button-prev{
+  width: 50px; height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .3);
+}
+.mySwiper #btn .swiper-button-next:after,
+.mySwiper #btn .swiper-button-prev:after{
+  font-size: 1.1em; color: #000; font-weight: bold;
+}
+.mySwiper .swiper-scrollbar{
+  background-color: rgba(255, 255, 255, .25);
+  height: 8px;
+  bottom: 15px; left: 10%;
+  width: 30%;
+  border-radius: 0;
+}
+.mySwiper .swiper-scrollbar-drag{
+  background-color: rgba(0, 0, 0, .45); border-radius: 0;
+}
+
+
+/* s1 시작 */
+.s1{
+  width: 100%; height: 100vh;
+  background-color: #FF7700;
+}
+.swiperWrap{
+  margin: 0 auto;
+  width: 90%; max-width: 1700px;
+  position: relative;
+  height: 60%; overflow: hidden;
+}
+.mySwiper1{
+  width: 100%; /* position: static; */
+  /* overflow:  visible; */
+  overflow: visible;
+}
+.mySwiper1 .swiper-wrapper{
+  width: 100%; height: 100%;
+  text-align: center;
+}
+.mySwiper1 .swiper-slide{
+  width: 400px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  border-radius: 500px 500px 0 0;
+  overflow: hidden;
+}
+.mySwiper1 .swiper-slide:first-child{margin-left: 0;}
+.mySwiper1 .swiper-slide a p{overflow: hidden;}
+.mySwiper1 .swiper-slide a p:nth-child(1){
+  width: 100%; aspect-ratio: 1 / 1.15; font-size: 0;
+}
+.mySwiper1 .swiper-slide a p img{
+  width: 100%; height: 100%; object-fit: cover;
+  transition: .5s;
+}
+.mySwiper1 .swiper-slide a:hover p img{
+  transform: scale(1.1);
+}
+.mySwiper1 .swiper-slide a p:nth-child(2){
+  line-height: 50px;
+  border-top: 2px solid #000;
+  font-family: cocoB;
+  letter-spacing: 3px;
+  transition: color .3s, background-color .3s;
+}
+.mySwiper1 .swiper-slide a:hover p:nth-child(2){
+  background-color: #000;
+  color: #fff;
+}
+.mySwiper1 #btn{
+   /* position: absolute; width: 111%; height: 50px;
+   left: 50%; top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 11; */
+}
+.mySwiper1 #btn .swiper-button-next:after,
+.mySwiper1 #btn .swiper-button-prev:after{
+  font-size: 1.7em; color: #000;
+}
+.mySwiper1 .swiper-scrollbar{
+  width: 30%; height: 7px;
+  bottom: -35px;
+  left: 50%; transform: translateX(-50%);
+  border-radius: 0;
+}
+.mySwiper1 .swiper-scrollbar-drag{
+  background-color: #000;
+  border-radius: 0;
+}
+
+
+/* s2 시작 */
+.s2{margin-top: 30px;}
+ h3.sTitle{
+  width: 100%; margin: 0 auto; text-align: center;
+  font-family: cocoEB;
+  font-size: 25px;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 5px;
+  padding: 170px 0 130px;
+  box-sizing: border-box;
+}
+.s2 ul.contents{}
+.s2 ul.contents li{
+  display: flex; align-items: center;
+  margin-bottom: 150px;
+}
+.s2 ul.contents li:nth-child(2){
+  flex-direction: row-reverse;
+}
+.s2 ul.contents li .image{
+  width: 67%; overflow: hidden;
+}
+.s2 ul.contents li:nth-child(odd) .image{
+  border-radius: 0 350px 350px 0;
+}
+.s2 ul.contents li:nth-child(2) .image{
+  border-radius: 350px 0 0 350px;
+}
+.s2 ul.contents li .image img{
+  width: 100%; object-fit: cover;
+}
+.s2 ul.contents li .txt{position: relative;}
+.s2 ul.contents li .txt a{
+  text-align: center;
+  display: flex; flex-direction: column;
+  gap: 30px;
+}
+.s2 ul.contents li:nth-child(odd) .txt{
+  margin-left: -30px;
+}
+.s2 ul.contents li:nth-child(2) .txt{
+  margin-right: -30px; z-index: 2;
+}
+.s2 ul.contents li:nth-child(odd) .txt:before{
+  content: "";
+  background-image: url(../images/s2_union.png);
+  background-size: contain;
+  width: 130px; height: 80px;
+  background-repeat: no-repeat;
+  position: absolute; right: -20px; top: -20px;
+  transition: .4s;
+}
+.s2 ul.contents li:nth-child(2) .txt:before{
+  content: "";
+  background-image: url(../images/s2_union.png);
+  background-size: contain;
+  width: 130px; height: 80px;
+  background-repeat: no-repeat;
+  position: absolute; left: -20px; top: -20px;
+  transition: .4s;
+}
+.s2 ul.contents li .txt:hover::before{
+  background-image: url(../images/s2_union_hov.png);
+  width: 183px; height: 112px;
+}
+.s2 ul.contents li .txt h2{
+  font-family: cocoB; 
+  font-size: 45px; letter-spacing: 5px;
+  line-height: 50px;
+  position: relative;
+}
+.s2 ul.contents li .txt p{
+  font-family: notoR;
+  line-height: 35px; color: #777;
+  font-size: 18px;
+}
+
+
+
+/* s3 시작 */
+.s3{
+  width: 100%; height: 100vh;
+  background-image: url(../images/s3_bg_img.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s3 .txt{
+  text-align: center;
+}
+.s3 .txt h1{
+  font-family: cocoEB;
+  color: #FF7700;
+  font-size: 115px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  margin-bottom: 50px;
+}
+.s3 .txt div{
+  font-family: notoR;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+
+/* s4 시작 */
+.s4{
+  width: 100%; height: 100vh;
+  background-image: url(../images/s4_bg_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.s4 > p{
+  position: absolute; z-index: 5;
+  left: 60%; top: 50%;
+  transform: translate(-60%, -50%);
+  width: 56%; aspect-ratio: 1 / 1;
+  
+}
+.s4 > p img{
+  width: 100%;
+  object-fit: cover;
+  animation: circleWord 60s linear infinite;
+}
+@keyframes circleWord {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}
+
+.s4 .s4_flex{
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%; box-sizing: border-box;
+}
+.s4 .s4_flex h3.sTitle{
+  width: 30%; text-align: left;
+  color: #fff;
+}
+.s4 .s4_flex .rTxt{
+  text-align: center;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  gap: 80px; flex-grow: 1;
+  height: 100%;
+}
+.s4 .s4_flex .rTxt p{
+  font-family: notoR;
+  font-size: 20px; line-height: 40px;
+  position: relative;
+}
+.s4 .s4_flex .rTxt p::after{
+  content: "";
+  position: absolute; left: 50%; bottom: -40px;
+  transform: translateX(-50%);
+  width: 50px; height: 3px;
+  background-color: #000;
+}
+.s4 .s4_flex .rTxt h4{
+  font-family: notoB;
+  font-size: 18px; line-height: 40px;
+}
+.s4 .none{width: 20%; height: 100%;}
+
+
+
+/* footer 시작 */
+footer{position: relative;}
+footer>ul{
+  display: flex;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+footer>ul>li h4{
+  font-family: cocoB;
+  margin-bottom: 20px;
+}
+footer>ul>li:nth-child(1){
+  width: 50%;
+  padding: 35px; box-sizing: border-box;
+}
+footer>ul>li:nth-child(1) .sub li{
+  line-height: 25px;
+  font-family: notoR;
+  font-size: 14px;
+}
+footer>ul>li:nth-child(1) .sub li:last-child{
+  color: #888;
+}
+footer>ul>li:nth-child(1) .sub li span{
+  font-family: notoM;
+  margin-right: 15px;
+}
+footer>ul>li:nth-child(1) .sub li:first-child span:nth-child(2){
+  margin-left: 60px; position: relative;
+}
+footer>ul>li:nth-child(1) .sub li:first-child span:nth-child(2)::before{
+  content: "";
+  position: absolute; left: -31px; top: 50%;
+  transform: translateY(-50%);
+  width: 2px; height: 14px;
+  background-color: #ccc;
+}
+
+footer>ul>li:nth-child(2){
+  display: flex; width: 50%;
+}
+footer>ul>li:nth-child(2)>div{
+  border-left: 2px solid #ccc;
+  padding: 35px; width: 50%;
+}
+footer>ul>li:nth-child(2) .sup .sub li{
+  line-height: 30px;
+  position: relative; z-index: 10;
+  font-family: notoR;
+  font-size: 14px;
+}
+footer>ul>li:nth-child(2) .fol div a{
+  margin-right: 10px;
+}
+footer>p{
+  position: absolute; bottom: 2px; right: 2px;
+  font-size: 0;
+}
+footer>p img{
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+/* top버튼 시작 */
+a#MOVE_TOP_BTN{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 999;
+  width: 50px; height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .15);
+  line-height: 50px;
+}
+a#MOVE_TOP_BTN img{
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+
+
+
+@media screen and (max-width:1500px) {
+  /* s0 시작 */
+  .mySwiper .swiper-scrollbar{
+    bottom: 10%; left: 15%;
+  }
+
+  /* s1 시작 */
+  .mySwiper1 .swiper-slide a p:nth-child(1){
+    aspect-ratio: 1 / 1.25;
+  }
+  .mySwiper1 .swiper-scrollbar{
+    bottom: -50px;
+  }
+}
+@media screen and (max-width:1280px) {
+  /* header 시작 */
+  header ul.nav{display: none;}
+
+  /* s0 시작 */
+  .mySwiper .swiper-slide p.on{
+    transform: scale(1.1);
+  }
+  .mySwiper .swiper-scrollbar{
+    bottom: 15%; left: 15%;
+  }
+
+  /* s1 시작 */
+  h3.sTitle{
+  font-size: 22px;
+  text-underline-offset: 13px;
+  text-decoration-thickness: 4.5px;
+  }
+  .mySwiper1 .swiper-slide a p:nth-child(1){
+    aspect-ratio: 1 / 1.3;
+  }
+  .mySwiper1 .swiper-slide a p:nth-child(2){
+  font-size: 15px;
+  letter-spacing: 2px;
+  }
+
+  /* s2 시작 */
+   .s2 ul.contents li:nth-child(2) .txt:before{
+    background-image: url(../images/s2_union_hov.png);
+  }
+   .s2 ul.contents li:nth-child(odd) .txt:before{
+    background-image: url(../images/s2_union_hov.png);
+  }
+  .s2 ul.contents li .txt:hover::before{
+    width: 130px; height: 80px;
+  }
+   .s2 ul.contents li .txt h2{
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .s2 ul.contents li .txt p{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  /* s3 시작 */
+  .s3 .txt h1{
+    font-size: 85px;
+    letter-spacing: 25px;
+  }
+  .s3 .txt div{
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  /* s4 시작 */
+  .s4 > p{
+    width: 60%;
+  }
+  .s4 .s4_flex .rTxt p{
+    font-size: 16px; line-height: 30px;
+  }
+  .s4 .s4_flex .rTxt p::after{
+    width: 40px;
+  }
+  .s4 .s4_flex .rTxt h4{
+    font-size: 16px; line-height: 30px;
+  }
+
+  /* footer 시작 */
+  footer>ul>li h4{
+    font-size: 14px;
+  }
+  footer>ul>li:nth-child(1) .sub li{
+    line-height: 20px;
+    font-size: 13px;
+  }
+  footer>ul>li:nth-child(2) .sup .sub li{
+    line-height: 25px;
+    font-size: 13px;
+  }
+  footer>p{
+    width: 16%;
+  }
+}
+
+@media screen and (max-width:1024px){
+  /* s0 시작 */
+  .mySwiper .swiper-slide p.on{
+    transform: scale(1.2);
+  }
+  .mySwiper .swiper-scrollbar{
+    bottom: 17%; left: 10%;
+  }
+
+  /* s1 시작 */
+  h3.sTitle{
+    font-size: 20px;
+  }
+
+  /* s2 시작 */
+  .s2 ul.contents li .image{
+    width: 60%;
+  }
+  .s2 ul.contents li .txt h2{
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3px;
+  }
+  .s2 ul.contents li .txt p{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .s2 ul.contents li:nth-child(odd) .txt{
+    margin-left: 20px;
+  }
+  .s2 ul.contents li:nth-child(2) .txt{
+    margin-right: 20px;
+  }
+
+  /* s3 시작 */
+  .s3 .txt h1{
+    font-size: 60px;
+    letter-spacing: 20px;
+  }
+  .s3 .txt div{
+    font-size: 18px;
+  }
+
+  /* s4 시작 */
+  .s4 .s4_flex h3.sTitle{
+    transform: rotate(-90deg);
+    text-align: center;
+    margin-left: -10%;
+  }
+  .s4 > p{
+    left: -40%; top: 50%;
+    transform: translateY(-50%);
+    width: 75%;
+  }
+  .s4 .s4_flex .rTxt p{
+    font-size: 15px;
+  }
+  .s4 .s4_flex .rTxt p::after{
+    height: 2px;
+  }
+  .s4 .s4_flex .rTxt h4{
+    font-size: 15px;
+  }
+  .s4 .none{width: 0;}
+
+  /* footer 시작 */
+  footer>ul{
+    flex-direction: column;
+  }
+  footer>ul>li:nth-child(1){
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+  }
+  footer>ul>li:nth-child(2){
+    width: 100%;
+  }
+  footer>ul>li:nth-child(2)>div.sup{
+    border-left: none;
+  }
+}
+
+@media screen and (max-width:880px){
+  /* s0 시작 */
+  .mySwiper .swiper-scrollbar{
+    bottom: 20%;
+  }
+}
+
+@media screen and (max-width:768px){
+  /* s0 시작 */
+  .s0 img.txtW{display: none;}
+  .s0 img.txtM{
+    display: inline; width: 90%;
+    top: 55%;
+  }
+  .mySwiper .swiper-scrollbar{
+    bottom: 5%; left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* s1 시작 */
+  .swiperWrap{
+    display: flex; align-items: center;
+  }
+  h3.sTitle{
+    font-size: 18px;
+    text-decoration-thickness: 4px;
+    padding: 100px 0 70px;
+  }
+  .s1 h3.sTitle{
+    padding: 140px 0 70px;
+  }
+
+  /* s2 시작 */
+  .s2 ul.contents li{
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 70px;
+  }
+  .s2 ul.contents li:nth-child(2){
+    flex-direction: column;
+    align-items: end;
+  }
+  .s2 ul.contents li .image{
+    width: 95%;
+  }
+  .s2 ul.contents li:nth-child(2) .txt:before{
+    left: -50px; top: 25px;
+    width: 70px; height: 43px;
+  }
+  .s2 ul.contents li:nth-child(odd) .txt:before{
+    right: -50px; top: 25px;
+    width: 70px; height: 43px;
+  }
+  .s2 ul.contents li .txt h2{
+    margin-top: 30px;
+  }
+  .s2 ul.contents li .txt h2 br{display: none;}
+  .s2 ul.contents li .txt p{display: none;}
+
+  /* s3 시작 */
+  .s3 .txt h1{
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+  }
+  .s3 .txt div{ 
+    font-size: 15px;
+  }
+
+  /* s4 시작 */
+  .s4 .s4_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .s4 .s4_flex h3.sTitle{
+    transform: rotate(0);
+    width: 100%;
+    margin-left: 0;
+    color: #000;
+  }
+  .s4 > p{
+    left: 50%; bottom: -30%;
+    transform: translate(-50%, 30%);
+    width: 75%; z-index: 0;
+  }
+
+  /* footer 시작 */
+  footer>p{
+    display: none;
+  }
+}
+
+@media screen and (max-width:599px){
+  /* s1 시작 */
+  .swiperWrap{width: 60%;}
+  .mySwiper1 .swiper-scrollbar{
+    width: 50%;
+    bottom: -50px;
+  }
+}
+
+@media screen and (max-width:480px){
+  /* s2 시작 */
+  .s2 ul.contents li:nth-child(2) .txt:before{
+    left: -30px; top: 5px;
+    width: 60px; height: 37px;
+  }
+  .s2 ul.contents li:nth-child(odd) .txt:before{
+    right: -30px; top: 5px;
+    width: 60px; height: 37px;
+  }
+  .s2 ul.contents li .txt h2{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  /* s3 시작 */
+  .s3 .txt h1{
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+  }
+  .s3 .txt div{ 
+    font-size: 15px;
+  }
+
+  /* footer 시작 */
+  footer>ul>li h4{
+    margin-bottom: 10px;
+  }
+  footer>ul>li:nth-child(1){
+    padding: 20px;
+  }
+  footer>ul>li:nth-child(2)>div{
+    padding: 20px;
+  }
+}
