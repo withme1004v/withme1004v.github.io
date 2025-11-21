@@ -1,0 +1,305 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: nanum, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: nanum;
+    src: url(../font/NanumBarunGothic.woff) format("woff");
+}
+@font-face {
+    font-family: tae;
+    src: url(../font/TAEBAEK\ milkyway.woff) format("woff");
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header .head {
+    width: 1200px;
+    height: 115px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li ul {
+    display: flex;
+    justify-content: flex-end;
+}
+header ul li ul li {
+    padding: 0 15px 0;
+}
+header ul li ul li:first-of-type {
+    border-bottom: 2px solid #000;
+}
+header ul li ul li:first-of-type img {
+    height: 25px;
+}
+header ul li ul li input {
+    border: none;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+}
+header ul li ul li input:focus {
+    outline: none;
+}
+header ul li ul li img {
+    height: 30px;
+}
+header ul li ul li:nth-of-type(2) img, header ul li ul li:nth-of-type(5) img  {
+    height: 40px;
+} 
+/*헤더끝*/
+.menu {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #1a7169;
+}
+.menu ul {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li {
+   flex: 1 1 25%;
+   line-height: 60px;
+   text-align: center;
+}
+.menu ul li:hover a::after, .menu ul li a.actvie::after {
+    position: absolute;
+    top: 5px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+   background: #7fc241;
+}
+.menu ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a7169;
+}
+.menu ul li a:hover, .menu ul li a.on
+{
+    color: #7fc241;
+}
+.menu ul .manuG a {
+    color: rgb(112, 112, 112);
+    font-weight: normal;
+}
+/*하단메뉴 시작*/
+.submenu {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 0px;
+    box-shadow: 0 3px 3px -3px #aaa;
+    overflow: hidden;
+    transition: height 0.8s;
+    z-index: 2;
+}
+.submenu.on {
+    height: 400px;
+}
+.submenu .lnb {
+    width: 1200px;
+    margin: 0 auto;
+}
+.submenu .lnb > ul {
+    display: flex;
+    justify-content: space-around;
+}
+.submenu .lnb > ul > li {
+    width: 25%;
+    line-height: 35px;
+    padding-left: 25px;
+}
+.submenu .lnb > ul > li a:hover {
+    color: #aaa;
+}
+.menuB {
+    padding-top: 15px;
+}
+.menuB a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+/*상단의 메뉴 끝*/
+.navi {
+    width: 1200px;
+    margin: 40px auto;
+    text-align: right;
+}
+.navi p {
+    margin-right: 20px;
+    color: #1a7169;
+}
+.navi p a {
+ color: #aaa;
+ padding: 0 10px;
+}
+/*내비게이션 끝*/
+.wrap {
+    width: 1200px;
+    margin: 0 auto 100px;
+}
+.wrap .buymenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .buymenu .buyimg {
+    position: relative;
+}
+.wrap .buymenu .buyimg .best {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    background: rgb(255, 0, 128);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.wrap .buymenu .buyimg img {
+    width: 500px;
+}
+.wrap .buymenu .buytxt {
+    width: 100%;
+    padding-left: 100px;
+    line-height: 28px;
+}
+.wrap .buymenu .buytxt li {
+    padding: 10px 0px;
+}
+.wrap .buymenu .buytxt ul li span {
+    color: #aaa;
+    font-size: 14px;
+}
+.wrap .buymenu .buytxt ul .check {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.menubttom {
+    margin-top: 20px;
+}
+.menubttom ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menubttom ul li {
+    margin-bottom: 5px;
+}
+.wrap .buymenu .buytxt .menubttom ul .box {
+    border: 1px solid #aaa;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+.menubttom ul li:first-child {
+    color: rgb(120, 120, 120);
+}
+.menubttom ul li:nth-child(2) {
+    width: 80%;
+}
+.menubttom ul:last-child li:nth-child(2) {
+    color: #1a7169;
+    font-weight: bold;
+}
+.buytxt ul .buy {
+    cursor: pointer;
+    width: 100%;
+    background: #0b302c;
+    color: #fff;
+    text-align: center;
+}
+/*푸터시작*/
+footer {
+    width: 100%;
+    background: #333;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    color: #aaa;
+}
+.inner .foot_top {    
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.inner .foot_top ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.inner .foot_top ul li a {
+    color: #aaa;
+}
+.inner .foot_top ul li a:hover {
+    text-decoration: underline;
+}
+.inner .foot_top ul li:last-child a {
+    color: #fff;
+}
+.inner .foot_bttom {
+    padding-top: 20px;
+    clear: both;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.inner .foot_bttom .copy {
+    width: 58%;
+    line-height: 10px;
+    font-size: 14px;
+}
+.inner .foot_bttom .copy select {
+    background: #333;
+    width: 250px;
+    height: 50px;
+    color: #aaa;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.inner .foot_bttom .call {
+    text-align: right;
+}
+.inner .foot_bttom .call p:first-child {
+    font-size: 18px;
+    color: #fff;
+}
+.inner .foot_bttom .call p:nth-of-type(2) {
+    font-size: 14px;
+}
+.inner .foot_bttom .call .tell {
+    margin-top: 10px;
+}
+.inner .foot_bttom .call ul {
+    display: flex;
+    justify-content: end;
+}
+.inner .foot_bttom .call ul li {
+    color: #fff;
+    padding-left: 15px;
+}
+.inner .foot_bttom .call ul li:nth-child(2) {
+    font-weight: bold;
+}

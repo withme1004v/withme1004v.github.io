@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="./css/page5.css">
+    <link rel="shortcut icon" href="./image/favi.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="remocon2">
+        <ul>
+            <li><a href="#"><img src="./image/face_1.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="./image/ins_1.png" alt="인스타"></a></li>
+            <li><a href="#"><img src="./image/youtube_1.png" alt="유튜브"></a></li>
+        </ul>
+    </div>
+    <div class="remocon" onclick="myscr()">
+        <img src="./image/btn2.png" alt="버튼"></a>
+    </div>
+    <script>
+        function myscr() {
+            window.scrollTo({ top: 0, behavior: "smooth" });  
+        }
+    </script>
+    <header>
+        <div class="head">
+            <a href="./index.html"><img src="./image/logo1.png" alt="로고"></a>
+            <ul>
+                <li><a href="./page1.html">COMPANY</a></li>
+                <li><a href="page2.html">RECPUIT</a></li>
+                <li><a href="./page3.html">BRAND</a></li>
+                <li><a href="page4.html">SHOP</a></li>
+                <li><a href="./page5.html">CONTACT</a></li>
+                <li class="button" onclick="myshow()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line2"></div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="modal">
+        <div class="inner">
+            <div class="modaltop">
+                <img src="./image/logo1.png" alt="로고">
+                <span onclick="myhide()">X</span>
+            </div>
+            <div class="modalmeun">
+                <ul class="modalRight">
+                    <li><a href="./page1.html">COMPANY</a></li>
+                    <li><a href="page2.html">RECPUIT</a></li>
+                    <li><a href="page3.html">BRAND</a></li>
+                    <li><a href="page4.html">SHOP</a></li>
+                    <li><a href="page5.html">CONTACT</a></li>
+                </ul>
+                <div class="modalLeft">
+                    <p>
+                        NO.1 <br>
+                        패션 라이프 스타일 편집숍 <br>
+                        <span><b>원더플레이스</b></span>
+                    </p>
+                    <ul class="sns">
+                        <li><a href="#"><img src="./image/face_1.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="./image/ins_1.png" alt="인스타"></a></li>
+                        <li><a href="#"><img src="./image/youtube_1.png" alt="유튜브"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            let modal = document.getElementById("modal");
+            modal.style.display = "none";
+            function myshow() {
+                modal.style.display = "flex";
+            }
+            function myhide() {
+                modal.style.display = "none";
+            }
+        </script>
+    </div> <!--모달팝업 끝-->
+        <div class="map">
+            <div class="mapwrap">
+                <div class="mapL">
+                    <p><b>CONTACT </b></p>
+                    <h1>고객의 <br> 패션라이프를 책임질 <br> 원더플레이스와 함께</h1>
+                    <p>
+                        서울 성동구 성수일로6길 33 <br>
+                        (성수동2가) 아연디지털타워 5층
+                    </p>
+                    <p><b>help@wonderplace.co.kr</b></p>
+                    <div class="btn">
+                        DETAILS MAP
+                    </div>
+                </div>
+                <div class="mapR"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.442143164726!2d127.05122437604498!3d37.5446455720443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca496e74b8f63%3A0x83c2372b1545df3c!2z7JWE7Jew65SU7KeA7YS47YOA7JuM!5e0!3m2!1sko!2skr!4v1683706949648!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div> <!--지도 끝-->
+    <footer>
+        <div class="foot">
+            <ul class="footin">
+                <li>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>@wonderplace.co.kr</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>@wanderplace</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>youtube</li>
+                        <li>@wonderplace6265</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footin">
+                <li>
+                    <ul>
+                        <li>TEL</li>
+                        <li>1668-3508</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>E-MAIL</li>
+                        <li>help@wonderplace.co.kr</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>ADDRESS </li>
+                        <li>서울특별시 성동구 성수일로6길 33<br>
+                            (성수동2가) 아연디지털타워 5층</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footin2">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li>대표이사 : 김영한</li>
+                <li>
+                    사업자 등록번호 : 201-86-20597</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

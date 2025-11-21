@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸르밀:디자인밀</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./imges/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <ul class="head">
+            <li><img src="./imges/site-logo.png" alt="logo"></li>
+            <li>
+                <ul>
+                    <li><input type="text" placeholder="검색어를 입력해 주세요." size="10"> <a href="#"><img src="./imges/free-icon-rounded-magnifying-glass-13267.png" alt="돋보기"></a></li>
+                    <li onmouseover="hov()" onmouseout="out()"><a href="#" class="over" id="spot"><img src="./imges/free-icon-location-4812734.png" alt="장소"></a></li>
+                    <li><a href="#"><img src="./imges/free-icon-headset-157273.png" alt="문의"></a></li>
+                    <li><a href="#"><img src="./imges/free-icon-user-8924586.png" alt="인적사항"></a></li>
+                    <li><a href="#"><img src="./imges/free-icon-shopping-bag-9110082.png" alt="쇼핑"></a></li>
+                </ul>
+            </li>
+            <li class="login">
+                <p>배송지를 등록하고</p>
+                <p><ins>배송 가능 지역</ins>을 확인하세요!</p>
+            </li>
+        </ul>
+        <script>
+            let hv = document.getElementsByClassName("login")[0];
+            function hov() {
+                hv.classList.add("off");
+            }
+            function out() {
+                hv.classList.remove("off");
+            }
+        </script>
+    </header> <!--헤더끝-->
+    <section> <!--메뉴시작-->
+        <div class="menu">
+            <ul>
+                <li><a href="page1.html">영유아맞춤식</a></li>
+                <li><a href="#">케어식/건강식</a></li>
+                <li><a href="#">칼로리/영양균형식</a></li>
+                <li><a href="#">맞춤프로그램식</a></li>
+                <li class="manuG"><a href="#">AI식단추천</a></li>
+                <li class="manuG"><a href="#">이벤트</a></li>
+                <li class="manuG"><a href="#">디자인밀스토리</a></li>
+            </ul>
+        </div>
+        <div class="submenu">
+            <div class="lnb">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">베이비</a></li>
+                            <li><a href="#">냉장이유식</a></li>
+                            <li><a href="#">실온이유식</a></li>
+                            <li><a href="#">간식</a><br></li>
+                            <li class="menuB"><a href="#">키즈</a></li>
+                            <li><a href="#">영양덮밥</a></li>
+                            <li><a href="#">영양반찬</a></li>
+                            <li><a href="#">간식음료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">메디케어</a></li>
+                            <li><a href="#">당뇨케어</a></li>
+                            <li><a href="#">암케어</a><br></li>
+                            <li class="menuB"><a href="#">시니어케어</a></li>
+                            <li><a href="#">시니어주식</a></li>
+                            <li><a href="#">시니어반찬</a></li>
+                            <li><a href="#">시니어음료&간식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">샐러드</a></li>
+                            <li><a href="#">300샐러드Meal</a><br></li>
+                            <li class="menuB"><a href="#">도시락/덮밥</a></li>
+                            <li><a href="#">300라이스Meal</a></li>
+                            <li><a href="#">500차림</a></li>
+                            <li><a href="#">정성한상</a><br></li>
+                            <li class="menuB"><a href="#">음료/간편식</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">간편식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">칼로리 집중조절</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">맞춤추천</a></li>
+                            <li class="menuB"><a href="#">간편추천</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">이벤트</a></li>
+                            <li class="menuB"><a href="#">반값체험</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">브랜드소개</a></li>
+                            <li class="menuB"><a href="#">뉴스&매거진</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+    <script src="./java/menu.js"></script> <!--메뉴끝-->
+    <div class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide visual1">
+                <ul class="visualA">
+                     <li>
+                         <ul>
+                            <li>300샐러드&라이스 Meal <br>
+                            신메뉴 이름 맞히기</li>
+                             <li>실용만점 깜찍한 선물 GET</li>
+                         </ul>
+                     </li>
+                <li class="visImg"> <img src="./imges/ben2.jpg" alt="배너"></li>
+                </ul>
+            </li>
+            <li class="swiper-slide visual2">
+                <ul class="visualA">
+                     <li>
+                         <ul>
+                            <li>시니어케어 선물기획전<br>
+                                (최대 50% OFF)</li>
+                             <li>부모님을 위한, 고령자를 위한.</li>
+                         </ul>
+                     </li>
+                <li class="visImg"> <img src="./imges/ben3.jpg" alt="배너"></li>
+                </ul>
+            </li>
+            <li class="swiper-slide visual3">
+                <ul class="visualA">
+                     <li>
+                         <ul>
+                            <li>같이 먹으면 더 맛있다!<br>
+                                고사리삽겹살 메뉴 출시</li>
+                             <li>최대 10% 할인쿠폰 증정</li>
+                         </ul>
+                     </li>
+                <li class="visImg"> <img src="./imges/ben4.jpg" alt="배너"></li>
+                </ul>
+            </li>
+            <li class="swiper-slide visual4">
+                <ul class="visualA">
+                     <li>
+                         <ul>
+                            <li>신규 가입 즉시 드려요! <br>
+                                첫만남 할인쿠폰 100%증정!</li>
+                             <li>첫 만남이니까 아낌없이 드려요</li>
+                         </ul>
+                     </li>
+                <li class="visImg"> <img src="./imges/ben1.jpg" alt="배너"></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>       
+    </div>
+    <!-- Swiper JS1 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper1 -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!--비주얼끝-->
+    <div class="remocon">
+        <ul>
+            <li><img src="./imges/free-icon-cart-2058732.png" alt="카트"><br>
+                타쇼핑몰<br>
+                주문조회
+            </li>
+            <li>이달의 식단</li>
+            <li>1:1 문의</li>
+            <li>이용가이드</li>
+            <li>Top</li>
+        </ul>
+    </div>
+    <div class="sangpum">
+        <div class="stxt"><h1>DESIGN YOUR TABLE</h1><p>Baby부터 Senior까지 당신만을 위한 건강한 식단</p></div>
+        <ul class="sbtn">
+            <li onclick="Bsbtn()">BEST</li>
+            <li onclick="Osbtn()">연령별</li>
+            <li onclick="Psbtn()">목적별</li>
+        </ul>
+        <div class="best">
+            <ul class="Bbtn">
+                <li class="dly" onclick="show()">신메뉴 출시 상품</li>
+                <li class="dly" onclick="hide()">치료 후 회복 추천</li>
+                <li class="btnall">전체보기 ></li>
+            </ul>
+            <ul class="best_menu">
+                <li>
+                    <ul>
+                        <li><div><p>베스트</p></div><a href="buy_page.html"><img src="./imges/menu1.jpg" alt="menu1"></a></li>
+                        <li>300샐러드Meal <br> <span>1일1식 / 4주(월~금, 총 30식)</span></li>
+                        <li>
+                            <ul>
+                                <li>150,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/menu2.jpg" alt="menu1"></li>
+                        <li>300라이스Meal <br> <span>1일1식 / 2주(월~금, 총 10식)</span></li>
+                        <li>
+                            <ul>
+                                <li>69,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><div><p>베스트</p></div><img src="./imges/menu3.jpg" alt="menu1"></li>
+                        <li>정성한상 <br> <span>1일1식 / 2주(월~금, 총 10식)</span></li>
+                        <li>
+                            <ul>
+                                <li>75,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/menu4.jpg" alt="menu1"></li>
+                        <li>300샐러드Meal&정성한상 MIX식단(4주) <br> <span>1일1식 / 4주(월~금, 총 30식)</span></li>
+                        <li>
+                            <ul>
+                                <li>150,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="best_menu2">
+                <li>
+                    <ul>
+                        <li><div><p class="orenge">NEW</p></div><img src="./imges/menu5.jpg" alt="menu1"></li>
+                        <li>암환자용 식단_진밥 <br> <span>1일2식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>240,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><div><p class="orenge">NEW</p></div><img src="./imges/menu6.jpg" alt="menu1"></li>
+                        <li>암환자용 식단_현미 <br> <span>1일2식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>240,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li> <div><p>베스트</p></div><img src="./imges/menu7.jpg" alt="menu1"></li>
+                        <li>디자인밀 당뇨식단 <br> <span>1일2식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>240,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/menu8.jpg" alt="menu1"></li>
+                        <li>단백한 하루<br> <span>3,240ml(180ml x 18개)</span></li>
+                        <li>
+                            <ul>
+                                <li>27,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <script>
+                let str = document.getElementsByClassName("best_menu")[0];
+                let str2 = document.getElementsByClassName("best_menu2")[0];
+                let colorbg = document.querySelectorAll(".dly")
+                colorbg[0].classList.add("on");
+                str2.style.display = "none";
+                function hide() {
+                  str.style.display = "none";
+                  str2.style.display = "flex";
+                  colorbg[0].classList.remove("on");
+                  colorbg[1].classList.add("on");
+                }
+                function show() {
+                  str.style.display = "flex";
+                  str2.style.display = "none";
+                  colorbg[0].classList.add("on");
+                  colorbg[1].classList.remove("on");
+                }
+              </script>
+        </div> 
+        <div class="old">
+            <ul class="Obtn">
+                <li class="obtnli" onclick="Bbtn()">For Baby</li>
+                <li class="obtnli" onclick="Kbtn()">For Kids</li>
+                <li>For Adult</li>
+                <li>For Senior</li>
+                <li class="btnall">전체보기 ></li>
+            </ul>
+            <ul class="baby_menu">
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="./imges/b_menu1.jpg" alt="menu1"></a></li>
+                        <li>초기2 이유식(만5개월)<br> <span>미음 / 4주(월~금, 총 20세트)</span></li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <ul class="sale">
+                                        <li><p>5% <del>84,000원</del></p></li>
+                                        <li>79,800원</li>
+                                    </ul>
+                                </li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/b_menu2.jpg" alt="menu1"></li>
+                        <li>후기이유식 2팩(만8~9개월)<br> <span>된죽 / 4주(월~금, 총20세트)</span></li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <ul class="sale">
+                                        <li><p>5% <del>296,800원</del></p></li>
+                                        <li>281,960원</li>
+                                    </ul>
+                                </li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/b_menu3.jpg" alt="menu1"></li>
+                        <li>병행기이유식(만10~11개월) <br> <span>된죽2팩+진밥1팩 / 4주(월~금, 총 20세트)</span></li>
+                        <li>
+                            <ul>
+                                <li> <ul class="sale">
+                                    <li><p>5% <del>436,800원</del></p></li>
+                                    <li>414,960원</li>
+                                </ul></li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/b_menu4.jpg" alt="menu1"></li>
+                        <li>완료기이유식 2팩(만11~13개월) <br> <span>진밥2팩 / 4주(월~금, 총 30식)</span></li>
+                        <li>
+                            <ul>
+                               <li> <ul class="sale">
+                                    <li><p>5% <del>330,400원</del></p></li>
+                                    <li>313,880원</li>
+                                </ul></li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="baby_menu2">
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="./imges/k_menu1.jpg" alt="menu1"></a></li>
+                        <li>THE순제주보리차<br> <span>1BOX / 120ml*20개입</span></li>
+                        <li>
+                            <ul>
+                                <li>25,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/k_menu2.jpg" alt="menu1"></li>
+                        <li>THE순배도라지차<br> <span>1BOX / 100ml*20개입</span></li>
+                        <li>
+                            <ul>
+                                <li>27,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script src="./java/oldmenu.js"></script>
+        <div class="purpose">
+            <ul class="Pbtn">
+                <li class="pbtn_bg" onclick="Mbtn()">메디케어</li>
+                <li class="pbtn_bg" onclick="Kabtn()">칼로리 조절</li>
+                <li>점심 추천</li>
+                <li>간식 추천</li>
+                <li class="btnall">전체보기 ></li>
+            </ul>
+            <ul class="purpose_menu">
+                <li>
+                    <ul>
+                        <li ><div><p class="orenge">NEN</p></div><a href="#"><img src="./imges/menu5.jpg" alt="menu1"></a></li>
+                        <li>암환자용 식단_진밥 <br> <span>1일2식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>240,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><div><p class="orenge">NEN</p></div><img src="./imges/menu6.jpg" alt="menu1"></li>
+                        <li>암환자용 식단_현미 <br> <span>1일2식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>240,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><div><p>베스트</p></div><img src="./imges/menu7.jpg" alt="menu1"></li>
+                        <li>디자인밀 당뇨식단 <br> <span>1일2식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>240,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/c_menu4.jpg" alt="menu1"></li>
+                        <li>당뇨케어밀플랜 볶음밥SET <br> <span>300g X 각 3봉 (총 6봉)</span></li>
+                        <li>
+                            <ul>
+                                <li>41,400원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="purpose_menu2">
+                <li>
+                    <ul>
+                        <li ><div><p>베스트</p></div><a href="#"><img src="./imges/c_menu5.jpg" alt="menu1"></a></li>
+                        <li>300샐러드Meal <br> <span>1일1식 / 4주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>150,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/c_menu6.jpg" alt="menu1"></li>
+                        <li>300라이스Meal <br> <span>1일1식 / 2주(월~금, 총 20식)</span></li>
+                        <li>
+                            <ul>
+                                <li>69,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/c_menu7.png" alt="menu1"></li>
+                        <li>밸러스쉐이크_7포(60G*7)<br> <span>1box (60g x 7포)</span></li>
+                        <li>
+                            <ul>
+                                <li>25,000원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><img src="./imges/c_menu8.jpg" alt="menu1"></li>
+                        <li>밸런스핏in소스_8팩 <br> <span>4종 x 2세트(총 8팩)</span></li>
+                        <li>
+                            <ul>
+                                <li>41,400원</li>
+                                <li><img src="./imges/shop.png" alt="shop"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <script>
+                let pur = document.getElementsByClassName("purpose_menu")[0];
+                let pur2 = document.getElementsByClassName("purpose_menu2")[0];
+                let colorbg2 = document.querySelectorAll(".pbtn_bg")
+                colorbg2[0].classList.add("on");
+                pur2.style.display = "none";
+                function Kabtn() {
+                    pur.style.display = "none";
+                    pur2.style.display = "flex";
+                  colorbg2[0].classList.remove("on");
+                  colorbg2[1].classList.add("on");
+                }
+                function Mbtn() {
+                    pur.style.display = "flex";
+                    pur2.style.display = "none";
+                  colorbg2[0].classList.add("on");
+                  colorbg2[1].classList.remove("on");
+                }
+            </script>
+        </div>
+        <script>
+            let bestM = document.getElementsByClassName("best")[0];
+            let oldM = document.getElementsByClassName("old")[0];
+            let purM = document.getElementsByClassName("purpose")[0];
+            let clik = document.querySelectorAll(".sbtn li")
+            clik[0].classList.add("sbtn_clik");
+            oldM.style.display ="none";
+            purM.style.display ="none";
+            function Bsbtn(){
+                bestM.style.display = "block";
+                oldM.style.display ="none";
+                purM.style.display ="none";
+                clik[0].classList.add("sbtn_clik");
+                clik[1].classList.remove("sbtn_clik");
+                clik[2].classList.remove("sbtn_clik");
+            }
+            function Osbtn(){
+                oldM.style.display = "block";
+                bestM.style.display ="none";
+                purM.style.display ="none";
+                clik[0].classList.remove("sbtn_clik");
+                clik[1].classList.add("sbtn_clik");
+                clik[2].classList.remove("sbtn_clik");
+            }
+            function Psbtn() {
+                oldM.style.display = "none";
+                bestM.style.display ="none";
+                purM.style.display ="block";
+                clik[0].classList.remove("sbtn_clik");
+                clik[1].classList.remove("sbtn_clik");
+                clik[2].classList.add("sbtn_clik");
+            }
+        </script>
+    </div> <!--디자인 유얼 테이블-->
+    <div class="toWrap">
+        <div class="today">
+            <div class="stxt"><h2>TODAY'S MENU</h2><p>매일 매일 달라지는 메뉴를 확인하세요.</p></div>
+            <ul class="tomenuTap">
+                <li>2023.04.24</li>
+                <li>영유아맞춤식</li>
+                <li>케어식/건기식</li>
+                <li>칼로리/영양균형식</li>
+            </ul>
+        </div>
+        <div class="swiper mySwiper3">
+            <div class="swiper-wrapper tomenu">
+                <li class="swiper-slide today_slide">
+                    <ul>
+                        <li onclick="myshow()"><img src="./imges/20221215imeGy5jwed.jpg" alt="미음"></li>
+                        <li><span>초기1-A</span></li>
+                        <li>쌀미음</li>
+                        <li>35kcal</li>
+                    </ul>
+                </li>                
+                <li class="swiper-slide today_slide">
+                    <ul>
+                        <li><img src="./imges/20221215jnthrW37m.jpg" alt="미음"></li>
+                        <li><span>초기2</span></li>
+                        <li>한우사과미음</li>
+                        <li>60kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide today_slide">
+                    <ul>
+                        <li><img src="./imges/20221215b9sAeGS.jpg" alt="미음"></li>
+                        <li><span>후기B</span></li>
+                        <li>한우아스파라거스근대죽</li>
+                        <li>95kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide today_slide">
+                    <ul>
+                        <li><img src="./imges/20221215BzDW-GS2Dw.jpg" alt="미음"></li>
+                        <li><span>후기</span></li>
+                        <li>두부달걀표고버섯죽</li>
+                        <li>110kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide today_slide">
+                    <ul>
+                        <li><img src="./imges/20221215BzDW-GS2Dw.jpg" alt="미음"></li>
+                        <li><span>후기</span></li>
+                        <li>두부달걀표고버섯죽</li>
+                        <li>110kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul>
+                        <li><img src="./imges/20221215BzDW-GS2Dw.jpg" alt="미음"></li>
+                        <li><span>후기</span></li>
+                        <li>두부달걀표고버섯죽</li>
+                        <li>110kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul>
+                        <li><img src="./imges/20221215BzDW-GS2Dw.jpg" alt="미음"></li>
+                        <li><span>후기</span></li>
+                        <li>두부달걀표고버섯죽</li>
+                        <li>110kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul>
+                        <li><img src="./imges/20221215BzDW-GS2Dw.jpg" alt="미음"></li>
+                        <li><span>후기</span></li>
+                        <li>두부달걀표고버섯죽</li>
+                        <li>110kcal</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul>
+                        <li><img src="./imges/20221215BzDW-GS2Dw.jpg" alt="미음"></li>
+                        <li><span>후기</span></li>
+                        <li>두부달걀표고버섯죽</li>
+                        <li>110kcal</li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+  <!-- Swiper JS2 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper2 -->
+  <script>
+    var swiper3 = new Swiper(".mySwiper3", {
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+        slidesPerView: 4.5,
+      spaceBetween: 30,
+    });
+  </script>
+    <div id="modal">
+        <div class="inner" >
+          <div class="modaltop">
+              <p>초기1-A</p><span onclick="myhide()">X</span>
+          </div>
+          <div class="modalin">
+              <img src="./imges/20221215imeGy5jwed.jpg" alt="미음">
+              <ul>
+                  <li>쌀미음</li>
+                  <li>총 내용량 120g, 35kcal</li>
+                  <li>생쌀가루 5.5%, 찹쌀가루 2.5%</li>
+                  <li><b>원재료명 및 함량:</b> 정제수, 유기생쌀가루(유기쌀 100%:국산) 5.5%, 찹쌀가루(유기찹쌀 100%:국산) 2.5%
+                      이 제품은 알류,우유,대두,밀,게,새우,돼지고기,토마토,호두,잣,쇠고기,닭고기,오징어,조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조하고 있습니다.</li>
+              </ul>
+          </div>
+          <div class="tab">
+              <table>
+                  <tr>
+                      <td>영양정보</td>
+                      <td>나트륨</td>
+                      <td>탄수화물</td>
+                      <td>당류</td>
+                      <td>지방</td>
+                      <td>트랜스지방</td>
+                      <td>포화지방</td>
+                      <td>콜레스트롤</td>
+                      <td>단백질</td>
+                  </tr>
+                  <tr>
+                      <td>총 함량</td>
+                      <td>0mg</td>
+                      <td>8g</td>
+                      <td>0g</td>
+                      <td>0g</td>
+                      <td>0g</td>
+                      <td>0g</td>
+                      <td>0mg</td>
+                      <td>1g</td>
+                  </tr>
+                  <tr>
+                      <td>영양성분 기준치</td>
+                      <td>0%</td>
+                      <td>9%</td>
+                      <td>-%</td>
+                      <td>0%</td>
+                      <td>-%</td>
+                      <td>-%</td>
+                      <td>-%</td>
+                      <td>7%</td>
+                  </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+      <script>
+        let modal = document.getElementById("modal");
+        modal.style.display = "none";
+        function myshow() {
+          modal.style.display = "flex";
+        }
+        function myhide() {
+          modal.style.display = "none";
+        }
+      </script>
+    <!--오늘의 식단 끝-->
+    <div class="story">
+        <div class="stxt"><h2>디자인밀 스토리</h2><p>Baby부터 Senior까지 건강한 경험을 위해 맞춤형 식단을 제안합니다.</p></div>
+        <div class="story-content">
+            <div class="stin">
+                <div class="stimg">
+                    <img  class="slide1" src="./imges/main_story_01.jpg" alt="스토리">
+                    <img  class="slide1" src="./imges/main_story_02.jpg" alt="스토리">
+                    <img  class="slide1" src="./imges/main_story_03.jpg" alt="스토리">
+                </div>
+            </div>
+            <script>
+                let i = 0;
+                let slides3 = document.getElementsByClassName("slide1");
+                slides3[0].style.opacity="1";
+                function slide2() {
+                    slides3[i].classList.remove("onn");
+                    i++;
+                    if(i>2) {
+                        i=0;
+                    }
+                    slides3[i].classList.add("onn");        
+                }
+                setInterval(slide2, 3000);
+                </script>
+            <ul class="story_text">
+                <li>
+                    <div class="tit">
+                        <b>01.</b> 개인맞춤형 식생활 관리 브랜드
+                    </div>
+                    <div class="link">
+                        <a href="#">디자인밀 ></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit">
+                        <b>02.</b> 신선 식단을 편리하게!
+                    </div>
+                    <div class="link">
+                        <a href="#">이용가이드 ></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit">
+                        <b>03.</b> 나에게 꼭 맞는 맞춤 식단
+                    </div>
+                    <div class="link">
+                        <a href="#">AI식단추천 ></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> <!--디자인밀 스토리끝-->
+    <div class="news">
+        <div class="news_txt">
+            <h2>NEWS & 매거진</h2>
+            <p>더보기 ></p>
+        </div>
+        <div class="swiper2 mySwiper2 news_main">
+            <div class="swiper-wrapper">
+                <ul  class="swiper-slide">
+                    <li>
+                        <img src="./imges/news1.jpg" alt="뉴스">
+                    </li>
+                    <li>풀무원 디자인밀, 이유식 브랜드 통합...'개인 맞춤형 식이관리 플랫폼'으로 업그레이드</li>
+                    <li>2023.01.26</li>
+                </ul>
+                <ul  class="swiper-slide">
+                    <li>
+                        <img src="./imges/news2.jpg" alt="뉴스">
+                    </li>
+                    <li>[디자인밀 NWES]풀무원 디자인밀, 개인 맞춤 정기구독형 칼로리 균형식 '300라이스Meal'출시</li>
+                    <li>2022.12.21</li>
+                </ul>
+                <ul  class="swiper-slide">
+                    <li>
+                        <img src="./imges/news3.jpg" alt="뉴스">
+                    </li>
+                    <li>[디자인밀 NWES] 풀무원 디자인밀, 고령친화우수식품 '7Days 영양진밥, 영양덮밥소스'...</li>
+                    <li>2022.12.20</li>
+                </ul>
+                <ul  class="swiper-slide">
+                    <li>
+                        <img src="./imges/news4.jpg" alt="뉴스">
+                    </li>
+                    <li>[디자인밀 NWES] 풀무원 디자인밀, 당뇨환자 맞춤 식단형 식품 '당뇨케어 밀플랜 볶음밥' 출시</li>
+                    <li>2022.12.15</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-pagination2"></div>
+    </div>
+  <!-- Swiper JS3 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper3 -->
+  <script>
+    var swiper2 = new Swiper (".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+      },
+    });
+  </script>
+    <div class="notice">
+        <ul>
+            <li><img src="./imges/speaker.png" alt="공지사항"></li>
+            <li>공지사항</li>
+            <li><a href="#">[공지] 5월 배송휴무 안내</a></li>
+            <li>+</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="foot_top">
+                <div class="foot_logo"><img src="./imges/footer-logo.png" alt=""></div>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="foot_bttom">
+                <div class="copy">
+                    <p>풀무원식품(주) / 대표이사: 김진홍 이우봉 박광순 / 충청북도 음성군 대소면 삼양로 730-27</p> <br> <p>사업자등록번호: 303-81-51649 / 통신판매업신고번호: 제 2013-서울강남-03067호</p> <br>
+                    <p> 전자우편주소: designmeal@pulmuone.com / 호스팅제공자: 풀무원식품(주)</p> <br>
+                    <p>Copyright.2023. dm.pulmuone.com. All rights reserved. <select name="family" id="site">
+                        <option value="패밀리">Family Site</option>
+                        <option value="풀무원">풀무원</option>
+                        <option value="풀무원샵">풀무원샵</option>
+                        <option value="풀무원샘물">풀무원샘물</option>
+                        <option value="풀무원녹즙">풀무원녹즙</option>
+                    </select></p>
+                </div>
+                <div class="call">
+                    <p>고객기쁨센터</p>
+                    <p>평일 9시~18시(주말/공휴일 휴무)ㅣ 점심시간 12시~13시</p>
+                    <div class="tell">
+                        <ul>
+                            <li>영유아맞춤식</li>
+                            <li>080-800-0433</li>
+                        </ul>
+                        <ul>
+                            <li>칼로리/영양균형식</li>
+                            <li>080-800-0433</li>
+                        </ul>
+                        <ul>
+                            <li>케어식/건기식</li>
+                            <li>080-800-0433</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영유아 맞춤식</title>
+    <link rel="stylesheet" href="./css/page1.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./imges/favicon.ico" type="image/x-icon">
+    <script src="./js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <ul class="head">
+            <li><a href="index.html"><img src="./imges/site-logo.png" alt="logo"></a></li>
+            <li>
+                <ul>
+                    <li><input type="text" placeholder="검색어를 입력해 주세요." size="10"> <a href="#"><img src="./imges/free-icon-rounded-magnifying-glass-13267.png" alt="돋보기"></a></li>
+                    <li onmouseover="hov()" onmouseout="out()"><a href="#" class="over" id="spot"><img src="./imges/free-icon-location-4812734.png" alt="장소"></a></li>
+                    <li><a href="#"><img src="./imges/free-icon-headset-157273.png" alt="문의"></a></li>
+                    <li><a href="#"><img src="./imges/free-icon-user-8924586.png" alt="인적사항"></a></li>
+                    <li><a href="#"><img src="./imges/free-icon-shopping-bag-9110082.png" alt="쇼핑"></a></li>
+                </ul>
+            </li>
+            <li class="login">
+                <p>배송지를 등록하고</p>
+                <p><ins>배송 가능 지역</ins>을 확인하세요!</p>
+            </li>
+        </ul>
+        <script>
+            let hv = document.getElementsByClassName("login")[0];
+            function hov() {
+                hv.classList.add("off");
+            }
+            function out() {
+                hv.classList.remove("off");
+            }
+        </script>
+    </header> <!--헤더끝-->
+    <section> <!--메뉴시작-->
+        <div class="menu">
+            <ul>
+                <li><a href="#">영유아맞춤식</a></li>
+                <li><a href="#">케어식/건강식</a></li>
+                <li><a href="#">칼로리/영양균형식</a></li>
+                <li><a href="#">맞춤프로그램식</a></li>
+                <li class="manuG"><a href="#">AI식단추천</a></li>
+                <li class="manuG"><a href="#">이벤트</a></li>
+                <li class="manuG"><a href="#">디자인밀스토리</a></li>
+            </ul>
+        </div>
+        <div class="submenu">
+            <div class="lnb">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">베이비</a></li>
+                            <li><a href="#">냉장이유식</a></li>
+                            <li><a href="#">실온이유식</a></li>
+                            <li><a href="#">간식</a><br></li>
+                            <li class="menuB"><a href="#">키즈</a></li>
+                            <li><a href="#">영양덮밥</a></li>
+                            <li><a href="#">영양반찬</a></li>
+                            <li><a href="#">간식음료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">메디케어</a></li>
+                            <li><a href="#">당뇨케어</a></li>
+                            <li><a href="#">암케어</a><br></li>
+                            <li class="menuB"><a href="#">시니어케어</a></li>
+                            <li><a href="#">시니어주식</a></li>
+                            <li><a href="#">시니어반찬</a></li>
+                            <li><a href="#">시니어음료&간식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">샐러드</a></li>
+                            <li><a href="#">300샐러드Meal</a><br></li>
+                            <li class="menuB"><a href="#">도시락/덮밥</a></li>
+                            <li><a href="#">300라이스Meal</a></li>
+                            <li><a href="#">500차림</a></li>
+                            <li><a href="#">정성한상</a><br></li>
+                            <li class="menuB"><a href="#">음료/간편식</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">간편식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">칼로리 집중조절</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">맞춤추천</a></li>
+                            <li class="menuB"><a href="#">간편추천</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">이벤트</a></li>
+                            <li class="menuB"><a href="#">반값체험</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="menuB"><a href="#">브랜드소개</a></li>
+                            <li class="menuB"><a href="#">뉴스&매거진</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+    <script src="./java/menu.js"></script> <!--메뉴끝-->
+    <div class="back">
+        <h1>
+            영유아 맞춤식
+        </h1>
+        <p>이유식부터 키즈밀까지 월령별 맞춤 식단 설계로 <br>바른입맛, 미각형성까지 아이들의 바른 성장을 돕습니다.</p>
+    </div>
+    <div class="benner swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="ben_img swiper-slide"><img src="./imges/page1/bn_1.png" alt="배너"></div>
+            <div class="ben_img swiper-slide"><img src="./imges/page1/bn_2.png" alt="배너"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script> <!--비주얼끝-->
+  <div class="icon_m">
+    <ul>
+        <li>
+            <ul class="icon_con">
+                <li class="icon_img"><img src="./imges/page1/icon_cart.png" alt="카트"></li>
+                <li>
+                    <ul class="icon_txt">
+                        <li>전제품 보기</li>
+                        <li>아이에 맞는 <br> 제품을 선택해 보세요.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="icon_con">
+                <li class="icon_img"><img src="./imges/page1/icon_baby.png" alt="카트"></li>
+                <li>
+                    <ul class="icon_txt">
+                        <li>이유식 체험</li>
+                        <li>3일치 식단을 50% <br> 할인가로 체험해보세요.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="icon_con">
+                <li class="icon_img"><img src="./imges/page1/icon_book.png" alt="카트"></li>
+                <li>
+                    <ul class="icon_txt">
+                        <li>월령가이드</li>
+                        <li>우리아이 월령에 맞는<br> 이유식을 확인해보세요.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="icon_con">
+                <li class="icon_img"><img src="./imges/page1/icon_calender.png" alt="카트"></li>
+                <li>
+                    <ul class="icon_txt">
+                        <li>이달의 식단</li>
+                        <li>매일 달라지는 식단을<br> 확인해보세요.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+  </div><!--아이콘메뉴 끝-->
+    <div id="babywarp">
+        <div class="baby">
+            <div class="babyLeft">
+                <div class="babytop">
+                    <h1 id="baby">베이비</h1>
+                    <h1 id="kid">키즈</h1>
+                </div>
+                <ul id="babyTT">
+                    <li> - 4개월 ~ 12개월까지 월령별 맞춤 이유식 식단</li>
+                    <li class="boder"> - 우리아이 성장단계까지 고려한  ‘매일 한우’와 <br> ‘매끼 적정 단백질’ 식단 제공</li>
+                    <li>
+                        <ul>
+                            <li>←</li>
+                            <li>→</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="kidTT">
+                    <li> - 13개월 이후의 우리 아이를 위한 영양맞춤식</li>
+                    <li>- 정기식단: 영양덮밥, 퓨레</li>
+                    <li class="boder">- 간편식: 반찬, 탕류, 간식, 차류 등</li>
+                    <li>
+                        <ul>
+                            <li>←</li>
+                            <li>→</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="babyright">
+                <img src="./imges/page1/baby.jpg" alt="아기">
+            </div>
+            <div class="kidright">
+                <img src="./imges/page1/kid.jpg" alt="아기">
+            </div>
+        </div>
+    </div><!--아기 혹은 어린이 선택-->
+    <div class="babyM">
+        <ul class="babyO">
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu6.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>초기1 쌀미음</li>
+                            <li><span>4M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu5.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>초기1 채소/ <br> 과일 미음</li>
+                            <li><span>4M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu1.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>초기2 </li>
+                            <li><span>5M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu7.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>중기</li>
+                            <li><span>6~7M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu8.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>후기 3팩</li>
+                            <li><span>8~9M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu3.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>병행기</li>
+                            <li><span>10~11M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu4.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>완료기</li>
+                            <li><span>11~13M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="babyK">
+                    <li><img src="./imges/page1/b_menu9.jpg" alt="죽"></li>
+                    <li>
+                        <ul class="babyT">
+                            <li>완료기 3팩</li>
+                            <li><span>11~13M</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(function(){
+            $("#kidTT").hide();
+            $(".kidright").hide();
+            $("#baby").css("color","#ff8f00");
+            $("#baby").click(function(){
+                $("#baby").css("color","#ff8f00");
+                $("#kid").css("color","#aaa");
+                $("#kidTT").hide();
+                $("#babyTT").show();
+                $(".kidright").hide();
+                $(".babyright").show();
+            });
+            $("#kid").click(function(){
+                $("#kid").css("color","#ff8f00");
+                $("#baby").css("color","#aaa");
+                $("#babyTT").hide();
+                $("#kidTT").show();
+                $(".babyright").hide();
+                $(".kidright").show();
+            });
+        });
+    </script>
+    <div class="alltxt">
+        <ul>
+            <li>전체상품보기</li>
+            <li>→</li>
+        </ul>
+    </div>
+    <div class="millstory">
+        <ul class="storyInner">
+            <li><span>브랜드 스토리</span></li>
+            <li><h1>디자인밀 영유아맞춤식은</h1></li>
+            <li><p>
+                내 가족이 안심하고 먹을 수 있는 바른 먹거리 원칙으로 <br>
+                우리 아이의 평생 건강과 입맛을 설계합니다.
+            </p></li>
+            <li class="storyM">
+                <ul >
+                    <li><img src="./imges/page1/바른먹거리.png" alt="바른제조"></li>
+                    <li><span>바른제조</span></li>
+                </ul>
+                <ul >
+                    <li><img src="./imges/page1/veg.jpg" alt="바른재료"></li>
+                    <li><span>바른재료</span></li>
+                </ul>
+                <ul >
+                    <li><img src="./imges/page1/socila.jpg" alt="바른성장"></li>
+                    <li><span>바른성장</span></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="alltxt2">
+            <ul>
+                <li>자세히보기</li>
+                <li>→</li>
+            </ul>
+        </div>
+    </div> <!--디자인밀 스토리 끝-->
+    <div class="qa">
+        <h2>자주 묻는 질문</h2>
+        <div class="swiper mySwiper2">
+            <ul class="qaIn swiper-wrapper">
+                <li class="swiper-slide">
+                    <ul class="qaCard">
+                        <li><h1>Q.</h1></li>
+                        <li>이유식을 하면서 변이 <br>
+                        묽어지거나 변비가 생겼다면?</li>
+                        <li>A.</li>
+                        <li>이유식을 하면 변을 묽게 보는 경우가 있습니다. <br>
+                            주로 모유(분유)수유에만 익숙해진 장이 새로운 음식을 받아들이게 되는 과정이므로 특별한 건강상의 문제가 없다면 이유식을 계속해도 무방합니다.</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="qaCard">
+                        <li><h1>Q.</h1></li>
+                        <li>이유식 섭취 후  <br>
+                            구토를 하면 어떻게 하나요?</li>
+                        <li>A.</li>
+                        <li>이유기 아기들은 아직 식도와 위를 연결하는 근육의 발달이 미숙하여 위 속의 음식물을 쉽게 식도와 입을 통해 밖으로 토해낼 수 있습니다. <br>
+
+                            특히, 위 속에 음식이 공기와 함께 꽉 차 있는 경우 토해내게 되는데, 한 번에 먹는 이유식의 양이 너무 많거나</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="qaCard">
+                        <li><h1>Q.</h1></li>
+                        <li>이유식 섭취 후 <br>
+                            알레르기 현상이 보인다면?</li>
+                        <li>A.</li>
+                        <li>이유식을 먹은 후 피부에 발진이나 습진이 나거나 이유식을 먹은 후 음식을 거의 토해내거나 묽은 변을 하루에 8회 이상 보는 등의 증상이 나타나면 알레르기로 의심해 볼 수 있습니다.
+                        </li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="qaCard">
+                        <li><h1>Q.</h1></li>
+                        <li>이유식 섭취 후 아기변에 먹은 음식이 그대로 보이면 어떻게</li>
+                        <li>A.</li>
+                        <li>아기변에 먹은 음식이 그대로 보인다면 이는 섭취한 식품의 크기와 무르기가 아이의 치아 및 소화 과정과 맞지 않을 때 그럴 수 있습니다. <br>
+
+                            월령이 낮은 경우 소화흡수를 잘 할 수 있도록 모든 재료를 잘 익혀 채에 걸려주는 형태로 해주시면 되고, 8개</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="qaCard">
+                        <li><h1>Q.</h1></li>
+                        <li>이유식 섭취 후 아기변에 먹은 음식이 그대로 보이면 어떻게</li>
+                        <li>A.</li>
+                        <li>아기변에 먹은 음식이 그대로 보인다면 이는 섭취한 식품의 크기와 무르기가 아이의 치아 및 소화 과정과 맞지 않을 때 그럴 수 있습니다. <br>
+
+                            월령이 낮은 경우 소화흡수를 잘 할 수 있도록 모든 재료를 잘 익혀 채에 걸려주는 형태로 해주시면 되고, 8개</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="alltxt3">
+            <ul>
+                <li>전체질문보기</li>
+                <li>→</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3.5,
+      spaceBetween: 30,
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+      <div class="notice">
+        <ul>
+            <li><img src="./imges/speaker.png" alt="공지사항"></li>
+            <li>공지사항</li>
+            <li><a href="#">[공지] 5월 배송휴무 안내</a></li>
+            <li>+</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="foot_top">
+                <div class="foot_logo"><img src="./imges/footer-logo.png" alt=""></div>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="foot_bttom">
+                <div class="copy">
+                    <p>풀무원식품(주) / 대표이사: 김진홍 이우봉 박광순 / 충청북도 음성군 대소면 삼양로 730-27</p> <br> <p>사업자등록번호: 303-81-51649 / 통신판매업신고번호: 제 2013-서울강남-03067호</p> <br>
+                    <p> 전자우편주소: designmeal@pulmuone.com / 호스팅제공자: 풀무원식품(주)</p> <br>
+                    <p>Copyright.2023. dm.pulmuone.com. All rights reserved. <select name="family" id="site">
+                        <option value="패밀리">Family Site</option>
+                        <option value="풀무원">풀무원</option>
+                        <option value="풀무원샵">풀무원샵</option>
+                        <option value="풀무원샘물">풀무원샘물</option>
+                        <option value="풀무원녹즙">풀무원녹즙</option>
+                    </select></p>
+                </div>
+                <div class="call">
+                    <p>고객기쁨센터</p>
+                    <p>평일 9시~18시(주말/공휴일 휴무)ㅣ 점심시간 12시~13시</p>
+                    <div class="tell">
+                        <ul>
+                            <li>영유아맞춤식</li>
+                            <li>080-800-0433</li>
+                        </ul>
+                        <ul>
+                            <li>칼로리/영양균형식</li>
+                            <li>080-800-0433</li>
+                        </ul>
+                        <ul>
+                            <li>케어식/건기식</li>
+                            <li>080-800-0433</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
