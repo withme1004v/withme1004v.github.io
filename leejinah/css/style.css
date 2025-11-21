@@ -1,0 +1,448 @@
+@charset "utf-8";
+@font-face {
+  font-family: BASKVILL;
+  src: url(../webfont/BASKVILL.woff) format("woff");
+}
+@font-face {
+  font-family: NotoSansCJKkr;
+  src: url(../webfont/NotoSansCJKkr-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../webfont/Roboto-Italic.woff) format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  width: 1620px;
+  margin: 0 auto;
+  background-color: #ede5e2;
+  font-family: BASKVILL;
+}
+.topline1 {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.topline1 ul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+.topline1 ul li {
+  font-family: NotoSansCJKkr;
+  font-style: italic;
+}
+.page1 .main_txt {
+  height: 530px;
+  line-height: 530px;
+  font-size: 250px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+section.page1 .topline2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 317px;
+  border-top: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
+}
+section.page1 .topline2 ul {
+  font-family: NotoSansCJKkr;
+  font-style: italic;
+}
+section.page1 .topline2 ul li {
+  padding: 1px;
+}
+section.page1 .topline2 .left {
+  width: 700px;
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+}
+section.page1 .topline2 .right {
+  margin-right: 50px;
+}
+section.page2 {
+  position: relative;
+}
+section.page2 .con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px 30px 0;
+}
+section.page2 .page2_txt {
+  font-size: 150px;
+  padding: 10px;
+}
+.name_jina {
+  color: #ede5e2;
+  text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
+}
+.img_jina {
+  width: 471px;
+  height: 433px;
+  border: 1px solid #333;
+  background-image: url(../images/leejina2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vertical_rlEN {
+  position: relative;
+  writing-mode: vertical-rl;
+  font-family: Roboto-Italic;
+  font-size: 14px;
+}
+.vertical_rlEN p {
+  position: absolute;
+  top: -180px;
+  left: 1600px;
+}
+.page2_line {
+  width: 100%;
+  height: 260px;
+  margin-top: 15px auto;
+  border-top: 1px solid #000;
+}
+.page2_txt2 {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  width: 471px;
+  justify-content: space-between;
+  font-family: Roboto-Italic;
+}
+.page2_line .page2_txt3 {
+  width: 1550px;
+  margin: 0 auto;
+}
+.page2_line p {
+  font-family: NotoSansCJKkr;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bold;
+}
+.page2_line p:first-child {
+  margin-top: 70px;
+}
+/*PAGE3*/
+.about,
+.portfolio,
+.other,
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 120px;
+  border-bottom: 1px solid #333;
+  padding: 40px;
+  margin: 0 auto;
+}
+.page3_subtxt {
+  padding: 5px;
+  width: 257px;
+}
+
+.portfolio a,
+.contact a {
+  color: #ede5e2;
+  text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
+}
+.about p,
+.portfolio p,
+.other p {
+  font-family: NotoSansCJKkr;
+  font-style: italic;
+  font-size: 15px;
+}
+/*PAGE4*/
+.page4 {
+  position: relative;
+}
+.page4_con {
+  width: 1500px;
+  height: 900px;
+  border: 1px solid #000;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.aboutme {
+  width: 1500px;
+  height: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutme .aboutme_list {
+  width: 740px;
+  height: 880px;
+}
+.circle {
+  width: 200px;
+  height: 60px;
+  font-size: 15px;
+  font-family: NotoSansCJKkr;
+  font-style: italic;
+  border: 1px solid #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 90px;
+}
+.aboutme_list .aboutme_list_title_des {
+  width: 350px;
+  margin-top: 15px;
+  font-family: NotoSansCJKkr;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutme_list .aboutme_list_title_des1 {
+  width: 500px;
+  margin-top: 15px;
+  font-family: NotoSansCJKkr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.aboutme_list_title_des1 ul:nth-child(4),
+.aboutme_list_title_des1 ul:last-child {
+  margin-top: 20px;
+}
+.aboutme .bar {
+  width: 2px;
+  height: 800px;
+  border-right: 1px solid #333;
+}
+.aboutme .using {
+  width: 740px;
+  height: 880px;
+}
+.box {
+  width: 500px;
+  display: flex;
+  margin: 40px auto 60px;
+  text-align: left;
+}
+.box h3 {
+  width: 100px;
+}
+.box .level li:last-child {
+  width: 13px;
+  height: 13px;
+  background-color: #ede5e2;
+  box-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.box .level_1 li:nth-child(4),
+.box .level_1 li:last-child {
+  width: 13px;
+  height: 13px;
+  background-color: #ede5e2;
+  box-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.box .level_2 li:nth-child(3),
+.box .level_2 li:nth-child(4),
+.box .level_2 li:last-child {
+  width: 13px;
+  height: 13px;
+  background-color: #ede5e2;
+  box-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.using_box .box ul {
+  padding-left: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+.using_box .box ul li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #333;
+}
+/*PAGE5*/
+.page_con {
+  width: 1500px;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 110px;
+  margin: 0 auto;
+}
+figure {
+  width: 1500px;
+  height: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+figure figcaption h1 {
+  font-size: 120px;
+  font-weight: 100;
+  text-align: right;
+}
+figure figcaption .point_txt {
+  color: #ede5e2;
+  text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
+  text-align: right;
+  font-size: 120px;
+}
+figcaption .tag {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px auto;
+}
+figcaption .portfolio_des li {
+  padding-bottom: 10px;
+}
+figcaption .portfolio_des {
+  width: 500px;
+  margin: 0 auto;
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  padding: 10px;
+}
+figcaption .portfolio_des span {
+  width: 200px;
+  font-weight: bold;
+  margin-right: 18px;
+}
+/*PAGE8*/
+.works_box {
+  width: 1620px;
+  height: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.w_box {
+  width: 100%;
+  height: 700px;
+  /* border: 1px solid #333; */
+  text-align: center;
+}
+.ui img {
+  width: 400px;
+}
+.banner1 img {
+  width: 500px;
+}
+.banner2 img {
+  width: 400px;
+}
+.banner1,
+.banner2 {
+  border-left: 1px solid #333;
+}
+.works_box p {
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  text-align: center;
+}
+.work_txt {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+.w_txt {
+  width: 100%;
+  height: 200px;
+  border-left: 1px solid #333;
+}
+.w_box h1 {
+  margin-top: 50px;
+  margin-left: 190px;
+  font-size: 50px;
+  text-align: left;
+}
+.w_box p {
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/*PAGE9*/
+.name_box {
+  width: 1620px;
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 250px;
+  line-height: 650px;
+  border-bottom: 1px solid #000;
+}
+.name_box .name_point_txt {
+  color: #ede5e2;
+  text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
+}
+.contact_box {
+  width: 1620px;
+  height: 260px;
+  margin: 0 auto;
+  font-family: NotoSansCJKkr;
+  font-size: 16px;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.contact_box .contact_left {
+  width: 1100px;
+  margin-left: 100px;
+}
+.contact_box .contact_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 520px;
+  height: 100%;
+  border-left: 1px solid #333;
+  background-color: rgb(251, 251, 251);
+}
+.contact_box .contact_right li {
+  margin-left: 30px;
+}
+.contact_box .contact_right li:last-child {
+  margin-top: 20px;
+}
+.contact_box .contact_right span {
+  padding-right: 30px;
+  font-weight: bold;
+}
