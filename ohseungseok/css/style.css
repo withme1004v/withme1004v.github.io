@@ -1,0 +1,612 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans KR", "Open Sans", sans-serif;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p,
+span,
+li {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 2px solid #d64242;
+}
+.header-wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+header nav {
+  width: 100%;
+  height: 60px;
+}
+header .gnb {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+header .gnb li {
+  height: 100%;
+  padding: 0 20px;
+}
+header .gnb li:hover a {
+  text-decoration: underline;
+}
+header .gnb a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
+  color: #111;
+  line-height: 60px;
+  font-size: 24px;
+}
+section:not(:first-child) {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #0e0d0d;
+  border-bottom: 1px solid #3c4452;
+}
+section.info {
+  background: #fff !important;
+}
+section .title {
+  position: relative;
+  padding-bottom: 30px;
+  color: #d2cfcf;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+section .top ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #d2cfcf;
+  font-size: 12px;
+  padding: 20px 0 40px;
+}
+section .wrap {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+section.info .info-title {
+  width: 100%;
+  margin-top: 60px;
+}
+section.info .info-title h1 {
+  font-size: 70px;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+section.info .text {
+  position: absolute;
+  right: 00px;
+  bottom: 100px;
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+section.info .text p {
+  font-size: 60px;
+  font-family: "Nanum Brush Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+section.info .text p:last-of-type {
+  margin-bottom: 60px;
+}
+section.info .bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #0e0d0d;
+}
+section.about .conbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+}
+section.about .imgbox {
+  position: relative;
+  width: 350px;
+  height: 450px;
+}
+section.about .imgbox .profile {
+  width: 100%;
+  height: 100%;
+  background: url(../images/profile.jpg);
+  background-size: cover;
+  background-position: -10px;
+  opacity: 0.8;
+}
+section.about .imgbox svg {
+  width: 218.44px;
+  height: 76.32px;
+  position: absolute;
+  right: -60px;
+  bottom: -10px;
+}
+section.about .imgbox svg text.cls-1 {
+  stroke: #b4ac18;
+  font-size: 60px;
+  fill: none;
+  font-family: Anton-Regular, Anton;
+  stroke-miterlimit: 10;
+}
+section.about .conbox > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.about .decs h2 {
+  color: #cec8c8;
+  font-family: "Anton";
+  letter-spacing: 1px;
+  font-weight: 100;
+  border-bottom: 1px solid #cec8c8;
+}
+section.about .decs .text {
+  margin-top: 10px;
+  color: #cec8c8;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 0 20px;
+}
+section.about .decs .text:last-child {
+  padding-bottom: 0;
+}
+section.about .decs strong {
+  display: inline-block;
+  width: 100px;
+}
+section.about .logo .text {
+  position: relative;
+  margin-top: 0;
+  height: 80px;
+  color: #cec8c8;
+}
+section.about .logo .text p {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  color: #ddd42c;
+  font-size: 60px;
+  font-family: "Nanum Brush Script", cursive;
+  font-weight: 400;
+  white-space: nowrap;
+}
+section.about .tools .text {
+  display: flex;
+  justify-content: space-between;
+}
+section.about .tools .text div {
+  width: 95px;
+  text-align: center;
+}
+section.about .tools .text div img {
+  width: auto;
+  height: 60px;
+}
+section.about .license .text div {
+  display: flex;
+  line-height: 1.2;
+}
+section.about .license .text div {
+  margin-bottom: 10px;
+}
+section.skills .subtitle {
+  height: 100px;
+  color: #cbd1db;
+  font-family: "Anton";
+}
+section.skills .subtitle:nth-child(3) {
+  margin-top: 70px;
+}
+section.skills .subtitle ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.skills .subtitle span {
+  font-size: 40px;
+}
+section.skills .imgbox {
+  width: 100%;
+  height: 400px;
+  opacity: 0.9;
+}
+section.skills .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.skills .decs {
+  width: 600px;
+  color: #fff;
+}
+section.works [class^="imgbox-"] {
+  width: 90%;
+  margin: 0 auto;
+}
+section.works [class^="imgbox-"] img {
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+section.works .bg {
+  position: relative;
+  border-radius: 5px;
+  max-height: 330px;
+  height: 33vh;
+}
+section.works .bg img {
+  max-width: 370px;
+  width: 80%;
+  max-height: 210px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 9px 0px #000;
+}
+section.works .bg .workdecs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+section.works .bg .workdecs li {
+  color: #fff;
+}
+section.works .bg .workdecs li:not(.tag) span:first-child {
+  display: inline-block;
+  width: 150px;
+}
+section.works .bg .workdecs li.tag {
+  margin-top: 20px;
+}
+section.works .bg .workdecs li.tag span:first-child {
+  margin-right: 30px;
+}
+section.works .imgbox-1 {
+  margin: 0 auto 25px;
+  max-width: 940px;
+}
+section.works .imgbox-1 .bg {
+  background-color: #0d0a0b;
+  background-image: linear-gradient(to left top, #000000, #31140c, #950606);
+}
+section.works .imgbox-2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+section.works .imgbox-2 a:first-child .bg {
+  background-image: radial-gradient(at 140% 85%, #676d0e, #1f1f20, #000000);
+  opacity: 0.8;
+}
+section.works .imgbox-2 a:last-child .bg {
+  background-image: radial-gradient(at 60% 180%, #a5caf8, #293544, #000000);
+  opacity: 0.8;
+}
+section.works .imgbox-1 a {
+  display: block;
+  width: 100%;
+}
+section.works .imgbox-2 a {
+  display: block;
+  width: 460px;
+}
+section.works [class^="imgbox-"] .text {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+section.works [class^="imgbox-"] .text p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #cec8c8;
+}
+section.works [class^="imgbox-"] .text span {
+  color: #cec8c8;
+  font-weight: 300;
+  font-size: 16px;
+}
+section.works [class^="imgbox-"] a:hover .text span {
+  animation: arrowAni 0.5s infinite alternate;
+}
+@keyframes arrowAni {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+section.works [class^="imgbox-"] a:hover img {
+  opacity: 0.6;
+}
+section.works [class^="imgbox-"] a:hover .workdecs {
+  opacity: 0.8;
+  transition: all 0.6s 0s;
+}
+section.works [class^="imgbox-"] a:active .workdecs {
+  opacity: 0;
+}
+.footer {
+  height: 100%;
+}
+.footer .title {
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -1px;
+  word-spacing: 30px;
+}
+.footer .footer-con {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px 0 80px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.footer .footer-con .contact {
+  color: #fff;
+}
+.footer .footer-con h2 {
+  margin-bottom: 10px;
+  color: #cec8c8;
+  font-family: "Anton";
+  letter-spacing: 1px;
+  font-weight: 100;
+  border-bottom: 1px solid #cec8c8;
+}
+.footer .footer-con .contact p {
+  line-height: 26px;
+  color: #cccccc;
+}
+.footer .footer-con .link > ul {
+  display: flex;
+  gap: 80px;
+}
+.footer .footer-con .link > ul > li {
+  width: 150px;
+}
+.footer .footer-con .link > ul a {
+  color: #cccccc;
+}
+.footer .footer-con .link > ul ul {
+  margin-top: 12px;
+}
+.footer .footer-con .link > ul ul li {
+  line-height: 26px;
+}
+.footer .imgbox {
+  width: 100%;
+  height: 400px;
+}
+.footer .top li:last-child a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer .top li:last-child a:after {
+  content: "\e5d8";
+  font-family: "Material Symbols Outlined";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.6s;
+}
+.footer .top li:last-child a:hover::after {
+  transform: translateY(-90%);
+}
+@media screen and (max-width: 1280px) {
+  section .title {
+    padding-top: 0px;
+  }
+  section.info .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  section.info .text {
+    margin-top: 150px;
+    position: static;
+    text-align: center;
+  }
+  section.info .text p {
+    font-size: 40px;
+  }
+  section.info .text p:nth-of-type(2) {
+    margin-bottom: 60px;
+  }
+  section.about .imgbox {
+    width: 300px;
+  }
+  section.about .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  section.about .imgbox .profile {
+    background-position: 50%;
+  }
+  section.about .imgbox svg {
+    right: 0;
+  }
+  section.about .conbox {
+    gap: 150px;
+  }
+  section.about .logo .text p {
+    font-size: 40px;
+    left: 0%;
+  }
+  section.skills .subtitle ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.skills .subtitle span {
+    font-size: 40px;
+  }
+  .footer .title {
+    font-size: 60px;
+    line-height: 60px;
+    word-spacing: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section .title {
+    padding: 10px 0;
+    font-size: 40px;
+    padding-bottom: 100px;
+    line-height: initial;
+  }
+  section.about .logo .text p {
+    font-size: 30px;
+    left: 0%;
+  }
+  section.about .tools .text div {
+    width: 80px;
+  }
+  section.about .tools .text div p {
+    display: none;
+  }
+  section.about .conbox {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-wrap {
+    width: 90%;
+  }
+  header .gnb li {
+    padding: 0 10px;
+  }
+  header .gnb a {
+    font-size: 18px;
+  }
+  section.info .text {
+    margin-top: 200px;
+  }
+  section.info .text p {
+    font-size: 30px;
+  }
+  section.info .text p:nth-of-type(2) {
+    margin-bottom: 80px;
+  }
+  section.info .info-title h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  section.info .bg {
+    display: none;
+  }
+  section.about .conbox {
+    flex-direction: column;
+  }
+  section.about .conbox > div {
+    gap: 10px;
+  }
+  section.about .wrap {
+    padding-bottom: 50px;
+  }
+  section.about .imgbox {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+  section.about .contact {
+    display: none;
+  }
+  section.about .logo .text p {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  section.skills .subtitle span {
+    font-size: 30px;
+  }
+  section.works .imgbox-2 {
+    flex-direction: column;
+  }
+  section.works .imgbox-2 a {
+    width: 100%;
+  }
+  section.works .wrap {
+    margin-bottom: 30px;
+  }
+  .footer .title {
+    font-size: 30px;
+    line-height: 30px;
+    word-spacing: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .title {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+  section.about .imgbox svg {
+  }
+  section.skills .subtitle span {
+    font-size: 24px;
+  }
+}
