@@ -1,0 +1,112 @@
+footer {
+  width: 100%;
+  background: #fbfbfb;
+  padding: 80px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  .foot_wrap {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .foot_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .foot_sns {
+        i {
+          font-size: 26px;
+          color: #000;
+          margin-right: 20px;
+        }
+      }
+      .foot_desc {
+        ul {
+          display: flex;
+          margin-bottom: 10px;
+          li {
+            margin-right: 15px;
+            font-size: 15px;
+          }
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+      span {
+        font-size: 15px;
+      }
+      .foot_btn {
+        a {
+          display: inline-block;
+          padding: 20px 25px;
+          color: #696969;
+          border-radius: 20px;
+          box-shadow: 10px 5px 18px rgba(0, 0, 0, 0.19);
+          transition: 0.5s;
+          &:hover {
+            background: #424242;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .foot_right {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      .foot_gnb {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > li {
+          h3 {
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+          .foot_lnb {
+            li {
+              font-size: 15px;
+              margin: 15px 0;
+              color: #939393;
+              text-transform: capitalize;
+              cursor: pointer;
+              transition: 0.5s;
+              &:hover {
+                color: #bf1e2e;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    .foot_wrap {
+      width: 100%;
+      .foot_left {
+        width: 100%;
+        align-items: center;
+        .foot_sns {
+          margin-bottom: 30px;
+        }
+        .foot_desc {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 30px;
+        }
+        span {
+          margin-bottom: 30px;
+        }
+      }
+      .foot_right {
+        display: none;
+      }
+    }
+  }
+}

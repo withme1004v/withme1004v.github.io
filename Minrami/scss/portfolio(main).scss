@@ -1,0 +1,129 @@
+body {
+  font-family: "Teko", "Noto Sans KR", sans-serif;
+}
+.mainvisual {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/mainbgmono.png) center no-repeat;
+  .main_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      width: 1100px;
+      object-fit: cover;
+      position: absolute;
+      top: calc(50% + 7px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      z-index: 1;
+    }
+    .main_text {
+      p {
+        position: absolute;
+        left: 0;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        font-size: 200px;
+        span {
+          color: #00ffc0;
+          -webkit-text-stroke-width: 0;
+        }
+        &:first-child {
+          top: 230px;
+          animation: texeani1 150s linear infinite;
+        }
+        &:nth-child(2) {
+          top: 50%;
+          transform: translateY(-50%);
+          animation: texeani2 150s linear infinite;
+        }
+        &:last-child {
+          bottom: 230px;
+          animation: texeani1 150s linear infinite;
+        }
+      }
+    }
+    .copyright {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 8%;
+      cursor: default;
+      span {
+        display: block;
+        color: #fff;
+        font-family: "Noto Sans KR";
+        font-size: 12px;
+        padding: 5px 20px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+@keyframes texeani1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -7000px;
+  }
+}
+@keyframes texeani2 {
+  0% {
+    left: -7000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .mainvisual {
+    .main_wrap {
+      img {
+        width: 800px;
+      }
+      .main_text {
+        display: none;
+        p {
+          span {
+          }
+        }
+      }
+      .copyright {
+        bottom: 12%;
+        span {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainvisual {
+    .main_wrap {
+      img {
+        width: 700px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .mainvisual {
+    .main_wrap {
+      img {
+        width: 400px;
+      }
+      .copyright {
+        span {
+          font-size: 10px;
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
+}

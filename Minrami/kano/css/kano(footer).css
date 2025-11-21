@@ -1,0 +1,101 @@
+footer {
+  width: 100%;
+  background: #fbfbfb;
+  padding: 80px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+}
+footer .foot_wrap {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot_wrap .foot_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .foot_wrap .foot_left .foot_sns i {
+  font-size: 26px;
+  color: #000;
+  margin-right: 20px;
+}
+footer .foot_wrap .foot_left .foot_desc ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+footer .foot_wrap .foot_left .foot_desc ul li {
+  margin-right: 15px;
+  font-size: 15px;
+}
+footer .foot_wrap .foot_left .foot_desc ul:last-child {
+  margin: 0;
+}
+footer .foot_wrap .foot_left span {
+  font-size: 15px;
+}
+footer .foot_wrap .foot_left .foot_btn a {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #696969;
+  border-radius: 20px;
+  box-shadow: 10px 5px 18px rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+footer .foot_wrap .foot_left .foot_btn a:hover {
+  background: #424242;
+  color: #fff;
+}
+footer .foot_wrap .foot_right {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot_wrap .foot_right .foot_gnb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .foot_wrap .foot_right .foot_gnb > li h3 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+footer .foot_wrap .foot_right .foot_gnb > li .foot_lnb li {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #939393;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .foot_wrap .foot_right .foot_gnb > li .foot_lnb li:hover {
+  color: #bf1e2e;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .foot_wrap {
+    width: 100%;
+  }
+  footer .foot_wrap .foot_left {
+    width: 100%;
+    align-items: center;
+  }
+  footer .foot_wrap .foot_left .foot_sns {
+    margin-bottom: 30px;
+  }
+  footer .foot_wrap .foot_left .foot_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  footer .foot_wrap .foot_left span {
+    margin-bottom: 30px;
+  }
+  footer .foot_wrap .foot_right {
+    display: none;
+  }
+}
