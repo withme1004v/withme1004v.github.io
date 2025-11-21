@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>대림</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.css" />
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $(".menu ul").hover(
+          function () {
+            $(".menubg").css("height", "270px");
+            $(".menu > ul > li > ul ").css("height", "270px");
+          },
+          function () {
+            $(".menubg").css("height", "0px");
+            $(".menu > ul > li > ul ").css("height", "0px");
+          }
+        );
+        $(".langwrap").hover(
+          function () {
+            $(this).css("height", "60px");
+            $(".language li:first-child").siblings().css("opacity", "1");
+          },
+          function () {
+            $(this).css("height", "30px");
+            $(".language li:first-child").siblings().css("opacity", "0");
+          }
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="#">
+          <div class="logo"></div>
+        </a>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./sub_01.html">회사소개</a>
+              <ul class="sub_menu sum1">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">회사연혁</a></li>
+                <li><a href="#">경영원칙</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">해외지사/국내지점</a></li>
+                <li><a href="#">그룹사 현황</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업분야</a>
+              <ul class="sub_menu sum2">
+                <li><a href="#">트레이딩</a></li>
+                <li><a href="#">PI</a></li>
+                <li><a href="#">물류</a></li>
+                <li><a href="#">건설정보화</a></li>
+                <li><a href="#">IT서비스</a></li>
+                <li><a href="#">부동산</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">재무정보</a>
+              <ul class="sub_menu sum3">
+                <li><a href="#">재무제표</a></li>
+                <li><a href="#">공시정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">홍보센터</a>
+              <ul class="sub_menu sum4">
+                <li><a href="#">회사소식</a></li>
+                <li><a href="#">CI소개</a></li>
+                <li><a href="#">홍보영상</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG</a>
+              <ul class="sub_menu sum5">
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">안전/환경경영</a></li>
+                <li><a href="#">정도경영</a></li>
+                <li><a href="#">상생경영</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+              <ul class="sub_menu sum6">
+                <li><a href="#">인재상</a></li>
+                <li><a href="#">인사제도</a></li>
+                <li><a href="#">직무소개</a></li>
+                <li><a href="#">채용정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"></a>
+              <ul class="naver sub_menu sum7">
+                <li>
+                  <a href="https://blog.naver.com/dl_daelim"
+                    ><img src="images/naver_blog.png" alt="blog" />
+                    <span>공식블로그</span></a
+                  >
+                </li>
+                <li><a href="https://blog.naver.com/dl_daelim">바로가기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menubg"></div>
+        <div class="nav">
+          <ul>
+            <li>
+              <div class="langwrap">
+                <ul class="language">
+                  <li>KR</li>
+                  <li>EN</li>
+                  <li>CN</li>
+                </ul>
+              </div>
+            </li>
+            <li class="button"></li>
+            <li class="search"></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="main">
+        <input type="radio" name="main" id="main1" checked />
+        <input type="radio" name="main" id="main2" />
+        <input type="radio" name="main" id="main3" />
+        <input type="radio" name="main" id="main4" />
+        <div class="mainbt">
+          <label for="main1"></label>
+          <label for="main2"></label>
+          <label for="main3"></label>
+          <label for="main4"></label>
+        </div>
+        <div class="bg">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/PC_main_KV_01_1503108884785_1503920615849.jpg"
+                  alt="main1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/2-3_1503555801377.jpg" alt="main2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/PC_main_KV_03_1503108902852.jpg" alt="main3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/PC_main_KV_04_1503108911708.jpg" alt="main4" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="pause">
+          <img src="images/visual_pause.png" alt="pause" />
+        </div>
+        <div class="slogan">
+          <img src="images/slogan02.png" alt="" />
+        </div>
+        <div class="view">
+          <a href="#">VIEW</a>
+        </div>
+      </div>
+      <div class="sub">
+        <div class="text">
+          <h1>Business Area</h1>
+          <p>㈜대림은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.</p>
+        </div>
+        <input type="radio" name="business" id="one" checked />
+        <input type="radio" name="business" id="two" />
+        <input type="radio" name="business" id="three" />
+        <input type="radio" name="business" id="four" />
+        <input type="radio" name="business" id="five" />
+        <div class="clip">
+          <ul class="clipob">
+            <li><img src="images/mask_img01.png" alt="mask" /></li>
+            <li><img src="images/mask_img02.png" alt="mask" /></li>
+            <li><img src="images/mask_img03.png" alt="mask" /></li>
+            <li><img src="images/mask_img04.png" alt="mask" /></li>
+            <li><img src="images/mask_img05.png" alt="mask" /></li>
+          </ul>
+        </div>
+        <ul class="btn">
+          <li><label for="one">석유화학</label></li>
+          <li><label for="two">물류</label></li>
+          <li><label for="three"> 건설정보화</label></li>
+          <li><label for="four">IT서비스</label></li>
+          <li><label for="five">개발사업</label></li>
+        </ul>
+        <ul class="btntxt">
+          <li>
+            화학 및 폴리머의 국내외 판매 및 고기능 플라스틱 소재인 폴리이미드
+            제품을 생산·판매하는<br />
+            석유화학 트레이딩 전문 기업으로 고객 가치 및 성과를 창출하고
+            있습니다.
+          </li>
+          <li>
+            전세계를 연결하는 글로벌 네트워크 바탕으로 차별화 된 대림만의 물류
+            서비스가<br />
+            경쟁력 있는 운임과 다양한 운송 방법으로 고객에게 서비스를 실현하고
+            있습니다.
+          </li>
+          <li>
+            건설 자체의 부가가치 상승과 주택, 터널, 항만, 철도, 교량 등<br />
+            건축물에 대한 기획부터 설계, 시공, A/S로 이어지는 Total Service를
+            제공합니다.
+          </li>
+          <li>
+            정보통신시스템 통합, 유지보수 및 대외 SI 사업으로 지속적인 성장을
+            하였으며, 특히 공공부문 정보화 사업에 대한 풍부한 경험과<br />
+            다양한 아키텍처 하에서의 정보시스템 통합기술력, 표준화된 방법론 및
+            품질보증 체계절차를 활용하여 고객에게 최적의 IT서비스를 제공하고
+            있습니다.
+          </li>
+          <li>
+            ㈜대림은 석유화학 트레이딩, 물류 서비스의 기존사업<br />
+            경쟁력을 기반으로 미래 성장동력이 될 신규 사업을 적극 개발 및
+            추진하고 있습니다.
+          </li>
+        </ul>
+        <div class="view2">view</div>
+      </div>
+    </section>
+    <footer>
+      <div class="txt">
+        <h1>About Company</h1>
+        <p>
+          대림은 글로벌 디벨로퍼로의 미래 모습을 구현하기 위해 노력하고
+          있습니다.
+        </p>
+      </div>
+      <div class="container">
+        <ul class="left">
+          <li>
+            <h2>1994~</h2>
+            <ul>
+              회사소개
+              <li>
+                ㈜대림은 글로벌 디벨로퍼로의<br />
+                미래 모습을 구현하기 위해 노력하고 있습니다.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              재무정보
+              <li>
+                재무정보를 정확하고<br />
+                신속하게 제공해 드립니다.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              인재채용
+              <li>
+                전세계를 향해 도전할 수 있는<br />
+                글로벌 인재를 모십니다.
+              </li>
+            </ul>
+            <!-- <ul>
+              <li>
+                <img src="images/naver_blog.png" alt="blog" /><a
+                  href="https://blog.naver.com/dl_daelim"
+                  >바로가기</a
+                >
+              </li>
+            </ul> -->
+          </li>
+        </ul>
+        <ul class="right">
+          <div class="right_title">
+            <span
+              ><strong>회사소식</strong> | (주)대림의 다양한 회사 소식을 알려
+              드립니다.</span
+            >
+          </div>
+          <li>
+            <div class="box_wrap">
+              <ul class="privacy">
+                <li><p>개인정보 처리방침 변경 공지</p></li>
+                <li>
+                  개인정보 처리방침이 아래와 같이 변경됨에 따라 개정사항을<br />
+                  공지합니다. 1. 개정 사유 - 개인정보 보호책임자 변경<br />
+                  2. 개정 내용 - 개인정보 보호책임자 변경에 따른 책임자 정보
+                  변경 3. 공고 및 시행일자 -
+                </li>
+                <li><span> 2023-11-01</span></li>
+              </ul>
+              <ul class="public">
+                <li><p>기준일 설정 공고</p></li>
+                <li>
+                  기준일 설정 공고 상법 제354조 및 우리 회사 정관 제13조에<br />
+                  의거하여 2023년 11월 16일 현재 주주명부에 기재되어 있<br />는
+                  주주에게 의결권을 부여하기 위하여 기준일을 공고합니다. 2023년
+                  11월 1일 서울특별시 종로구 통일로 134(평동, 디타워)돈의
+                </li>
+                <li><span> 2023-11-01</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <ul class="icon">
+              <li>
+                <img src="images/menu_icon1.png" alt="img" />
+                <div class="text">
+                  <h3>해외지사·국내지사</h3>
+                  <p>넓은 세계를 향한 24시간<br />깨어 있는 ㈜대림</p>
+                </div>
+              </li>
+              <li>
+                <img src="images/menu_icon2.png" alt="img" />
+                <div class="text">
+                  <h3>고객문의</h3>
+                  <p>
+                    빠르고 신속하게<br />
+                    답변해 드립니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="images/menu_icon3.png" alt="img" />
+                <div class="text">
+                  <h3>찾아오시는 길</h3>
+                  <p>
+                    본사 위치 및 연락처를<br />
+                    안내해 드립니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="info_bg">
+        <ul class="info">
+          <li>
+            <a href="#">회사소개</a>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">회사연혁</a></li>
+              <li><a href="#">경영원칙</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+              <li><a href="#">해외지사/국내지점</a></li>
+              <li><a href="#">그룹사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">사업분야</a>
+            <ul>
+              <li><a href="#">트레이딩</a></li>
+              <li><a href="#">PI</a></li>
+              <li><a href="#">물류</a></li>
+              <li><a href="#">건설정보화</a></li>
+              <li><a href="#">IT서비스</a></li>
+              <li><a href="#">부동산</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">재무정보</a>
+            <ul>
+              <li><a href="#">재무제표</a></li>
+              <li><a href="#">공시정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">홍보센터</a>
+            <ul>
+              <li><a href="#">회사소식</a></li>
+              <li><a href="#">CI소개</a></li>
+              <li><a href="#">홍보영상</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ESG</a>
+            <ul>
+              <li><a href="#">ESG경영</a></li>
+              <li><a href="#">안전/환경경영</a></li>
+              <li><a href="#">정도경영</a></li>
+              <li><a href="#">상생경영</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">인재채용</a>
+            <ul>
+              <li><a href="#">인재상</a></li>
+              <li><a href="#">인사제도</a></li>
+              <li><a href="#">직무소개</a></li>
+              <li><a href="#">채용정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="copybg">
+        <div class="copy">
+          <div class="copy_top">
+            <ul class="cpleft">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">공정거래자율준수</a></li>
+              <li><a href="#">영상정보 처리기기 설치 운영방침</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+            <ul class="cpright">
+              <li><a href="#">계열사 바로가기</a><a href="#">+</a></li>
+            </ul>
+          </div>
+          <div class="copy_bot">
+            <span
+              >03181 서울특별시 종로구 통일로 134 돈의문 D-타워 (주)대림</span
+            >
+            <span>TEL : 02-3708-3491</span><span>FAX : 02-757-7447</span>
+            <span> Copyright(C) 2021 Daelim, All rights reserved. </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        effect: "creative",
+        speed: 2000,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        creativeEffect: {
+          prev: {
+            translate: ["-5%", 0, 0],
+            opacity: 0,
+          },
+          next: {
+            opacity: 0,
+            translate: ["5%", 0, 0],
+          },
+        },
+      });
+      let pause = document.querySelector(".pause");
+      pause.onmouseenter = function () {
+        swiper.pause();
+      };
+    </script>
+  </body>
+</html>

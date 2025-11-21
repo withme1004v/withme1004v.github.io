@@ -1,0 +1,124 @@
+@charset "utf-8";
+section {
+  width: 100%;
+  position: relative;
+}
+section .top_box {
+  width: 100%;
+  position: relative;
+}
+section .top_box .top_img {
+  width: 100%;
+  height: 400px;
+  background: url(../../images/sub2/business_sub_top.png) 50% 50% no-repeat;
+}
+section .top_box .top_title {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  top: 0;
+  padding-top: 120px;
+  width: 100%;
+}
+section .top_box .top_title h1 {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+section .top_box .top_title span {
+  letter-spacing: -1.5px;
+}
+section .top_box .top_title h1:after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  display: block;
+  margin: 15px auto;
+}
+section .sec {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: -75px;
+  position: relative;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+section .sec .sec_menu {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+section .sec .sec_menu::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  bottom: 0;
+}
+section .sec .sec_menu li {
+  text-align: center;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+section .sec .sec_head {
+  padding-top: 50px;
+  display: flex;
+}
+section .sec .sec_head .sec_text {
+  border: 1px solid;
+  border-left: 0;
+  box-sizing: border-box;
+  height: 269px;
+  width: 549px;
+  padding: 50px 20px;
+}
+section .sec .sec_head .sec_text h2 {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+section .sec .sec_head .sec_text span {
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+section .sec .sec_body {
+  text-align: center;
+  padding-top: 50px;
+}
+section .sec .sec_body ul li {
+  border: 1px solid;
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6 {
+  padding-bottom: 50px;
+}
+section .sec .sec_body .sec_line {
+  display: flex;
+}
+section .sec .icon_box {
+  box-sizing: border-box;
+  height: 180px;
+  overflow: hidden;
+}
+section .sec .line1 .icon_box {
+  background: url(../../images/sub2/b_list_icon1.png) 50% -170px no-repeat;
+}
+.icon_img {
+  width: 185px;
+  height: 180px;
+}
+
+section .sec .sec_body .sec_line .icon_box {
+  width: 185px;
+  height: 180px;
+}
+section .sec .sec_body .sec_line .list_box {
+  width: 180px;
+  height: 180px;
+}

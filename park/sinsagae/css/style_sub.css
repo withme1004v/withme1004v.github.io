@@ -1,0 +1,480 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Pretendard;
+  src: url(../webfonts/woff/Pretendard-Regular.woff) format("woff");
+}
+body {
+  font-family: Pretendard;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+header .logo {
+  width: 40%;
+  margin: 40px auto;
+  margin-bottom: 0;
+  text-align: center;
+  filter: brightness(0);
+  cursor: pointer;
+}
+header .language {
+  width: 100px;
+  position: absolute;
+  display: flex;
+  right: 100px;
+  top: 0px;
+  justify-content: center;
+  gap: 20px;
+}
+header .language a {
+  font-size: 17px;
+  color: #000;
+}
+header .language a:first-child::after {
+  content: "|";
+  position: absolute;
+  right: 50px;
+  cursor: none;
+  color: rgb(137, 137, 137);
+}
+header .logo_bg {
+  background: url(/images/logo2.svg) center/contain no-repeat;
+  filter: brightness(100);
+  width: 124px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  opacity: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header > .gnb_bg {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+header > .gnb_bg.fixed {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.8s;
+  z-index: 10;
+}
+header .gnb {
+  width: 1280px;
+  display: flex;
+  margin: 50px auto;
+  margin-top: 30px;
+  padding: 0 100px;
+  text-align: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+  /* 포지션 변화 */
+  box-sizing: border-box;
+}
+header .gnb.fixed {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 10;
+}
+header .gnb li {
+  width: calc(100% / 6);
+  margin-top: -30px;
+  line-height: 90px;
+}
+
+header .gnb > li > a {
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.5s;
+}
+header .gnb li a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: -3px;
+  display: flex;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s;
+}
+header .gnb li.scroll a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: -3px;
+  display: flex;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s;
+}
+header .gnb li a.on::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .gnb li a.on1::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+header .gnb li:not(:hover) a.on1::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+header .gnb li.scroll a.on::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .gnb li.scroll a.on1::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+header .gnb li.scroll:not(:hover) a.on1::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.lnb {
+  width: 100%;
+  position: absolute;
+  /* 포지션,마진 변화 */
+}
+.lnb.fixed {
+  position: fixed;
+  top: 80px;
+}
+.subwrap {
+  height: 200px;
+}
+.lnb .sub {
+  display: grid;
+}
+
+.lnb .bg {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.lnb .bg.fixed {
+  width: 100%;
+  background: #fff;
+}
+.lnb .bg ul {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  width: 920px;
+  margin: 0 auto;
+  grid-auto-flow: column;
+  padding: 50px;
+  padding-left: 0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+}
+
+.lnb ul li a {
+  font-size: 17px;
+  color: #000;
+}
+
+#main {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+}
+#main img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.8);
+}
+.btn {
+  width: 9px;
+  height: 15px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 10;
+  bottom: 7%;
+  right: 42%;
+  filter: brightness(500);
+  cursor: pointer;
+}
+
+@keyframes underline {
+  33% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  66% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  100% {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+section {
+  text-align: center;
+}
+section .title h1 {
+  font-size: 45px;
+  text-align: center;
+  margin: 50px auto;
+}
+section .sec_top {
+  width: 100%;
+  height: 760px;
+  background: url(../images/sub/introduction_visual_bg.jpg) center/cover
+    no-repeat;
+}
+section .top_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section .sec_top .logo_white {
+  width: 336px;
+  height: 16px;
+  margin: 0 auto;
+  background: url(../images/sub/logo_white.svg) center/cover no-repeat;
+  margin-bottom: 25px;
+}
+section .sec_top h2 {
+  font-size: 50px;
+  color: #fff;
+}
+section .sec_top span {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 40px;
+}
+section .title h1::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: #000;
+  display: block;
+  margin: 10px auto;
+}
+section .sec_2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 40px;
+  box-sizing: border-box;
+}
+section .sec_2 h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+section .sec_2 p {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+section .sec_2 span {
+  font-size: 18px;
+  line-height: 1.5;
+}
+section .sec_3 {
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+section .sec_3 p {
+  width: 100%;
+}
+section .sec_3 p img {
+  width: 100%;
+  object-fit: cover;
+}
+section .sec_3 .sec_3text {
+  position: absolute;
+  bottom: 80px;
+  text-align: right;
+  left: 600px;
+}
+section .sec_3 .sec_3text span {
+  font-size: 15px;
+}
+section .sec_3 .sec_3text h3 {
+  font-size: 24px;
+}
+section .sec_4 {
+  width: 100%;
+  padding: 120px 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+section .sec_4 h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+section .sec_4 p {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+section .sec_4 span {
+  font-size: 18px;
+  line-height: 2;
+}
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+.foot_logo {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 20px;
+}
+.foot_menu {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 23px 0;
+  position: relative;
+}
+
+.foot_menu > li > a {
+  position: relative;
+}
+.foot_menu > li > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: -3px;
+  display: flex;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.foot_menu > li > a.on::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.foot_menu > li > a.on1::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.foot_menu > li:not(:hover) > a.on1::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.foot_menu > ul > li > a {
+  font-size: 15px;
+  font-weight: bold;
+}
+.foot_menu li:last-child a {
+  position: relative;
+}
+.foot_menu li:last-child > a::before {
+  content: "";
+  background-image: url(../images/tri.svg);
+  width: 8px;
+  height: 6px;
+  position: absolute;
+  right: -20px;
+  bottom: 5px;
+  transition: 0.5s;
+}
+.foot_menu li:last-child > a.rota::before {
+  transform: rotate(180deg);
+}
+.family_bg {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.family_list {
+  position: relative;
+  background: #fff;
+  width: 60%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+  height: 100px;
+  text-align: center;
+}
+.family_list a {
+  font-size: 13px;
+  position: relative;
+}
+footer .family_list a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: -3px;
+  display: flex;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+footer .family_list > li > a.on::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+footer .family_list > li > a.on1::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+footer .family_list > li:not(:hover) > a.on1::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+footer .copy {
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  padding: 22px 0;
+  border-top: 1px dashed #999;
+}

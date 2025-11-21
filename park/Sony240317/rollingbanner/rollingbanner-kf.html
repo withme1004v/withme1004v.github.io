@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Banner Keyframes Version</title>
+    <link rel="stylesheet" href="./rollingbanner-kf.css" />
+    <script>
+      //DOM 생성 후
+      window.addEventListener("DOMContentLoaded", function () {
+        let roller = document.querySelector(".roller");
+        roller.id = "roller1";
+
+        let clone = roller.cloneNode(true);
+        clone.id = "roller2";
+        document.querySelector(".wrap").appendChild(clone);
+
+        document.querySelector("#roller1").style.left = "0px";
+        document.querySelector("#roller2").style.left =
+          document.querySelector(".roller ul").offsetWidth + "px";
+
+        roller.classList.add("original");
+        clone.classList.add("clone");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rollingbanner">
+        <div class="wrap">
+          <div class="roller">
+            <ul>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">Digital Dream Kids</strong>
+                  <span class="status down">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>1995</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">Do you dream in Sony? </strong>
+                  <span class="status down">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>1998</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">like.no.other</strong>
+                  <span class="status down">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>2005</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">make.believe</strong>
+                  <span class="status up">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>2009</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">BE MOVED</strong>
+                  <span class="status up">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>2013</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">Digital Dream Kids</strong>
+                  <span class="status down">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>1995</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">Do you dream in Sony? </strong>
+                  <span class="status down">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>1998</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">like.no.other</strong>
+                  <span class="status down">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>2005</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">make.believe</strong>
+                  <span class="status up">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>2009</em></span>
+                  </span>
+                </a>
+              </li>
+              <li class="slogun">
+                <a href="#">
+                  <strong class="name">BE MOVED</strong>
+                  <span class="status up">
+                    <span class="num">SINCE</span>
+                    <span class="rate"><em>2013</em></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

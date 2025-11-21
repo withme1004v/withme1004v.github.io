@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>대림 > 사업분야</title>
+    <link rel="stylesheet" href="aos-master/aos.css" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style_sub.css" />
+    <link rel="stylesheet" href="css/sub/sub_2.css" />
+    <!-- Demo styles -->
+    <style></style>
+    <script src="aos-master/aos.js"></script>
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        AOS.init();
+        $(window).scroll(function () {
+          var ht = $(document).scrollTop();
+          console.log(ht);
+          if (ht > 0) {
+            $(".bar").addClass("on");
+          } else {
+            $(".bar").removeClass("on");
+          }
+        });
+        $(".menu > ul").hover(
+          function () {
+            $(".menubg").css("height", "320px");
+            $(".menu > ul > li > ul ").css("height", "240px");
+            $(".sub_menu").css("opacity", "1");
+          },
+          function () {
+            $(".menubg").css("height", "0px");
+            $(".menu > ul > li > ul ").css("height", "0px");
+            $(".sub_menu").css("opacity", "0");
+          }
+        );
+        $(".menubg").hover(
+          function () {
+            $(".menubg").css("height", "320px");
+            $(".menu > ul > li > ul ").css("height", "240px");
+            $(".sub_menu").css("opacity", "1");
+          },
+          function () {
+            $(".menubg").css("height", "0px");
+            $(".menu > ul > li > ul ").css("height", "0px");
+            $(".sub_menu").css("opacity", "0");
+          }
+        );
+        $(".langwrap").hover(
+          function () {
+            $(this).css("height", "60px");
+            $(".language li:first-child").siblings().css("opacity", "1");
+          },
+          function () {
+            $(this).css("height", "30px");
+            $(".language li:first-child").siblings().css("opacity", "0");
+          }
+        );
+        $(".select1 li:first").click(function () {
+          $(".select1").removeClass("on");
+          $(".select2").removeClass("on");
+          $(".select1").addClass("on");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="index_main.html">
+          <div class="logo"></div>
+        </a>
+        <div class="menubg"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="/sub_01.html">회사소개</a>
+              <ul class="sub_menu sum1">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">회사연혁</a></li>
+                <li><a href="#">경영원칙</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">해외지사/국내지점</a></li>
+                <li><a href="#">그룹사 현황</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" style="color: #2c53af">사업분야</a>
+              <ul class="sub_menu sum2">
+                <li><a href="#">트레이딩</a></li>
+                <li><a href="#">PI</a></li>
+                <li><a href="#">물류</a></li>
+                <li><a href="#">건설정보화</a></li>
+                <li><a href="#">IT서비스</a></li>
+                <li><a href="#">부동산</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">재무정보</a>
+              <ul class="sub_menu sum3">
+                <li><a href="#">재무제표</a></li>
+                <li><a href="#">공시정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">홍보센터</a>
+              <ul class="sub_menu sum4">
+                <li><a href="#">회사소식</a></li>
+                <li><a href="#">CI소개</a></li>
+                <li><a href="#">홍보영상</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG</a>
+              <ul class="sub_menu sum5">
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">안전/환경경영</a></li>
+                <li><a href="#">정도경영</a></li>
+                <li><a href="#">상생경영</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+              <ul class="sub_menu sum6">
+                <li><a href="#">인재상</a></li>
+                <li><a href="#">인사제도</a></li>
+                <li><a href="#">직무소개</a></li>
+                <li><a href="#">채용정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"></a>
+              <ul class="naver sub_menu sum7">
+                <li>
+                  <a href="https://blog.naver.com/dl_daelim"
+                    ><img src="images/naver_blog.png" alt="blog" />
+                    <span>공식블로그</span></a
+                  >
+                </li>
+                <li><a href="https://blog.naver.com/dl_daelim">바로가기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li>
+              <div class="langwrap">
+                <ul class="language">
+                  <li>KR</li>
+                  <li>EN</li>
+                  <li>CN</li>
+                </ul>
+              </div>
+            </li>
+            <li class="button"></li>
+            <li class="search"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="inner">
+          <p class="home"><img src="images/sub/bg_nav_home.png" alt="" /></p>
+          <ul class="select1 bar_ul">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사업분야</a></li>
+            <li><a href="#">재무정보</a></li>
+            <li><a href="#">홍보센터</a></li>
+            <li><a href="#">ESG</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+          <ul class="select2 bar_ul">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">회사연혁</a></li>
+            <li><a href="#">경영원칙</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">해외지사/국내지점</a></li>
+            <li><a href="#">그룹사 현황</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="top_box">
+        <div class="top_img"></div>
+        <div class="top_title">
+          <h1>사업분야</h1>
+          <span
+            >㈜대림 구성원들은 목표 의식을 가지고 끈기 있는 도전과 상호 간의
+            협력을 실천하여 <br />
+            개인과 조직의 공동 성장을 추구합니다.</span
+          >
+        </div>
+      </div>
+      <div class="sec">
+        <ul class="sec_menu">
+          <li>전체</li>
+          <li>트레이딩</li>
+          <li>PI</li>
+          <li>물류</li>
+          <li>건설정보화</li>
+          <li>IT서비스</li>
+          <li>부동산</li>
+        </ul>
+        <div class="sec_head">
+          <p class="sec_img">
+            <img src="images/sub2/b_list_img0.png" alt="b_list_img0" />
+          </p>
+          <div class="sec_text">
+            <h2>㈜대림 사업분야</h2>
+            <span
+              >㈜대림 구성원들은 목표 의식을 가지고 끈기 있는 도전과 <br />
+              상호 간의 협력을 실천하여 개인과 조직의 공동 성장을
+              추구합니다.</span
+            >
+          </div>
+        </div>
+        <div class="sec_body">
+          <ul class="sec_line line1">
+            <li class="icon_box">
+              <p class="icon_img"></p>
+              <span>석유화학 트레이딩</span>
+            </li>
+            <li class="list_box">
+              <h3>석유제품</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>모노머</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>케미칼</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>폴리프로필렌</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+          </ul>
+          <ul class="sec_line line2">
+            <li class="icon_box">
+              <p class="icon_img"><img src="" alt="" /></p>
+              <span>폴리이미드</span>
+            </li>
+            <li class="list_box">
+              <h3>PLAVIS 소개</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>기술 개요</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>사용 분야</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>해외 네트워크</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>인증서</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+          </ul>
+          <ul class="sec_line line3">
+            <li class="icon_box">
+              <p class="icon_img"><img src="" alt="" /></p>
+              <span>물류</span>
+            </li>
+            <li class="list_box">
+              <h3>일반화물</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>프로젝트화물</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>보관</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>ISO 탱크 컨테이너</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+          </ul>
+          <ul class="sec_line line4">
+            <li class="icon_box">
+              <p class="icon_img"><img src="" alt="" /></p>
+              <span>건설정보화</span>
+            </li>
+            <li class="list_box">
+              <h3>토목기전</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>건축기전</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>신재생 에너지</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>IBS</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+          </ul>
+          <ul class="sec_line line5">
+            <li class="icon_box">
+              <p class="icon_img"><img src="" alt="" /></p>
+              <span>IT 서비스</span>
+            </li>
+            <li class="list_box">
+              <h3>ITO & BPO</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>시스템 통합 & IT솔루션</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+            <li class="list_box">
+              <h3>커뮤니케이션 서비스</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+          </ul>
+          <ul class="sec_line line6">
+            <li class="icon_box">
+              <p class="icon_img"><img src="" alt="" /></p>
+              <span>부동산</span>
+            </li>
+            <li class="list_box">
+              <h3>부동산</h3>
+              <div class="list_btn"><a href="#">바로가기</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="copybg">
+        <div class="copy">
+          <div class="copy_top">
+            <ul class="cpleft">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">공정거래자율준수</a></li>
+              <li><a href="#">영상정보 처리기기 설치 운영방침</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+            <ul class="cpright">
+              <li><a href="#">계열사 바로가기</a><a href="#">+</a></li>
+            </ul>
+          </div>
+          <div class="copy_bot">
+            <span
+              >03181 서울특별시 종로구 통일로 134 돈의문 D-타워 (주)대림</span
+            >
+            <span>TEL : 02-3708-3491</span><span>FAX : 02-757-7447</span>
+            <span> Copyright(C) 2021 Daelim, All rights reserved. </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
+  </body>
+</html>

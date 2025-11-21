@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신세계인터내셔날</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="aos-master/aos.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style_sub.css" />
+    <!-- Demo styles -->
+
+    <script src="aos-master/aos.js"></script>
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script></script>
+    <script>
+      $(function () {
+        AOS.init();
+        // $(".gnb li").hover(function () {
+        //   $(".bg").css("opacity", "1");
+        // });
+        $(".gnb li a:first").addClass("on");
+        $(".foot_menu > li").each(function (i, v) {
+          console.log(v);
+          $(v).hover(
+            function () {
+              $(".foot_menu >li> a").removeClass("on");
+              $(".foot_menu >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on1")
+                .addClass("on");
+            },
+            function () {
+              $(".foot_menu >li >a").removeClass("on1");
+              $(".foot_menu >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on")
+                .addClass("on1");
+            }
+          );
+        });
+        $(".gnb li").each(function (i, v) {
+          console.log(v);
+          $(v).hover(
+            function () {
+              $(".bg").css("opacity", "1");
+              $(".bg ul").eq(i).css("opacity", "1");
+              $(".gnb li a").removeClass("on");
+              $(".gnb li").eq(i).find("a").removeClass("on1").addClass("on");
+              $(".lnb").hover(
+                function () {
+                  $(".bg").css("opacity", "1");
+                  $(".bg ul").eq(i).css("opacity", "1");
+                },
+                function () {
+                  $(".bg").css("opacity", "0");
+                  $(".bg ul").css("opacity", "0");
+                }
+              );
+            },
+            function () {
+              $(".bg").css("opacity", "0");
+              $(".bg ul").eq(i).css("opacity", "0");
+              $(".gnb li a").removeClass("on");
+              $(".gnb li").eq(i).find("a").removeClass("on").addClass("on1");
+            }
+          );
+        });
+        $(window).scroll(function () {
+          var ht = $(document).scrollTop();
+          if (ht > 0) {
+            console.log(ht);
+            $(".logo_bg").css({ filter: "none" });
+            $(".gnb_bg").addClass("fixed");
+            $(".logo_bg").css({ opacity: "1" });
+            $(".gnb").addClass("fixed");
+            $(".lnb").addClass("fixed");
+          } else if (ht == 0) {
+            $(".logo_bg").css({ filter: "brightness(0)" });
+            $(".gnb_bg").removeClass("fixed");
+            $(".logo_bg").css({ opacity: "0" });
+            $(".gnb").removeClass("fixed");
+            $(".lnb").removeClass("fixed");
+          }
+          // if (ht >= 900) {
+          //   $(".gnb li").addClass("scroll");
+          //   $(".lnb .bg").addClass("fixed");
+          // } else {
+          //   $(".gnb li").removeClass("scroll");
+          //   $(".lnb .bg").removeClass("fixed");
+          // }
+        });
+        $(".bot_head").hover(
+          function () {
+            $(this).find("img").css({ transform: "scale(1.1)" });
+          },
+          function () {
+            $(this).find("img").css({ transform: "scale(1)" });
+          }
+        );
+        $(".family_list > li").each(function (i, v) {
+          console.log(v);
+          $(v).hover(
+            function () {
+              $(".family_list >li> a").removeClass("on");
+              $(".family_list >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on1")
+                .addClass("on");
+            },
+            function () {
+              $(".family_list >li >a").removeClass("on1");
+              $(".family_list >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on")
+                .addClass("on1");
+            }
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="language">
+        <a href="#"><span>KO</span></a>
+        <a href="#"><span>EN</span></a>
+      </div>
+      <div class="gnb_bg">
+        <ul class="gnb">
+          <div class="logo_bg"></div>
+          <li>
+            <a href="#">COMPANY</a>
+          </li>
+          <li>
+            <a href="index_sub_2.html">BUSINESS</a>
+          </li>
+          <li>
+            <a href="#">INVESTORS</a>
+          </li>
+          <li>
+            <a href="#">RESPONSIBILITY</a>
+          </li>
+          <li>
+            <a href="#">PEOPLE</a>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lnb_scrollbg">
+        <div class="lnb">
+          <div class="bg">
+            <div class="subwrap">
+              <ul class="sub">
+                <li><a href="#">신세계그룹</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">비전</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">위치</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">패션 </a></li>
+                <li><a href="#"> 뷰티 </a></li>
+                <li><a href="#"> 라이프스타일 </a></li>
+                <li><a href="#">디지털 플랫폼 </a></li>
+                <li><a href="#">라이선스 비즈니스</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">주주구성</a></li>
+                <li><a href="#">이사회구성 </a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">공고 및 IR정보</a></li>
+                <li><a href="#">주가정보</a></li>
+                <li><a href="#">주주정책</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">CSR경영</a></li>
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">상생경영</a></li>
+                <li><a href="#">사회공헌활동</a></li>
+                <li><a href="#">상담 및 제보</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">SI 팀</a></li>
+                <li><a href="#">SI 파트너</a></li>
+                <li><a href="#">채용</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">뉴스</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section_wrap">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+          <h1>회사소개</h1>
+        </div>
+        <div class="sec_top">
+          <div
+            class="top_wrap"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <p class="logo_white"></p>
+            <h2>Global Digital Company</h2>
+            <span
+              >신세계인터내셔날은 세계 최고를 지향하며, 디지털 솔루션과 도구를
+              통해
+              <br />
+              고객경험을 지속적으로 혁신하고 있습니다.</span
+            >
+          </div>
+        </div>
+        <div class="sec_2" data-aos="fade-up" data-aos-duration="1500">
+          <h1>Mission</h1>
+          <p>’디지털 전환’과 ‘고객 공감’을 통한 고객 경험 혁신</p>
+          <span
+            >신세계인터내셔날은 '고객 제일주의'를 통해 혁신과 차별화를 만들어
+            갑니다. 1996년 설립된 신세계인터내셔날은 패션, 뷰티, 라이프스타일
+            <br />
+            산업을 선도하며, 해외 유명 브랜드와 자체 브랜드로 구성된 강력한
+            포트폴리오를 가지고 있습니다. <br /><br />고객의 불만을 해결하기
+            위해 최선을 다하며, 디지털 솔루션과 도구를 통해 고객 경험을
+            지속적으로 혁신하고 있습니다. <br />
+            온라인과 오프라인 쇼핑 여정을 강화하여 고객에게 탁월한 쇼핑 경험을
+            제공하고, 고객 중심 관점으로 비즈니스 모델을 빠르게 발전시키고
+            있습니다. <br />
+            <br />신세계인터내셔날은 자체 브랜드를 글로벌 브랜드로 육성하고,
+            디지털 전환을 통해 글로벌 디지털 기업으로 발전하기 위해 노력하고
+            있습니다. <br />
+            일상의 모든 순간에 잊지 못할 고객 경험을 선사하는 기업이
+            되겠습니다.</span
+          >
+        </div>
+        <div class="sec_3">
+          <p><img src="images/sub/introduction_ceo.jpg" alt="ceo" /></p>
+          <div class="sec_3text">
+            <span>신세계인터내셔날 대표이사 </span>
+            <h3>윌리엄 김</h3>
+          </div>
+        </div>
+        <div class="sec_4" data-aos="fade-up" data-aos-duration="1500">
+          <h1>CEO 윌리엄 김</h1>
+          <span
+            >2023년 1월 대표이사로 선임된 윌리엄 김은 신세계인터내셔날을 글로벌
+            기업으로 성장시키겠다는 비전과 목표 아래 회사의 핵심 경쟁력을 강화해
+            나가고 있습니다. <br />
+            지속 성장을 위해 적극적인 신규 브랜드 도입과 신사업 발굴, 자체
+            브랜드의 글로벌화를 추진하고 있으며, 디지털 분야에서의 풍부한 경험을
+            바탕으로 <br />
+            회사의 디지털 전환을 이끌고 있습니다. <br />
+            <br />윌리엄 김은 신세계인터내셔날에 입사하기 전 영국의 글로벌
+            사이클링 의류브랜드 라파(Rapha)의 대표를 역임했으며, <br />
+            라파 이전에는 약 3년간 삼성전자 무선사업부에서 마케팅총괄부사장을
+            맡았습니다. <br />
+            <br />2012년에는 올세인츠(ALLSAINTS)의 CEO를 맡아 회사를 상징적인
+            글로벌 혁신 패션 브랜드로 성장시켰습니다. 디지털화와 세계화에 초점을
+            맞춘 <br />
+            비즈니스 모델을 구축하여 회사의 수익성을 대폭 향상시켰습니다. 이러한
+            윌리엄 김의 디지털 경영 및 소비자 경험에 대한 폭넓은 경험은 <br />
+            버버리, 구찌 등 29년간 글로벌 명품 브랜드에서 일한 경험에서
+            비롯됐습니다.</span
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="foot_logo"><img src="images/logo2.svg" alt="" /></div>
+      <ul class="foot_menu">
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">NOTICE</a></li>
+        <li><a href="#">운영관리방침 </a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">PARTNER SUPPORT</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li>
+          <a href="#">FAMILYSITE</a>
+        </li>
+      </ul>
+      <div class="family_bg">
+        <ul class="family_list">
+          <li><a href="#">S.I.VILLAGE</a></li>
+          <li><a href="#">신세계그룹</a></li>
+          <li><a href="#">신세계백화점</a></li>
+          <li><a href="#">이마트</a></li>
+          <li><a href="#">신세계푸드</a></li>
+          <li><a href="#">신세계건설</a></li>
+          <li><a href="#">신세계I&C</a></li>
+          <li><a href="#">SCK컴퍼니</a></li>
+          <li><a href="#">조선호텔앤리조트</a></li>
+          <li><a href="#">신세계사이먼</a></li>
+          <li><a href="#">신세계L&B</a></li>
+          <li><a href="#">이마트에브리데이</a></li>
+          <li><a href="#">이마트24</a></li>
+          <li><a href="#">신세계센트럴시티 </a></li>
+          <li><a href="#">신세계프라퍼티</a></li>
+          <li><a href="#">신세계디에프</a></li>
+          <li><a href="#"> 신세계라이브쇼핑 </a></li>
+          <li><a href="#">신세계까사</a></li>
+          <li><a href="#">SSG.COM</a></li>
+          <li><a href="#">시그나이트파트너스 </a></li>
+          <li><a href="#">신세계야구단</a></li>
+          <li><a href="#">더블유컨셉코리아</a></li>
+          <li><a href="">지마켓</a></li>
+        </ul>
+      </div>
+      <div class="copy">
+        COPYRIGHT 2023 (C) BY SHINSEGAE INTERNATIONAL. ALL RIGHTS RESERVED
+      </div>
+    </footer>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let i = true;
+      $(".foot_menu li:last a").on("click", function (e) {
+        event.preventDefault();
+        if (i == true) {
+          $(".family_bg").css({ height: "150px" });
+          $(this).addClass("rota");
+        } else {
+          $(".family_bg").css({ height: "0px" });
+          $(this).removeClass("rota");
+        }
+        i = !i;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신세계인터내셔날</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="aos-master/aos.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style_sub_2.css" />
+    <!-- Demo styles -->
+
+    <script src="aos-master/aos.js"></script>
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script></script>
+    <script>
+      $(function () {
+        AOS.init();
+        // $(".gnb li").hover(function () {
+        //   $(".bg").css("opacity", "1");
+        // });
+        $(".gnb li a:nth(1)").addClass("on");
+        $(".list li a:first").addClass("on");
+
+        $(".gnb li").each(function (i, v) {
+          console.log(v);
+          $(v).hover(
+            function () {
+              $(".bg").css("opacity", "1");
+              $(".bg ul").eq(i).css("opacity", "1");
+              $(".gnb li a").removeClass("on");
+              $(".gnb li").eq(i).find("a").removeClass("on1").addClass("on");
+              $(".lnb").hover(
+                function () {
+                  $(".bg").css("opacity", "1");
+                  $(".bg ul").eq(i).css("opacity", "1");
+                },
+                function () {
+                  $(".bg").css("opacity", "0");
+                  $(".bg ul").css("opacity", "0");
+                }
+              );
+            },
+            function () {
+              $(".bg").css("opacity", "0");
+              $(".bg ul").eq(i).css("opacity", "0");
+              $(".gnb li a").removeClass("on");
+              $(".gnb li").eq(i).find("a").removeClass("on").addClass("on1");
+            }
+          );
+        });
+        $(".list li a").hover(
+          function () {
+            $(this).css({ color: "#000" });
+            $(this).removeClass("on");
+            $(this).removeClass("on1").addClass("on");
+          },
+          function () {
+            $(this).css({ color: "#ccc" });
+            $(this).removeClass("on1");
+            $(this).removeClass("on").addClass("on1");
+          }
+        );
+        $(".brands_img").hover(
+          function () {
+            $(this).find("img").addClass("on");
+          },
+          function () {
+            $(this).find("img").removeClass("on");
+          }
+        );
+        $(window).scroll(function () {
+          var ht = $(document).scrollTop();
+          if (ht > 0) {
+            console.log(ht);
+            $(".logo_bg").css({ filter: "none" });
+            $(".gnb_bg").addClass("fixed");
+            $(".logo_bg").css({ opacity: "1" });
+            $(".gnb").addClass("fixed");
+            $(".lnb").addClass("fixed");
+          } else if (ht == 0) {
+            $(".logo_bg").css({ filter: "brightness(0)" });
+            $(".gnb_bg").removeClass("fixed");
+            $(".logo_bg").css({ opacity: "0" });
+            $(".gnb").removeClass("fixed");
+            $(".lnb").removeClass("fixed");
+          }
+          // if (ht >= 900) {
+          //   $(".gnb li").addClass("scroll");
+          //   $(".lnb .bg").addClass("fixed");
+          // } else {
+          //   $(".gnb li").removeClass("scroll");
+          //   $(".lnb .bg").removeClass("fixed");
+          // }
+        });
+
+        $(".family_list > li").each(function (i, v) {
+          console.log(v);
+          $(v).hover(
+            function () {
+              $(".family_list >li> a").removeClass("on");
+              $(".family_list >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on1")
+                .addClass("on");
+            },
+            function () {
+              $(".family_list >li >a").removeClass("on1");
+              $(".family_list >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on")
+                .addClass("on1");
+            }
+          );
+        });
+        $(".foot_menu > li").each(function (i, v) {
+          console.log(v);
+          $(v).hover(
+            function () {
+              $(".foot_menu >li> a").removeClass("on");
+              $(".foot_menu >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on1")
+                .addClass("on");
+            },
+            function () {
+              $(".foot_menu >li >a").removeClass("on1");
+              $(".foot_menu >li")
+                .eq(i)
+                .find("a")
+                .removeClass("on")
+                .addClass("on1");
+            }
+          );
+        });
+        let i = true;
+        $(".foot_menu li:last a").on("click", function (e) {
+          event.preventDefault();
+          if (i == true) {
+            $(".family_bg").css({ height: "150px" });
+            $(this).addClass("rota");
+          } else {
+            $(".family_bg").css({ height: "0px" });
+            $(this).removeClass("rota");
+          }
+          i = !i;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="language">
+        <a href="#"><span>KO</span></a>
+        <a href="#"><span>EN</span></a>
+      </div>
+      <div class="gnb_bg">
+        <ul class="gnb">
+          <div class="logo_bg"></div>
+          <li>
+            <a href="index_sub.html">COMPANY</a>
+          </li>
+          <li>
+            <a href="#">BUSINESS</a>
+          </li>
+          <li>
+            <a href="#">INVESTORS</a>
+          </li>
+          <li>
+            <a href="#">RESPONSIBILITY</a>
+          </li>
+          <li>
+            <a href="#">PEOPLE</a>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lnb_scrollbg">
+        <div class="lnb">
+          <div class="bg">
+            <div class="subwrap">
+              <ul class="sub">
+                <li><a href="#">신세계그룹</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">비전</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">위치</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">패션 </a></li>
+                <li><a href="#"> 뷰티 </a></li>
+                <li><a href="#"> 라이프스타일 </a></li>
+                <li><a href="#">디지털 플랫폼 </a></li>
+                <li><a href="#">라이선스 비즈니스</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">주주구성</a></li>
+                <li><a href="#">이사회구성 </a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">공고 및 IR정보</a></li>
+                <li><a href="#">주가정보</a></li>
+                <li><a href="#">주주정책</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">CSR경영</a></li>
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">상생경영</a></li>
+                <li><a href="#">사회공헌활동</a></li>
+                <li><a href="#">상담 및 제보</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">SI 팀</a></li>
+                <li><a href="#">SI 파트너</a></li>
+                <li><a href="#">채용</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">뉴스</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section_wrap">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+          <h1>패션</h1>
+          <span
+            >신세계인터내셔날은 30년 역사를 지닌 한국 명품 시장의 개척자입니다.
+            럭셔리, 컨템포러리, 캐주얼, 액티브웨어 등 <br />
+            다양한 글로벌 브랜드를 수입 및 유통하고, 경쟁력 있는 자체 패션
+            브랜드를 글로벌 브랜드로 육성하고 있습니다.</span
+          >
+        </div>
+        <ul class="list">
+          <li><a href="#">전체</a></li>
+          <li><a href="#">럭셔리</a></li>
+          <li><a href="#">컨템포러리</a></li>
+          <li><a href="#">캐주얼 & 액티브 </a></li>
+          <li><a href="#">자사 브랜드</a></li>
+        </ul>
+        <div class="brands">
+          <ul class="brands_list">
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/GIORGIO ARMANI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/GIORGIO ARMANI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">GIORGIO ARMANI</h3>
+                <span class="kr">조르지오 아르마니</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/BRUNELLO-CUCINELLI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img
+                    src="images/sub/BRUNELLO-CUCINELLI_logo.png"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">BRUNELLO CUCINELLI</h3>
+                <span class="kr">브루넬로 쿠치넬리</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/CHROME HEARTS_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/CHROME HEARTS_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">CHROME HEARTS</h3>
+                <span class="kr">크롬하츠</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/COURREGES_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/COURREGES_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">Courrèges</h3>
+                <span class="kr">꾸레쥬</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/PAUL SMITH_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/PAUL SMITH_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">PAUL SMITH</h3>
+                <span class="kr">폴스미스</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/ALEXANDER WANG_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/ALEXANDER WANG_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">ALEXANDER WANG</h3>
+                <span class="kr">알렉산더 왕</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/ugg_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/ugg_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">UGG</h3>
+                <span class="kr">어그</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/VUORI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/VUORI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">VUORI</h3>
+                <span class="kr">뷰오리</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/J.LINDEBERG_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/J.LINDEBERG_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">J.LINDEBERG</h3>
+                <span class="kr">제이 린드버그</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/PHILIPP PLEIN GOLF_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img
+                    src="images/sub/PHILIPP PLEIN GOLF_logo.png"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">PHILIPP PLEIN GOLF</h3>
+                <span class="kr">필립플레인 골프</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/PHILIPP PLEIN_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/PHILIPP PLEIN_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">PHILIPP PLEIN</h3>
+                <span class="kr">필립 플레인</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/HERNO_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/HERNO_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">HERNO</h3>
+                <span class="kr">에르노</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/STELLA MCCARTNEY_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/STELLA MCCARTNEY_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">STELLA MCCARTNEY</h3>
+                <span class="kr">스텔라 맥카트니</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/RICK OWENS_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/RICK OWENS_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">RICK OWENS</h3>
+                <span class="kr">릭 오웬스</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/PANGAIA_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/PANGAIA_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">PANGAIA</h3>
+                <span class="kr">판가이아</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/EMPORIO ARMANI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/EMPORIO ARMANI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">EMPORIO ARMANI</h3>
+                <span class="kr">엠포리오 아르마니</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/ENFÖLD_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/ENFÖLD_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">ENFÖLD</h3>
+                <span class="kr">엔폴드</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/SACAI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/SACAI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">SACAI</h3>
+                <span class="kr">사카이</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/DSQUARED2_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/DSQUARED2_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">DSQUARED2</h3>
+                <span class="kr">디스퀘어드2</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/DRIES VAN NOTEN_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/DRIES VAN NOTEN_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">DRIES VAN NOTEN</h3>
+                <span class="kr">드리스 반 노튼</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/REFORMATION_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/REFORMATION_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">REFORMATION</h3>
+                <span class="kr">리포메이션</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/SAVE THE DUCK_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/SAVE THE DUCK_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">SAVE THE DUCK</h3>
+                <span class="kr">세이브더덕</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/LARDINI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/LARDINI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">LARDINI</h3>
+                <span class="kr">라르디니</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/Yohji Yamamoto_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/Yohji Yamamoto_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">Yohji Yamamoto</h3>
+                <span class="kr">요지 야마모토</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/GIUSEPPE ZANOTTI_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/GIUSEPPE ZANOTTI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">GIUSEPPE ZANOTTI</h3>
+                <span class="kr">주세페 자노티</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/FONTANA MILANO 1915_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img
+                    src="images/sub/FONTANA MILANO 1915_logo.png"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">FONTANA MILANO 1915</h3>
+                <span class="kr">폰타나 밀라노 1915</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/ARMANI EXCHANGE_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/ARMANI EXCHANGE_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">ARMANI EXCHANGE</h3>
+                <span class="kr">아르마니 익스체인지</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/GAP_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/GAP_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">GAP</h3>
+                <span class="kr">갭</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/DIESEL_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/DIESEL_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">DIESEL</h3>
+                <span class="kr">디젤</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/MARNI_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/MARNI_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">MARNI</h3>
+                <span class="kr">마르니</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/MAISON MARGIELA_img.jpg" alt="img" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/MAISON MARGIELA_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">MAISON MARGIELA</h3>
+                <span class="kr">메종 마르지엘라</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/DELLA LANA_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/DELLA LANA_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">DELLA LANA</h3>
+                <span class="kr">델라라나</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/G-CUT_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/G-CUT_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">G-CUT</h3>
+                <span class="kr">지컷</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/ILAIL_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/ILAIL_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">ILAIL</h3>
+                <span class="kr">일라일</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/MAN ON THE BOON_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/MAN ON THE BOON_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">MAN ON THE BOON</h3>
+                <span class="kr">맨온더분</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/STUDIO TOMBOY_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/STUDIO TOMBOY_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">STUDIO TOMBOY</h3>
+                <span class="kr">스튜디오 톰보이</span>
+              </div>
+            </li>
+            <li
+              class="brands_item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="brands_img">
+                <div class="img_box">
+                  <img src="images/sub/VOV_img.jpg" alt="" />
+                </div>
+                <div class="logo_box">
+                  <img src="images/sub/VOV_logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="brands_info">
+                <h3 class="en">VOV</h3>
+                <span class="kr">보브</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="foot_logo"><img src="images/logo2.svg" alt="" /></div>
+      <ul class="foot_menu">
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">NOTICE</a></li>
+        <li><a href="#">운영관리방침 </a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">PARTNER SUPPORT</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li>
+          <a href="#">FAMILYSITE</a>
+        </li>
+      </ul>
+      <div class="family_bg">
+        <ul class="family_list">
+          <li><a href="#">S.I.VILLAGE</a></li>
+          <li><a href="#">신세계그룹</a></li>
+          <li><a href="#">신세계백화점</a></li>
+          <li><a href="#">이마트</a></li>
+          <li><a href="#">신세계푸드</a></li>
+          <li><a href="#">신세계건설</a></li>
+          <li><a href="#">신세계I&C</a></li>
+          <li><a href="#">SCK컴퍼니</a></li>
+          <li><a href="#">조선호텔앤리조트</a></li>
+          <li><a href="#">신세계사이먼</a></li>
+          <li><a href="#">신세계L&B</a></li>
+          <li><a href="#">이마트에브리데이</a></li>
+          <li><a href="#">이마트24</a></li>
+          <li><a href="#">신세계센트럴시티 </a></li>
+          <li><a href="#">신세계프라퍼티</a></li>
+          <li><a href="#">신세계디에프</a></li>
+          <li><a href="#"> 신세계라이브쇼핑 </a></li>
+          <li><a href="#">신세계까사</a></li>
+          <li><a href="#">SSG.COM</a></li>
+          <li><a href="#">시그나이트파트너스 </a></li>
+          <li><a href="#">신세계야구단</a></li>
+          <li><a href="#">더블유컨셉코리아</a></li>
+          <li><a href="">지마켓</a></li>
+        </ul>
+      </div>
+      <div class="copy">
+        COPYRIGHT 2023 (C) BY SHINSEGAE INTERNATIONAL. ALL RIGHTS RESERVED
+      </div>
+    </footer>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>대림 > 회사소개 > Overview</title>
+    <link rel="stylesheet" href="aos-master/aos.css" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style_sub.css" />
+    <link rel="stylesheet" href="css/sub/sub_1.css" />
+    <!-- Demo styles -->
+    <style></style>
+    <script src="aos-master/aos.js"></script>
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        AOS.init();
+        $(window).scroll(function () {
+          var ht = $(document).scrollTop();
+          console.log(ht);
+          if (ht > 0) {
+            $(".bar").addClass("on");
+          } else {
+            $(".bar").removeClass("on");
+          }
+        });
+        $(".menu > ul").hover(
+          function () {
+            $(".menubg").css("height", "320px");
+            $(".menu > ul > li > ul ").css("height", "240px");
+            $(".sub_menu").css("opacity", "1");
+          },
+          function () {
+            $(".menubg").css("height", "0px");
+            $(".menu > ul > li > ul ").css("height", "0px");
+            $(".sub_menu").css("opacity", "0");
+          }
+        );
+        $(".menubg").hover(
+          function () {
+            $(".menubg").css("height", "320px");
+            $(".menu > ul > li > ul ").css("height", "240px");
+            $(".sub_menu").css("opacity", "1");
+          },
+          function () {
+            $(".menubg").css("height", "0px");
+            $(".menu > ul > li > ul ").css("height", "0px");
+            $(".sub_menu").css("opacity", "0");
+          }
+        );
+        $(".langwrap").hover(
+          function () {
+            $(this).css("height", "60px");
+            $(".language li:first-child").siblings().css("opacity", "1");
+          },
+          function () {
+            $(this).css("height", "30px");
+            $(".language li:first-child").siblings().css("opacity", "0");
+          }
+        );
+        $(".select1 li:first").click(function () {
+          $(".select1").removeClass("on");
+          $(".select2").removeClass("on");
+          $(".select1").addClass("on");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="index_main.html">
+          <div class="logo"></div>
+        </a>
+        <div class="menubg"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="/sub_01.html" style="color: #2c53af">회사소개</a>
+              <ul class="sub_menu sum1">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">회사연혁</a></li>
+                <li><a href="#">경영원칙</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">해외지사/국내지점</a></li>
+                <li><a href="#">그룹사 현황</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업분야</a>
+              <ul class="sub_menu sum2">
+                <li><a href="#">트레이딩</a></li>
+                <li><a href="#">PI</a></li>
+                <li><a href="#">물류</a></li>
+                <li><a href="#">건설정보화</a></li>
+                <li><a href="#">IT서비스</a></li>
+                <li><a href="#">부동산</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">재무정보</a>
+              <ul class="sub_menu sum3">
+                <li><a href="#">재무제표</a></li>
+                <li><a href="#">공시정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">홍보센터</a>
+              <ul class="sub_menu sum4">
+                <li><a href="#">회사소식</a></li>
+                <li><a href="#">CI소개</a></li>
+                <li><a href="#">홍보영상</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG</a>
+              <ul class="sub_menu sum5">
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">안전/환경경영</a></li>
+                <li><a href="#">정도경영</a></li>
+                <li><a href="#">상생경영</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+              <ul class="sub_menu sum6">
+                <li><a href="#">인재상</a></li>
+                <li><a href="#">인사제도</a></li>
+                <li><a href="#">직무소개</a></li>
+                <li><a href="#">채용정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"></a>
+              <ul class="naver sub_menu sum7">
+                <li>
+                  <a href="https://blog.naver.com/dl_daelim"
+                    ><img src="images/naver_blog.png" alt="blog" />
+                    <span>공식블로그</span></a
+                  >
+                </li>
+                <li><a href="https://blog.naver.com/dl_daelim">바로가기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li>
+              <div class="langwrap">
+                <ul class="language">
+                  <li>KR</li>
+                  <li>EN</li>
+                  <li>CN</li>
+                </ul>
+              </div>
+            </li>
+            <li class="button"></li>
+            <li class="search"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="inner">
+          <p class="home"><img src="images/sub/bg_nav_home.png" alt="" /></p>
+          <ul class="select1 bar_ul">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사업분야</a></li>
+            <li><a href="#">재무정보</a></li>
+            <li><a href="#">홍보센터</a></li>
+            <li><a href="#">ESG</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+          <ul class="select2 bar_ul">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">회사연혁</a></li>
+            <li><a href="#">경영원칙</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">해외지사/국내지점</a></li>
+            <li><a href="#">그룹사 현황</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sec1">
+        <h1 data-aos="fade-up" data-aos-duration="1000">
+          <span>Value Creator</span> For Better Life!
+        </h1>
+        <div class="sec1_img">
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <img src="images/sub/img_overview1.png" alt="overview" />
+          </p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <img src="images/sub/img_overview2.png" alt="overview" />
+          </p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <img src="images/sub/img_overview3.png" alt="overview" />
+          </p>
+        </div>
+        <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"
+          >㈜대림은 글로벌 디벨로퍼로의 미래 모습을 구현하기 위해 임직원 모두가
+          변화와 혁신에 매진하고 있으며 <br />
+          기업 윤리 및 사회적 책임을 다해서 주주 및 고객, 지역사회를 포함한 모든
+          이해관계자들의 성원에 보답하는데 최선을 다하겠습니다.</span
+        >
+        <div
+          class="sec1_textbox"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1100"
+        >
+          <ul class="left_text">
+            <li><strong>회사명</strong></li>
+            <li><strong>대표이사</strong></li>
+            <li><strong>대표전화</strong></li>
+            <li><strong>해외지사</strong></li>
+            <li><strong>주요사업</strong></li>
+            <li><strong>재무사항</strong></li>
+          </ul>
+          <ul class="right_text">
+            <li>㈜대림</li>
+            <li>배원복</li>
+            <li>02-3708-3491</li>
+            <li>1개 법인, 5개 지사</li>
+            <li>석유화학 도매업, 화물운송주선업, 건설 및 IT서비스업</li>
+            <li>
+              자산 2,594,240백만원 / 매출액 3,000,390백만원 / 당기순이익
+              173,153백만원
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sec2">
+        <div class="sec2_wrap">
+          <h1>키워드로 보는 ㈜대림</h1>
+          <ul class="sec2_box">
+            <li>
+              <strong>3</strong><span>위</span><br />
+              PI(폴리이미드) 특허기술 보유 및 제조
+            </li>
+            <li>
+              <strong>1</strong><span>위</span><br />
+              국내 최대 Fleet 규모의 ISO Tank Operator
+            </li>
+            <li>
+              <strong>200</strong><span>개국</span><br />
+              전세계 200개 국가 수출
+            </li>
+            <li>
+              <strong>1</strong><span>위</span><br />
+              국내 업체 중 납사 Trading 규모 1위
+            </li>
+            <li>
+              <strong>3</strong><span>위</span><br />
+              프로필렌아시아 물동량 기준 3위
+            </li>
+            <li>
+              <strong>25</strong><span>년</span><br />
+              대한민국과 함께한 25년
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="copybg">
+        <div class="copy">
+          <div class="copy_top">
+            <ul class="cpleft">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">공정거래자율준수</a></li>
+              <li><a href="#">영상정보 처리기기 설치 운영방침</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+            <ul class="cpright">
+              <li><a href="#">계열사 바로가기</a><a href="#">+</a></li>
+            </ul>
+          </div>
+          <div class="copy_bot">
+            <span
+              >03181 서울특별시 종로구 통일로 134 돈의문 D-타워 (주)대림</span
+            >
+            <span>TEL : 02-3708-3491</span><span>FAX : 02-757-7447</span>
+            <span> Copyright(C) 2021 Daelim, All rights reserved. </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
+  </body>
+</html>

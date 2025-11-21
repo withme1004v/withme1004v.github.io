@@ -1,0 +1,380 @@
+@charset "utf-8";
+body {
+}
+
+* {
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+header .logo {
+  width: 180px;
+  height: 150px;
+  margin-left: 50px;
+  float: left;
+}
+
+header .right_menu {
+  display: flex;
+  width: 300px;
+  position: absolute;
+  gap: 50px;
+  margin: 50px auto;
+  right: 0;
+}
+header .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+section {
+  clear: both;
+  width: 100%;
+  position: relative;
+}
+section .title_main {
+  width: 500px;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+section .title_main h1 {
+  font-size: 80px;
+  color: #535fe8;
+  line-height: 1;
+  text-align: right;
+}
+section .title_sub {
+  width: 500px;
+  position: absolute;
+  bottom: 135px;
+  left: 370px;
+}
+section .title_sub h2 {
+  font-size: 50px;
+  color: #535fe8;
+}
+section .main_camera {
+  position: absolute;
+  left: 310px;
+  top: 230px;
+}
+section .main_camera img {
+  width: 310px;
+}
+section .main_img {
+  height: 688px;
+  margin: 0 auto;
+  text-align: right;
+  margin-right: 150px;
+}
+section .main_img img {
+  object-fit: cover;
+  height: 100%;
+}
+/* 롤링 배너 */
+.rollingbanner {
+  width: 100%;
+  height: 40px;
+  font-size: 0.875rem;
+  color: #fff;
+  letter-spacing: -0.075em;
+  margin: 80px auto;
+  border-top: 1px solid #535fe8;
+  border-bottom: 1px solid #535fe8;
+}
+.rollingbanner a {
+  color: #535fe8;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.rollingbanner > .wrap {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, #fff 0%, rgba(170, 0, 0, 0) 100%);
+}
+.wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(170, 0, 0, 0) 0%, #fff 100%);
+}
+
+/* 애니메이션하는 요소 */
+.roller {
+  position: absolute;
+  height: 100%;
+}
+.roller > ul {
+  margin: 0;
+  list-style: none;
+  padding: 9px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.roller > ul > li {
+  padding-right: 30px;
+}
+.roller > ul > li span {
+  padding-right: 3px;
+}
+.roller > ul > li .status {
+  position: relative;
+  padding-left: 20px;
+}
+.roller > ul > li .status.up::before {
+  position: absolute;
+  content: ".";
+  transform: rotateZ(-45deg);
+  width: 18px;
+  height: 18px;
+  padding: 1px;
+  left: 0;
+}
+.roller > ul > li .status.down::before {
+  position: absolute;
+  content: ".";
+  transform: rotateZ(45deg);
+  width: 18px;
+  height: 18px;
+  padding: 1px;
+  left: 0;
+}
+
+/* 애니메이션 */
+.roller.original {
+  animation: 20s linear 0s infinite normal forwards running rollingleft1;
+}
+.roller.clone {
+  animation: 20s linear 0s infinite normal none running rollingleft2;
+}
+@keyframes rollingleft1 {
+  /* 원본용 */
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.01% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rollingleft2 {
+  /* 클론용 */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+article {
+  width: 100%;
+}
+.gridBlock {
+  opacity: 0;
+}
+
+/* Grid almost fully pulled from https://www.rino-pelle.com/ */
+.grid-container {
+  width: 100vw;
+  height: 400vh;
+  position: relative;
+}
+.grid {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 70vw;
+  height: 60vw;
+  margin: 0 auto;
+  position: absolute;
+}
+/*-----------------------스와이퍼-------------------- */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 650px;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.swiper-slide video {
+  width: 100%;
+}
+#sec2 {
+  margin: 100px auto;
+}
+#sec2 .history {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+#sec2 .history_img {
+  width: 782px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#sec2 .history_img .nosy {
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  width: 100%;
+  height: 448px;
+  background: repeating-radial-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+  background-size: 3px 3px;
+  filter: url(#noise);
+}
+#sec2 .history_img img {
+  width: 100%;
+  object-fit: cover;
+  display: inline-block;
+  mix-blend-mode: hard-light;
+}
+#sec2 .history_txt {
+  width: 50%;
+}
+#sec2 .history_txt h1 {
+  font-size: 65px;
+  margin-bottom: 65px;
+}
+/* 2차 전광판 */
+#sec2 .bot {
+  width: 100%;
+  display: flex;
+}
+#sec2 .bot_left {
+  width: 50%;
+  height: 1000px;
+  transition: 1s;
+  overflow: hidden;
+  position: relative;
+}
+#sec2 .bot_left .bg_left {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  background: #2e2e2e;
+  transform: scaleY(0);
+  left: 0;
+  top: 0;
+  transform-origin: top;
+}
+#sec2 .bot_right .bg_right {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  background: #535fe8;
+  transform: scaleY(0);
+  left: 0;
+  top: 0;
+  transform-origin: bottom;
+}
+#sec2 .bot_left .bg_left.on {
+  animation: slide_down 1s forwards;
+}
+#sec2 .bot_right {
+  width: 50%;
+  height: 1000px;
+  transition: 1s;
+  overflow: hidden;
+  position: relative;
+}
+#sec2 .bg_right.on {
+  animation: slide_up 1s forwards;
+}
+@keyframes slide_up {
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes slide_down {
+  100% {
+    transform: scaleY(1);
+  }
+}
+.bot_left,
+.bot_right {
+  text-align: center;
+}
+.contents,
+.contents_right {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+.contents_right {
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.contents.on {
+  height: 1000px;
+}
+.contents_right.on {
+  height: 1000px;
+}
+.bot_left .bot_text {
+  font-size: 50px;
+  color: #fff;
+}
+.bot_right .bot_text {
+  font-size: 30px;
+  color: #fff;
+}
+footer {
+  width: 100%;
+  height: 300px;
+}

@@ -1,0 +1,302 @@
+
+www.lipsum.com(영문 문서 생성기)
+http://guny.kr/stuff/klorem/(한글문서생성기)
+
+---------------------------------------------------------------------------------------------------------------------
+
+이지퍼블리싱
+http://easyspub.co.kr/Main/PUB
+
+폰트크기비교
+www.pxtoem.com
+
+무료호스팅
+http://www.dothome.co.kr
+https://github.com/
+
+www.cubic-bezier.com css 속도 개념?
+
+https://placehold.co/ 
+
+https://960.gs/         그리드 시스템
+http://gridcalculator.dk/    그리드 계산
+
+-+-----------------------------------------------+-
+
+* 참고 사이트 *
+
+디자인참고사이트
+http://www.jungle.co.kr
+http://www.dbcut.com
+https://www.behance.net
+https://www.loud.kr
+https://www.imagetalk.co.kr
+https://mangotree.co.kr
+https://www.dynamixer.co.kr
+https://www.leejeonghun.com/
+http://www.gdweb.co.kr
+https://uxarchive.com/
+https://dribbble.com/
+
+무료이미지사이트
+https://pixabay.com/ko/
+https://www.pexels.com/ko-kr/
+https://www.freepik.com/
+https://www.crowdpic.net/
+https://unsplash.com/ko
+https://burst.shopify.com/
+https://www.shutterstock.com/
+https://www.graphicsfuel.com/
+https://picjumbo.com/
+https://freedesignresources.net/
+https://www.pinterest.co.kr/
+
+무료 목업 사이트
+https://www.ls.graphics/free-mockups
+https://www.mockupworld.co/
+https://freedesignresources.net/
+https://psdrepo.com/tag/free-psd-mockups/
+https://www.graphberry.com/
+https://www.pixeden.com/
+https://mockups-design.com/
+
+색상 조합 사이트
+color.adobe.com
+paletton.com
+colorhunt.co
+www.color-hex.com
+BrandColors.net
+moviesincolor.com
+www.design-seeds.com
+https://color.hailpixel.com
+https://www.flatuicolorpicker.com
+
+그라데이션 무료 사이트
+webgradients.com
+www.colinkeany.com/blend/
+mycolor.space
+uigradients.com
+www.eggradients.com
+cssgradient.io
+haikei.app
+
+무료패턴
+http://subtlepatterns.com
+www.patterncooler.com
+www.toptal.com/designers/subtlepattern
+https://a-g-i.org/user/davidpearson/view/projects//
+
+무료브러쉬
+https://www.deviantart.com/ (brush 검색)
+https://www.brusheezy.com/
+https://www.brushlovers.com/
+https://myphotoshopbrushes.com/
+https://fbrushes.com/
+https://www.brushking.eu/
+https://qbrushes.net/
+https://freedesignfile.com -->Freedesignile은 무료 벡터를 제공하는데 전념하고 있다. 
+포토샵 섹션에는 포토샵 브러시가 있고 2000개 이상의 무료 브러시를 다운로드할 수 있다.
+
+이미지 용량 최적화
+tinypng.com
+
+자동으로 누끼 따기
+www.remove.bg/ko
+
+아이콘문자
+fontawesome.com
+
+무료폰트
+https://fonts.google.com/
+https://sangsangfont.com/
+https://github.com/zesstype/Black-Han-Sans
+http://www.swagger.kr/font.html
+https://www.fontfabric.com/free-fonts/
+https://noonnu.cc/
+https://www.dafont.com/
+http://www.jeongseonfont.com/
+http://tvn10festival.tving.com/playground/tvn10font
+https://www.woowahan.com/#/fonts
+
+무료 웹 템플릿 사이트
+https://startbootstrap.com/
+https://bootstrapthemes.co/items/free-bootstrap-templates/
+https://www.webjangi.com/
+https://html5up.net/
+https://www.creative-tim.com/templates-->free검색
+https://webflow.com/templates/free-website-templates
+
+사진을 그림으로 바꿔주는 사이트
+https://huggingface.co/spaces/akhaliq/ArcaneGAN
+https://huggingface.co/spaces/akhaliq/AnimeGANv2
+
+webp변환
+https://ezgif.com/webp-maker
+svg 변환
+https://yoksel.github.io/url-encoder/
+움짤애니사이트
+https://lottiefiles.com/
+자바스크립트 동작 플러그인
+https://swiperjs.com/get-started
+
+에뛰드하우스(많은것은 없지만 구성 좋음)_https://www.etude.com/int/en/index.php
+https://www.chaingpt.org/(ux/ui 경험)
+새만금 메타버스 체험관(둥실둥실 정적 메인)_https://smgmetaverse.or.kr/#hero
+네이버클라우드(기업체)_https://www.ncloud.com/
+효성그룹(기업체)_https://www.hyosung.com/kr
+메를로랩(기업체)_https://merlotlab.com/
+설해원(리조트)_https://www.seolhaeone.com/universe/home.do
+허드슨ai(움직이는거 참고용)_https://www.hudson-ai.com/
+뻔치(재밌는ui다수)_https://mfunch.com/index.html
+아너스빌(도표)_https://okdong-honorsville.co.kr/
+네이버나눔스퀘어(재미b)_https://www.dbcut.com/bbs/link.php?bo_table=websites&wr_id=23492&no=1
+엘바디자인그룹(블랜딩효과)_https://www.helloelva.com/
+nhn(제품군 넘어갈때 효과)_https://www.nhn.com/
+https://bavet.eu/
+
+영어학원_https://www.ybmengloo.co.kr/
+휴비스_https://huvis.com/kor/
+
+#--------------------------찐소니 프로젝트 참고---------------------------------#
+
+https://paseco.com/en/index.php 메인이미지
+https://www.gselevators.co.kr/kr/index 메뉴상단바
+https://www.ktcloud.com/?lan=kor 3가지 메뉴 디자인
+https://mainlineit.com/kr/main 메뉴바
+http://arthur.co.kr/#section01 중간 4가지 분류가 되어있는 메뉴
+https://www.greatment.co.kr/ko/main 메인화면 아이콘 배치 및 구성
+http://www.kd.co.kr/kr/index.php 제품 착용자들 세로로 내려가는 구성
+https://www.dot-mill.com/ 화면이 반으로 나뉘어 위아래로 내려가는 구성
+https://motionarray.com/browse/stock-motion-graphics/?q=arrow&sort_by=most-popular&page=3
+모션어로우
+
+
+
+
+랜딩페이지
+https://www.bauer-lab.com/ 메인색
+https://barooq.com/포폴나열
+https://itddaa.com/약간의감성
+https://appknot.com/ 포폴나열
+https://www.bpco.kr/(큰그림컴퍼니) 좌우로 전환되는 페이지
+https://tapkorea.kr/(탭코리아) 인터렉션효과
+https://www.ethan-alice.com:442/(포폴나열효과 및 메뉴)
+https://glassdomeinc.com/(와일드함, 외국느낌 메인 시원시원이미지)
+https://www.tmck.co.kr/마케팅(재밌는동작)
+https://preview.themeforest.net/item/rare-radio-online-music-wordpress-theme/full_screen_preview/24461451?clickid=SDJxNWVhjxyPRCtSiAVkOVAVUkH3UVy5cVP71I0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=369282&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius
+(메인 움직이는 )
+
+클론할만한
+https://www.aekyung.co.kr/(애경산업)
+https://www.daelim.co.kr(대림)
+https://glassdomeinc.com/(글래스돔)
+https://insure.kfcc.co.kr/#/(새마을금고)
+https://www.hansollogistics.com/(한솔로지틱스)
+https://www.gwgs.go.kr/tour/index.do(강원고성문화관광)
+https://gggs.kaist.ac.kr/(녹색성장지속가능대학원)
+
+
+https://www.therawmaterials.com/contact(힙스터감성)
+https://www.smpmc.co.kr/메인 (하지만난잡_)
+호텔사이트
+https://www.astycabin.co.kr/
+
+기출문제
+건시스템
+comcbtmmmm
+
+
+https://forms.gle/RJzYDXAMSJMkMY9f7
+
+23/11/23
+가이드라인
+
+23/11/26
+오버프린트 프리뷰(전체대지) ctrl + alt + shft + y
+라인모드 ctrl + alt + y
+
+23/11/29
+텍스트 변형 MAKE WITH WARP
+텍스트 변형 MAKE WITH MASH
+브러쉬 패턴 아트 필기체
+
+지우개는 라인생기고 가위는 안생긴다 
+나이프는 밖에서부터
+
+텍스트 모양이랑 같이가기
+
+블렌드툴 무궁무진
+(3d마냥 활용가능)
+
+effect convert - expend apperance - 모양바꾸고 윤곽선 변경
+
+23.12.01 포토샵
+이미지 연결
+스크립트 로드파일 인투 스택 -> 에디트 얼라인 레이어(연결), 에디트 블렌드 레이어(합성)
+
+23/12/05
+ctrl + alt + shift e : 레이어 병합 복사
+레거시 브러쉬 패턴 쉐입 : 컨트롤 알트 클릭시 모두 펼쳐짐
+변형중 ctrl + alt + shift perspective
+path를 가진 벡터방식은 비트맵 방식으로 레스터화 시켜야한다.
+
+23/12/06
+포토샵 레이어 마스크시 연결고리 해제시 안쪽형태 따로 이동가능
+사진 불러올시 레이어에서 드래그하면서 + shift는 중심으로 이동
+클리핑 마스크시 레이어 사이 alt로 클릭
+에디트에 스카이 리플레이스먼트 - 이미지에서 사진을 자동으로 인식하여 바꿔준다
+이미지 어저스트먼트상태에서 alt 누를시 캔슬버튼 리셋으로 된다
+fatkun 크롬 확장 프로그램(이미지다운) or shit + win + s 임시 스샷
+
+23/12/08
+포토샵 레이어 스타일 이너쉐도우 아웃터 쉐도우 
+use global 라이트 사용시 동시에됨
+해제시에는 따로
+
+23/12/11
+필터들
+퍼즐효과 - 이미지 사이즈와 여백확인 후 사각형 패턴 만들고 조정
+필터갤러리시 스마트 오브젝트 적용하면 필터 세부조절가능
+카메라로우 - 색 세부조절 가능
+렌즈커렉션 - 왜곡된 사진에 대한 편집가능
+리큐파이 - 인물사진 편집가능
+
+23/12/12
+파일 -> 스크립트 -> 로드파일인투스택 할시 한창에 불러와진다.
+애니메이션은 gif로 저장
+svae a copy 기능 사용시 다양한 확장자로 빠르게 저장가능
+
+23/12/13
+vss 도움말 팝업 제거 관리 -> 설정 -> hover -> editor > Hover: Enabled 체크해제
+아래줄복사 -    바로가기키에서ctrl + d로 설정
+태그로감싸기 - 바로가기키에서 alt + w "
+https://validator.w3.org/ 코딩문법
+
+23/12/15
+피그마 플러그인 
+easometric - 아이소 느낌 투시
+mockrocket - 목업
+clay mockup 3d - "
+user profile - 랜덤사람사진
+Lorem ipsum universal - 텍스트 랜덤
+pixels - 픽셀화
+pixels, unsplash, pixabey - 사진 무료(texture 검색후 재질합치기 가능)
+iconyify - 아이콘
+blush,ilustlation - 무료 일러스트
+
+피그마 위젯
+emoji-이모티콘
+
+231228
+vscode 플러그인
+indent-rainbow - 들여쓰기 색 구분
+auto rename tag - 바꾸는 태그 자동수정
+
+html css js 모형
+https://getbootstrap.com/
+https://michalsnik.github.io/aos/
+
+jquery 모형
+https://owlcarousel2.github.io/OwlCarousel2/
+https://bxslider.com/
+https://kenwheeler.github.io/slick/

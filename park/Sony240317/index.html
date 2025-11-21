@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소니코리아</title>
+    <link rel="shortcut icon" href="images/Favicon_144x144.webp" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="aos-master/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Demo styles -->
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script src="aos-master/aos.js"></script>
+
+    <script>
+      $(function () {
+        AOS.init();
+      });
+      // 롤링배너메인
+      window.addEventListener("DOMContentLoaded", function () {
+        let roller = document.querySelector(".roller");
+        roller.id = "roller1";
+        let clone = roller.cloneNode(true);
+        clone.id = "roller2";
+        document.querySelector(".wrap").appendChild(clone);
+
+        document.querySelector("#roller1").style.left = "0px";
+        document.querySelector("#roller2").style.left =
+          document.querySelector(".roller ul").offsetWidth + "px";
+
+        roller.classList.add("original");
+        clone.classList.add("clone");
+      });
+      // 롤링배너화이트
+      window.addEventListener("DOMContentLoaded", function () {
+        let rollerwh = document.querySelector(".rollingbanner_white .roller");
+        rollerwh.id = "roller3";
+        let clone = rollerwh.cloneNode(true);
+        clone.id = "roller4";
+        document.querySelector(".rollingbanner_white .wrap").appendChild(clone);
+
+        document.querySelector("#roller3").style.left = "0px";
+        document.querySelector("#roller4").style.left =
+          document.querySelector(".rollingbanner_white .roller ul")
+            .offsetWidth + "px";
+
+        rollerwh.classList.add("original");
+        clone.classList.add("clone");
+
+        //마우스커서
+        $(document).mousemove(function (e) {
+          var mouseX = e.clientX;
+          var mouseY = e.clientY;
+          $("#cursor").css({
+            left: mouseX + "px",
+            top: mouseY + "px",
+          });
+          console.log(mouseX);
+          console.log(mouseY);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="first"><img src="images/ILCE_7CM2_Desktop.webp" alt="" /></div>
+    <header>
+      <div class="top_menu">
+        <div class="logo">
+          <img src="images/sony_logo.png" alt="logo" />
+        </div>
+        <ul class="right_menu">
+          <li><a href="#">Login</a></li>
+          <li><img src="images/youtube.png" alt="youtube" /></li>
+          <li><img src="images/insta.png" alt="insta" /></li>
+          <li><img src="images/twit.png" alt="twit" /></li>
+        </ul>
+      </div>
+    </header>
+    <div id="cursor">
+      <div class="pointer_circle"></div>
+      <div class="pointer_click">
+        <img src="images/cursor_clik.png" alt="" />
+      </div>
+      <div class="pointer_drag">
+        <img src="images/cursor_drag.png" alt="" />
+      </div>
+    </div>
+    <section>
+      <div class="main">
+        <div class="title_main" data-aos="fade-right" data-aos-delay="2300">
+          <h1>SONY BE .MOVED</h1>
+        </div>
+        <div
+          class="main_camera"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          data-aos-delay="2200"
+        >
+          <img src="images/main_camera.png" alt="camera" />
+        </div>
+        <div class="title_sub" data-aos="fade-up" data-aos-delay="2100">
+          <h2>WH-CH720N</h2>
+          <p>모든 위대함은 아주 작은 <strong>것들로부터</strong></p>
+          <!-- α7C II / -->
+        </div>
+        <div class="main_img">
+          <img src="images/main.png" alt="" />
+          <!-- <img src="images/ILCE_7CM2_Desktop.webp" alt="" /> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="rollingbanner">
+          <div class="wrap">
+            <div class="roller">
+              <ul>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">Digital Dream Kids</strong>
+                    <span class="status down">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>1995</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">Do you dream in Sony? </strong>
+                    <span class="status down">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>1998</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">like.no.other</strong>
+                    <span class="status down">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>2005</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">make.believe</strong>
+                    <span class="status up">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>2009</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">BE MOVED</strong>
+                    <span class="status up">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>2013</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">Digital Dream Kids</strong>
+                    <span class="status down">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>1995</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">Do you dream in Sony? </strong>
+                    <span class="status down">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>1998</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">like.no.other</strong>
+                    <span class="status down">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>2005</em></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="slogun">
+                  <a href="#">
+                    <strong class="name">make.believe</strong>
+                    <span class="status up">
+                      <span class="since">SINCE</span>
+                      <span class="rate"><em>2009</em></span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 그리드 시작 -->
+    <article>
+      <div class="grid-container">
+        <div class="grid">
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer centerPiece">
+            <div class="gridBlock centerBlock">
+              <h1>All greatness comes from small things <br /></h1>
+              <video autoplay muted loop>
+                <source src="images/sony_camera_video.mp3" />
+              </video>
+              <div class="textgrid">
+                At Sony Group, roughly 110,000 Group employees work in concerted
+                effort to create new value with the shared Purpose to "fill the
+                world with emotion, through the sony
+              </div>
+            </div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+          <div class="gridLayer">
+            <div class="gridBlock"></div>
+          </div>
+        </div>
+        <!-- 그리드롤링 -->
+        <div class="container container_white">
+          <div class="rollingbanner rollingbanner_white">
+            <div class="wrap">
+              <div class="roller">
+                <ul>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">Digital Dream Kids</strong>
+                      <span class="status down">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>1995</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">Do you dream in Sony? </strong>
+                      <span class="status down">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>1998</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">like.no.other</strong>
+                      <span class="status down">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>2005</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">make.believe</strong>
+                      <span class="status up">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>2009</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">BE MOVED</strong>
+                      <span class="status up">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>2013</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">Digital Dream Kids</strong>
+                      <span class="status down">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>1995</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">Do you dream in Sony? </strong>
+                      <span class="status down">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>1998</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">like.no.other</strong>
+                      <span class="status down">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>2005</em></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="slogun">
+                    <a href="#">
+                      <strong class="name">make.believe</strong>
+                      <span class="status up">
+                        <span class="since">SINCE</span>
+                        <span class="rate"><em>2009</em></span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 스와이퍼 -->
+    <div id="sec3" style="cursor: none">
+      <div class="slide_title slide_title1">
+        <em class="text_shadow">
+          <span class="array">BE MOVED</span>
+        </em>
+        <em class="text_shadow">
+          <p>당신의 일상을 특별하게 해줄 소니 제품을 만나보세요</p>
+        </em>
+      </div>
+      <div class="swiper_bg">
+        <div class="bg_ob">
+          <div class="ob_2"><img src="images/s4_obj_right.png" alt="ob" /></div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper slide">
+            <div class="swiper-slide">
+              <div class="swiper_inner">
+                <div class="img_box"><img src="images/banner.jpg" /></div>
+                <div class="text_box">
+                  <em class="text_shadow">
+                    <span>헤드폰</span>
+                  </em>
+                  <em class="text_shadow"
+                    ><span>압도적 공간감의 오픈형 레퍼런스 헤드폰</span></em
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_inner">
+                <div class="img_box">
+                  <img src="images/camcorder_banner.jpg" />
+                </div>
+                <div class="text_box">
+                  <em class="text_shadow">
+                    <span>카메라</span>
+                  </em>
+                  <em class="text_shadow"
+                    ><span>자유로운 나를 담는, 브이르그 카메라</span></em
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_inner">
+                <div class="img_box">
+                  <img src="images/earphone_banner.png" />
+                </div>
+                <div class="text_box">
+                  <em class="text_shadow">
+                    <span>이어폰</span>
+                  </em>
+                  <em class="text_shadow"
+                    ><span>노이즈 캔슬링 이어폰의 시작</span></em
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div id="sec4">
+      <div class="sec4_title" data-aos="fade-up" data-aos-duration="1000">
+        SONY'S HISTORY
+      </div>
+      <div class="history">
+        <div
+          class="history_txt"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <span
+            >50년대 소니는 해외 진출에 대한 희망으로 가득찼습니다. 확실히 “SONY
+            BOY (귀여운 젊은이)”였습니다. 그러나 당시 <br />
+            “Made in Japan”은 유감스럽게도 조잡한 품질의 대명사 였습니다.
+            일본에서도 의욕적이고 우수한 인재가 있었습니다만 아직 지식의 축적과
+            자본력은 빈약했습니다. 더욱이 상품을 만들어도 국내에서는 구매력이
+            없는 시대였기에 구미시장에 찾아야만 했습니다. 그러한 사정이
+            있었다고는 해도 회사의 이름을 일본식 표기에서 서구식 표기로 바꾼다는
+            것은 그러한 예도 없었으며 대단히 용기가 필요한 일이었습니다. 한편,
+            세계를 무대로 판매하기 위해서는 회사명을 어느 나라 사람이든 기억하기
+            쉽고 정확하게 부를 수 있게 하고 싶었습니다. 그리고 신뢰라는 이름으로
+            기억되고 싶었습니다. 이러한 발상으로 SONY라는 4문자는 태어났습니다.
+            그러한 이름을 가진다는 것은 자신이 만든 상품에 대해 책임의 소재를
+            확실히 한다는 것이기도 합니다. 여행은 이제 막 시작된 것
+            뿐이었습니다.</span
+          >
+        </div>
+        <div
+          class="history_img"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+        >
+          <div class="nosy"></div>
+          <svg>
+            <filter id="noise">
+              <feTurbulence id="turbulence">
+                <animate
+                  attributeName="baseFrequency"
+                  dur="1s"
+                  values="0.9 0.9;0.8 0.8;0.9 0.9;"
+                  repeatCount="indefinite"
+                ></animate>
+              </feTurbulence>
+              <feDisplacementMap
+                in="SourceGraphic"
+                scale="3"
+              ></feDisplacementMap>
+            </filter>
+          </svg>
+          <img src="images/history_img.png" alt="" />
+        </div>
+        <div
+          class="history_page"
+          class="history_img"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+        >
+          <a href="#">자세히 보기</a>
+        </div>
+      </div>
+      <div class="store">
+        <div class="store_banner">
+          <img src="images/store_banner.webp" alt="" />
+        </div>
+        <div class="store_title">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Search Store
+          </h1>
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
+            >가까운 소니 매장을 검색해보세요</span
+          >
+        </div>
+        <div class="search_window">
+          <em><span>매장 검색 바로가기</span></em>
+        </div>
+        <div class="search_circle">
+          <img src="images/search_white.png" alt="search_white" />
+        </div>
+        <div class="store_bot_area store_bot_area1">
+          <div class="area">
+            <div class="area_img">
+              <img src="images/overview-05-d-2.webp" alt="" />
+            </div>
+            <div class="area_img">
+              <img src="images/overview-04-d-2.webp" alt="" />
+            </div>
+            <div class="area_img">
+              <img src="images/overview-03-d.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="store_bot_area store_bot_area2">
+          <div class="area area2">
+            <div class="area_img">
+              <img src="images/feature1-3-d-1.webp" alt="" />
+            </div>
+            <div class="area_img">
+              <img src="images/feature1-4_d-1.webp" alt="" />
+            </div>
+            <div class="area_img">
+              <img src="images/feature5-02-d-1.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sec5">
+      <div class="bot">
+        <div class="bot_left">
+          <div class="bg_left"></div>
+          <div class="contents_leftwrap">
+            <ul class="contents">
+              <li>
+                <div class="bot_img">
+                  <img src="images/bot_img/camera1.png" alt="" />
+                </div>
+                <div class="bot_text">
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially
+                </div>
+              </li>
+              <li>
+                <div class="bot_img">
+                  <img src="images/camera2.png" alt="" />
+                </div>
+                <div class="bot_text">
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged.
+                </div>
+              </li>
+              <li>
+                <div class="bot_img">
+                  <img src="images/camera3.png" alt="" />
+                </div>
+                <div class="bot_text">
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting,
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bot_right">
+          <div class="bg_right"></div>
+          <div class="contents_rightwrap">
+            <ul class="contents_right">
+              <li>
+                <div class="bot_img">
+                  <img src="images/bot_img/headphone1.png" alt="" />
+                </div>
+                <div class="bot_text">
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letra
+                </div>
+              </li>
+              <li>
+                <div class="bot_img">
+                  <img src="images/bot_img/headphone2.png" alt="" />
+                </div>
+                <div class="bot_text">
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letra
+                </div>
+              </li>
+              <li>
+                <div class="bot_img">
+                  <img src="images/bot_img/headphone3.png" alt="" />
+                </div>
+                <div class="bot_text">
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letra
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_inner">
+        <ul class="footer_top">
+          <li>
+            <a href="#">매장찾기</a>
+            <ul>
+              <li><a href="#">직영점 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">고객지원</a>
+            <ul>
+              <li><a href="#">소니코리아 고객지원</a></li>
+              <li><a href="#">소니스토어 고객지원</a></li>
+              <li><a href="#">프로페셔널 제품 지원 및 서비스</a></li>
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">제품정보</a>
+            <ul>
+              <li><a href="#">소비자 가전</a></li>
+              <li><a href="#">프로페셔널 제품 및 솔루션</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">뉴스 및 정보</a>
+            <ul>
+              <li><a href="#">뉴스/보도자료</a></li>
+              <li><a href="#">Inverstor Relations</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="copy">
+          <span>
+            이용약관 개인정보취급방침 이메일주소무단수집거부 SSL보안인증 <br />
+            COPYRIGHT © 2024 SONY KOREA CORPORATION. ALL RIGHTS RESERVED. <br />
+          </span>
+          <span>
+            사업장주소 :서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+            <br />
+            사업자등록번호 :106-81-23810<br />
+            통신판매번호 2012-서울영등포-1038 소니코리아 (주)<br />
+            대표이사 : Okura Kikuo | 개인정보관리책임자 : Okura Kikuo<br />
+            본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 상업적 목적의
+            무단전재, 복사, 배포 등을 금합니다.<br />
+            TEL : 소니코리아 고객지원센터 1588-0911 E-MAIL :
+            cshelp@sony.co.kr</span
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="gsap/gsap.min.js"></script>
+    <script src="gsap/ScrollTrigger.min.js"></script>
+    <script src="swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 800,
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        // touchRatio: 0,
+        // autoplay: {
+        //   delay: 2000,
+        //   pauseOnMouseEnter: true,
+        // },
+        pagination: {
+          el: ".swiper-pagination",
+          // type: "progressbar",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          // hide: true,
+        },
+        on: {
+          slideChange: function () {
+            $(".slide_title span").toggleClass("on");
+            $(".slide_title p").toggleClass("on");
+            var array = [
+              "IT'S A SONY .",
+              "BE MOVED",
+              // "Digital Dream Kids",
+              // "Do you dream in Sony?",
+              "like.no.other",
+              "Sony United",
+              "make.believe",
+            ];
+            let i = this.realIndex;
+            console.log(i);
+            $(".array").text(array[i]);
+          },
+        },
+      });
+      $(".swiper-slide").click(function () {
+        swiper.slideNext();
+      });
+
+      gsap.to("#cursor .pointer_circle", {
+        rotate: 360,
+        repeat: -1,
+        duration: 10,
+        ease: "none",
+      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".grid-container",
+            start: "top top",
+            end: () => innerHeight * 4,
+            scrub: 3,
+            pin: ".grid",
+            anticipatePin: 1,
+            // markers: true,
+          },
+        })
+        .to("video", { width: "100%" })
+        .from(".gridLayer", {
+          width: "100vw",
+          ease: "none",
+          transformOrigin: "50% 50%",
+          duration: 2,
+        })
+        .from(
+          ".gridBlock:not(.centerBlock)",
+          {
+            autoAlpha: 0,
+            duration: 2,
+            stagger: { amount: 5, from: "random" },
+          },
+          "on"
+        )
+        .from(".gridLayer:nth-child(4) h1", { autoAlpha: 0 }, "on");
+      let sec3 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#sec3",
+          start: "top top",
+          pin: "#sec3",
+          scrub: true,
+        },
+      });
+      $("#sec3").hover(
+        function () {
+          $("#cursor").css({ opacity: 1 });
+        },
+        function () {
+          $("#cursor").css({ opacity: 0 });
+        }
+      );
+      $(".img_box").hover(
+        function () {
+          $("#cursor .pointer_drag").css({ opacity: 0 });
+          $("#cursor .pointer_click").css({ opacity: 1 });
+        },
+        function () {
+          $("#cursor .pointer_drag").css({ opacity: 1 });
+          $("#cursor .pointer_click").css({ opacity: 0 });
+        }
+      );
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".store",
+            start: "top top",
+            end: "+=2000",
+            pin: ".store",
+            // markers: true,
+            scrub: 3,
+            duration: 3,
+          },
+        })
+        .from(".search_window", { width: 0, duration: 2 }, "search")
+        .from(".search_circle", { left: "50%", duration: 2 }, "search")
+        .to(".search_window span", { autoAlpha: 1 })
+        .to(".store_bot_area2", { autoAlpha: 0, duration: 2 });
+
+      const tl = gsap.timeline();
+      tl.to(".bg_left", { scale: 2, delay: 0.2 }, "botbg")
+        .to(".bg_right", { scale: 2, delay: 0.2 }, "botbg")
+        .to(".contents_leftwrap", { autoAlpha: 1 }, "contents")
+        .to(".contents_rightwrap", { autoAlpha: 1 }, "contents");
+
+      ScrollTrigger.create({
+        animation: tl,
+        trigger: ".bot",
+        pin: true,
+        // markers: true,
+        strat: "top 0%",
+        scrub: 3,
+      });
+      let contents = document.querySelector(".contents");
+
+      let conclone = contents.cloneNode(true);
+
+      document.querySelector(".contents_leftwrap").appendChild(conclone); //부착
+      contents.classList.add("contents_original");
+      conclone.classList.add("contents_clone");
+
+      let contents2 = document.querySelector(".contents_right");
+
+      let conclone2 = contents2.cloneNode(true);
+      document.querySelector(".contents_rightwrap").appendChild(conclone2); //부착
+      contents2.classList.add("contents2_original");
+      conclone2.classList.add("contents2_clone");
+    </script>
+  </body>
+</html>
