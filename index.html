@@ -2,804 +2,226 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="css/swiper-bundle.css" /> -->
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>H.JULIA Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Noto Sans", sans-serif;
+      }
+      .wrap {
+        width: 95%;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .wrap h1 {
+        font-size: 3vw;
+        padding: 5vw 0;
+        color: #052449;
+        text-align: center;
+      }
+      .wrap .inner {
+        display: flex;
+        justify-content: center;
+      }
+      .wrap ul li {
+        padding: 50px 0;
+      }
+      .wrap ul li a {
+        font-size: 2vw;
+        color: #052449;
+        position: relative;
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        z-index: 999;
+      }
+      .wrap ul li .thumb {
+        width: 600px;
+        height: 330px;
+        position: relative;
+        flex-shrink: 0;
+      }
+      .wrap ul li .thumb .thumbImg {
+        width: 80%;
+        height: 100%;
+        border-radius: 5px;
+        position: absolute;
+        left: 10%;
+        top: 10px;
+        overflow: hidden;
+        text-align: center;
+      }
+      .wrap ul li .thumb .thumbImg img {
+        transition: 2s;
+      }
+      .wrap ul li .thumb img {
+        width: 100%;
+      }
+      @media screen and (max-width: 900px) {
+        .wrap h1 {
+          font-size: 5vw;
+        }
+        .wrap ul li a {
+          font-size: 30px;
+        }
+        .wrap ul li a {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .wrap ul li .thumb {
+          width: 450px;
+          height: 240px;
+        }
+        .wrap ul li .thumb .thumbImg {
+          width: 80%;
+          height: 100%;
+          top: 5px;
+          border-radius: 5px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="wrap">
-      <header>
-        <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt="logo" /></a>
-        </div>
-        <div class="util">
-          <nav>
-            <ul>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">SKILLS</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li>
-                <a href="#">CONTANCT <span>ME</span></a>
-              </li>
-            </ul>
-          </nav>
-          <div class="sns">
-            <p><a href="#">IN</a></p>
-          </div>
-        </div>
-      </header>
-      <div class="visual">
-        <div class="slogan">
-          <p class="serif" data-aos="fade-up">WELCOME TO</p>
-          <p class="s_serif" data-aos="fade-up" data-aos-delay="200">
-            MY PORTFOLIO
-          </p>
-          <p class="serif" data-aos="fade-up" data-aos-delay="400">
-            A DESIGNER & PUBLISHER'S
-          </p>
-          <p class="s_serif" data-aos="fade-up" data-aos-delay="600">
-            NEWSPAPER!
-          </p>
-        </div>
+    <div class="wrap">
+      <h1>Student Portfolio(훈련생 웹 작품 모음)</h1>
+      <div class="inner">
+        <ul>
+          <li>
+            <a href="JeongHyeji/index.html" target="_new"
+              ><span># 01 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="JeongHyeji/01.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="Minrami/index.html" target="_new"
+              ><span># 02 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="Minrami/02.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="hwangjoowon/index.html" target="_new"
+              ><span># 03 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="hwangjoowon/03.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="leesohyun/index.html" target="_new"
+              ><span># 04 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="leesohyun/04.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="leejinah/index.html" target="_new"
+              ><span># 05 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="leejinah/05.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="westseaon/index.html" target="_new"
+              ><span># 06 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="westseaon/06.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="ohseungseok/index.html" target="_new"
+              ><span># 07 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="ohseungseok/07.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="kimjooeun/index.html" target="_new"
+              ><span># 08 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="kimjooeun/08.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="kimyeeun/index.html" target="_new"
+              ><span># 09 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="kimyeeun/09.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="park/index.html" target="_new"
+              ><span># 10 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="park/10.png" alt="" />
+                </p></div
+            ></a>
+          </li>
+        </ul>
       </div>
-      <section>
-        <div class="services">
-          <h5 data-aos="fade-up" data-aos-delay="100">SERVICES</h5>
-          <div class="contents">
-            <ul class="con1">
-              <li data-aos="fade-up" data-aos-delay="200">
-                <div class="text">
-                  <img src="images/services01.svg" alt="services01" />
-                  <div class="desc">
-                    <h4>Web Design</h4>
-                    <p>
-                      항상 사용자 편의성을 고려한 UX & UI를 연구하며 디자인하고
-                      웹접근성을 준수하는 웹 디자이너입니다.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="200">
-                <div class="text">
-                  <img src="images/services02.svg" alt="services02" />
-                  <div class="desc">
-                    <h4>Web Publishing</h4>
-                    <p>
-                      사용자의 흥미를 유발하고 사용하기 쉬운 UI와 기억에 남는
-                      UX를 코딩하고 싶은 웹 퍼블리셔입니다.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="con2">
-              <li data-aos="fade-up" data-aos-delay="300">
-                <div class="text">
-                  <img src="images/services03.svg" alt="services03" />
-                  <div class="desc">
-                    <h4>Graphic Design</h4>
-                    <p>
-                      편집, 광고 등 다양한 분야에서도 활약할 수 있는 다재다능한
-                      그래픽 디자이너입니다.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="400">
-                <div class="text">
-                  <img src="images/services04.svg" alt="services04" />
-                  <div class="desc">
-                    <h4>Communication Design</h4>
-                    <p>
-                      저는 고객·동료와 신뢰를 바탕으로 항상 소통을 하며 저의
-                      스타일과 조화를 이룰 수 있는 디자이너입니다.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="skills">
-          <h5 data-aos="fade-up" data-aos-delay="100">SKILLS</h5>
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="200">
-              <img src="images/skills01.svg" alt="skills01" />
-            </li>
-            <li data-aos="fade-up" data-aos-delay="300">
-              <img src="images/skills02.svg" alt="skills02" />
-            </li>
-            <li data-aos="fade-up" data-aos-delay="400">
-              <img src="images/skills03.svg" alt="skills03" />
-            </li>
-            <li data-aos="fade-up" data-aos-delay="500">
-              <img src="images/skills04.svg" alt="skills04" />
-            </li>
-            <li data-aos="fade-up" data-aos-delay="600">
-              <img src="images/skills05.svg" alt="skills05" />
-            </li>
-            <li data-aos="fade-up" data-aos-delay="700">
-              <img src="images/skills06.svg" alt="skills06" />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="portfolio">
-          <div class="text" data-aos="fade-up" data-aos-delay="100">
-            <h5>PORTFOLIO</h5>
-            <!--  <p>
-              설명글입니다. 설명글입니다. 설명글입니다. 설명글입니다.
-              설명글입니다. 설명글입니다. 설명글입니다. 설명글입니다.
-              설명글입니다. 설명글입니다. 설명글입니다. 설명글입니다.
-            </p> -->
-          </div>
-          <div class="contents">
-            <ul class="con">
-              <li data-aos="fade-up" data-aos-delay="200">
-                <a href="shinsegae/index.html" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio01.jpg" alt="portfolio01" />
-                  </p>
-                  <div class="desc">
-                    <h5>Shinsegae</h5>
-                    <p>WEB PUBLISHING</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="250">
-                <a href="mayfield/index.html" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio02.png" alt="portfolio02" />
-                  </p>
-                  <div class="desc">
-                    <h5>Mayfield Hotel Seoul</h5>
-                    <p>WEB PUBLISHING</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="300">
-                <a href="louvre/index.html" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio03.jpg" alt="portfolio03" />
-                  </p>
-                  <div class="desc">
-                    <h5>Louvre</h5>
-                    <p>WEB PUBLISHING</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="350">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio04.png" alt="portfolio04" />
-                  </p>
-                  <div class="desc">
-                    <h5>LX <span class="kor">한국국토정보공사</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="400">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio05.png" alt="portfolio05" />
-                  </p>
-                  <div class="desc">
-                    <h5>Helios</h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="450">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio06.png" alt="portfolio06" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">제주4·3평화재단</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="500">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio07.png" alt="portfolio07" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">한국법제연구원</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="550">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio08.png" alt="portfolio08" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">보령시 만세보령</span></h5>
-                    <p>APP DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="600">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio09.png" alt="portfolio09" />
-                  </p>
-                  <div class="desc">
-                    <h5>KAERI <span class="kor">첨단방사선연구소</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="650">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio10.png" alt="portfolio10" />
-                  </p>
-                  <div class="desc">
-                    <h5>KARI <span class="kor">한국항공우주연구원</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="700">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio11.png" alt="portfolio11" />
-                  </p>
-                  <div class="desc">
-                    <h5>KIPF <span class="kor">공공기관연구센터</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="750">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio12.png" alt="portfolio12" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">방위사업청 영문</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="800">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio13.jpg" alt="portfolio13" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">인천발전연구원 영문</span></h5>
-                    <p>WEB DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="850">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio14.png" alt="portfolio14" />
-                  </p>
-                  <div class="desc">
-                    <h5>K-STARTUP <span class="kor">창업지원포털</span></h5>
-                    <p>CARD NEWS DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="900">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio15.png" alt="portfolio15" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">한국법제연구원</span></h5>
-                    <p>CARD NEWS DESIGN</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="950">
-                <a href="#" target="_blank">
-                  <p class="pic">
-                    <img src="images/portfolio16.png" alt="portfolio16" />
-                  </p>
-                  <div class="desc">
-                    <h5><span class="kor">한국여성정책연구원</span></h5>
-                    <p>CARD NEWS DESIGN</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="popup00">
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5>LX <span class="kor">한국국토정보공사</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <a href="https://www.lx.or.kr/kor.do" target="_blank"
-                ><img src="images/popup01.jpg" alt="popup01"
-              /></a>
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 LX 한국국토정보공사는 '측량 기준점'을
-                모티브로 도형화하여 공간정보·지적제도의 무한한 가치 창출을
-                주도하고 국민행복을 추구하는 최고의 국토정보 전문기관인 LX를
-                표현하였습니다. 감사하게도 이 홈페이지가 굿 디자인
-                웹(gdweb)사이트에 업로드 되었습니다. 또한 반응형으로 제작된
-                홈페이지입니다.
-              </p>
-              <p class="blue">
-                PC 버전으로 자세히 보고 싶으시다면
-                <span>
-                  <a href="https://www.lx.or.kr/kor.do" target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5>HELIOS</h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup02.jpg" alt="popup02" />
-            </p>
-            <div class="desc">
-              <p>
-                Helios는 메이아이에서 그 당시에 구축 예정인 홈페이지여서 저의
-                제안 디자인으로 진행할 예정이였습니다. 브랜드 홍보를 위한
-                비주얼과 다양한 인프라, Helios의 '연결'을 표현한 로고 이미지를
-                디자인 모티브로 사용하였습니다. 또한 반응형으로 제작될
-                홈페이지입니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">제주4·3평화재단</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <a href="https://jeju43peace.or.kr/" target="_blank"
-                ><img src="images/popup03.jpg" alt="popup03"
-              /></a>
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 제주4·3평화재단은 역사적 의미를 공감할 수
-                있는 감성적 슬로건과 사진을 통해 재단사업 등 정보제공을 강조한
-                디자인입니다. 감사하게도 이 홈페이지가 굿 디자인
-                웹(gdweb)사이트에 업로드 되었습니다. 또한 반응형으로 제작된
-                홈페이지입니다.
-              </p>
-              <p class="blue">
-                대표홈페이지를 PC 버전으로 자세히 보고 싶으시다면
-                <span>
-                  <a href="https://jeju43peace.or.kr/" target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-              <br />
-              <p class="blue">
-                사이버체험관(VR투어) 홈페이지를 PC 버전으로 자세히 보고
-                싶으시다면
-                <span>
-                  <a
-                    href="https://jeju43peace.or.kr/cyber/index.html"
-                    target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">한국법제연구원</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <a href="https://www.klri.re.kr/" target="_blank"
-                ><img src="images/popup04.jpg" alt="popup04"
-              /></a>
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 한국법제연구원은 콘텐츠 그룹핑으로 심플한
-                레이아웃으로 구성하였고, 로고 컬러 활용으로 identity를
-                강조하였습니다. 감사하게도 이 홈페이지가 굿 디자인
-                웹(gdweb)사이트에 업로드 되었습니다. 또한 반응형으로 제작된
-                홈페이지입니다.
-              </p>
-              <p class="blue">
-                대표홈페이지를 PC 버전으로 자세히 보고 싶으시다면
-                <span>
-                  <a href="https://www.klri.re.kr/" target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">보령시 만세보령</span></h5>
-              <p>APP DESIGN</p>
-            </div>
-            <p class="pic">
-              <a
-                href="http://www.brcn.go.kr/html/mobile/intro.jsp"
-                target="_blank"
-                ><img src="images/popup05.png" alt="popup05"
-              /></a>
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 보령시 만세보령은 다양한 보령의 소식을
-                사용자들에게 직관적으로 정보를 제공하기위해 심플하고 간결하게
-                정돈된 UI로 사용 편리성을 강조하였으며 NAVY, PINK 컬러 사용으로
-                깨끗하고 밝은 이미지를 표현한 디자인입니다.
-              </p>
-              <p class="blue">
-                Mobile 버전으로 자세히 보고 싶으시다면
-                <span>
-                  <a
-                    href="http://www.brcn.go.kr/html/mobile/intro.jsp"
-                    target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5>KAERI <span class="kor">첨단방사선연구소</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup06.jpg" alt="popup06" />
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 KAERI 첨단방사선연구소는 한국원자력연구원의
-                제안 시안이며, 정육각형을 메타포로 원자핵을 형상화하고 최고의
-                인재, 최고의 기술, 최고의 설비로 우리나라 원자력 기술 발전을
-                이끌어 가는 글로벌 연구기관임을 강조하기 위해 로고 컬러 활용으로
-                identity를 강조하였습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5>KARI <span class="kor">항공우주연구원</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup07.jpg" alt="popup07" />
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 KARI 항공우주연구원은 제안 시안이며, KARI의
-                항공과 우주를 상징하는 도형 'A'의 로고타입을 활용하여 메타포로
-                잡았으며 항공과 우주를 연구하는 첨단성과 진취적인 연구기관임을
-                이미지로 강조하였습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5>KIPF <span class="kor">공공기관연구센터</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup08.jpg" alt="popup08" />
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 KIPF 공공기관연구센터는 한국조세재정연구원의
-                제안 시안이며, KIPF의 'i'의 동그라미 로고타입을 활용하여
-                메타포로 잡았으며 로고의 NAVY, RED 컬러 사용으로 전문적이며
-                조세재정연구원의 identity를 강조하였습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">방위사업청 영문</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup09.jpg" alt="popup09" />
-            </p>
-            <div class="desc">
-              <p>
-                케이엘정보통신에서 구축한 방위사업청은 영문홈페이지로써 콘텐츠
-                부분을 복잡한 그래픽 효과를 배제하고 단순한 색상과 레이아웃을
-                통해 직관적인 인식이 가능하도록 구성하였습니다. 그 당시에
-                반응형으로 제작되었으며, 현재는 리뉴얼 되었습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">인천발전연구원 영문</span></h5>
-              <p>WEB DESIGN</p>
-            </div>
-            <p class="pic">
-              <a href="https://www.ii.re.kr/main.do?s=eng" target="_blank"
-                ><img src="images/popup10.jpg" alt="popup10"
-              /></a>
-            </p>
-            <div class="desc">
-              <p>
-                케이엘정보통신에서 작업한 Incheon Development Institute는
-                인천발전연구원 영문 홈페이지입니다. 인천 도시의 이미지와 각각의
-                서브 페이지의 내용에 맞는 이름과 아이콘으로 콘텐츠를 디자인하여
-                바로가기 형태로 디자인하였습니다. 또한 반응형으로 제작된
-                홈페이지입니다.
-              </p>
-              <p class="blue">
-                대표홈페이지를 PC 버전으로 자세히 보고 싶으시다면
-                <span>
-                  <a href="https://www.ii.re.kr/main.do?s=eng" target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5>K-STARTUP <span class="kor">창업지원포털</span></h5>
-              <p>CARD NEWS DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup11.png" alt="popup11" />
-            </p>
-            <div class="desc">
-              <p>
-                유클리드소프트에서 창업진흥원 통합유지보수를 하면서 작업한
-                K-STARTUP 카드뉴스 디자인으로 창업진흥원에서 주관하는 여러
-                사업들의 창업소식을 이미지와 일러스트로 시각화하여
-                디자인하였습니다. 참고로 홈페이지를 방문하시면 아래 두가지 외에
-                많은 카드뉴스를 볼 수 있습니다.
-              </p>
-              <p class="blue">
-                '2023년 창업지원 통합공고' 카드뉴스를 자세히 보고 싶으시다면
-                <span>
-                  <a href="https://me2.do/Gl7t4oUn" target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-              <br />
-              <p class="blue">
-                'Welcome To The 정글!' 카드뉴스를 자세히 보고 싶으시다면
-                <span>
-                  <a href="https://me2.do/FiOWfx9p" target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">한국법제연구원</span></h5>
-              <p>CARD NEWS DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup12.png" alt="popup12" />
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 한국법제연구원에서 '인공지능 오작동으로 인해
-                발생한 사고 책임은 누구에게 있을까?'와 '도심 한복판에 구멍이 뻥!
-                싱크홀 막을 수 없나'에 대한 카드뉴스 디자인으로 다소 어려운
-                주제에 관한 이야기를 이미지와 일러스트로 시각화하여
-                디자인하였습니다.
-              </p>
-              <p class="blue">
-                '인공지능 오작동으로 인해 발생한 사고 책임은 누구에게 있을까?'
-                카드뉴스를 자세히 보고 싶으시다면
-                <span>
-                  <a
-                    href="https://www.klri.re.kr/kor/cardnews/6/list.do"
-                    target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-              <br />
-              <p class="blue">
-                '도심 한복판에 구멍이 뻥! 싱크홀 막을 수 없나' 카드뉴스를 자세히
-                보고 싶으시다면
-                <span>
-                  <a
-                    href="https://www.klri.re.kr/kor/cardnews/8/list.do"
-                    target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="popup">
-          <div class="pop">
-            <p class="btn_close">
-              <a href="#"><img src="images/x.svg" alt="btn_x" /></a>
-            </p>
-            <div class="title_box">
-              <h5><span class="kor">한국여성정책연구원</span></h5>
-              <p>CARD NEWS DESIGN</p>
-            </div>
-            <p class="pic">
-              <img src="images/popup13.png" alt="popup13" />
-            </p>
-            <div class="desc">
-              <p>
-                메이아이에서 작업한 한국여성정책연구원에서 '임신중단 현실과
-                낙태죄 폐지에 대한 여성들의 인식과 경험'과 '통계로 본 북한
-                여성의 삶과 현재'에 대한 카드뉴스 디자인으로 여러 통계를
-                시각화하여 디자인하였습니다.
-              </p>
-              <p class="blue">
-                '임신중단 현실과 낙태죄 폐지에 대한 여성들의 인식과 경험'
-                카드뉴스를 자세히 보고 싶으시다면
-                <span>
-                  <a
-                    href="http://www.kwdi.re.kr/plaza/cardnewsView.do?p=1&amp;idx=123073"
-                    target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-              <br />
-              <p class="blue">
-                '통계로 본 북한 여성의 삶과 현재' 카드뉴스를 자세히 보고
-                싶으시다면
-                <span>
-                  <a
-                    href="http://www.kwdi.re.kr/plaza/cardnewsView.do?p=1&amp;idx=123076"
-                    target="_blank"
-                    >홈페이지 바로가기</a
-                  ></span
-                >를 눌러주세요.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <p class="btn_top1"><a href="#"></a></p>
-      <section>
-        <div class="contact">
-          <h5 data-aos="fade-up" data-aos-delay="100">CONTACT ME</h5>
-          <div class="contents">
-            <h2 data-aos="fade-up" data-aos-delay="200">
-              DESIGNER<br />H.J<span>ULIA</span>
-              <p class="kor">신뢰를 바탕으로 소통하는 디자이너 정혜지입니다.</p>
-            </h2>
-            <div class="info">
-              <p class="pic" data-aos="fade-up" data-aos-delay="300">
-                <img src="images/me.jpg" alt="me" />
-              </p>
-              <ul data-aos="fade-up" data-aos-delay="400">
-                <li class="name">JEONG HYEJI</li>
-                <li class="phone">010-2041-0931</li>
-                <li>kjgrt37@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="foot">
-          <p>Copyright © H.JULIA Website</p>
-          <p class="sns"><a href="#">IN</a></p>
-          <p class="now">Available Now</p>
-        </div>
-      </footer>
-      <div class="btn_top"><a href="#"></a></div>
     </div>
-
-    <!-- <script src="js/swiper-bundle.js"></script> -->
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
     <script>
-      AOS.init({
-        duration: 1200,
+      let list = document.querySelectorAll(".wrap ul li");
+      let thumbht = document.querySelector(".wrap ul li .thumb").clientHeight;
+      list.forEach(function (v, k) {
+        v.querySelector(".thumbImg").onmouseenter = function () {
+          let imght = v.querySelector(".thumbImg img").clientHeight;
+          console.log(imght);
+          let ht = imght - thumbht;
+          v.querySelector(
+            ".thumbImg img"
+          ).style.transform = `translateY(${-ht}px)`;
+        };
+        v.querySelector(".thumbImg").onmouseleave = function () {
+          v.querySelector(".thumbImg img").style.transform = `translateY(0px)`;
+        };
       });
     </script>
   </body>
