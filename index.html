@@ -68,6 +68,7 @@
       }
       .wrap ul li .thumb .thumbImg img {
         transition: 2s;
+        pointer-events: none;
       }
       .wrap ul li .thumb img {
         width: 100%;
@@ -185,12 +186,12 @@
             ></a>
           </li>
           <li>
-            <a href="kimyeeun/index.html" target="_new"
+            <a href="kyeun/index.html" target="_new"
               ><span># 09 View Portfolio</span>
               <div class="thumb">
                 <img src="images/monitor.svg" alt="" />
                 <p class="thumbImg">
-                  <img src="kimyeeun/09.jpg" alt="" />
+                  <img src="kyeun/09.jpg" alt="" />
                 </p></div
             ></a>
           </li>
@@ -215,6 +216,13 @@
           let imght = v.querySelector(".thumbImg img").clientHeight;
           console.log(imght);
           let ht = imght - thumbht;
+          if (imght <= 1500) {
+            v.querySelector(".thumbImg img").style.transition = "2s";
+          } else if (imght <= 3000) {
+            v.querySelector(".thumbImg img").style.transition = "4s";
+          } else {
+            v.querySelector(".thumbImg img").style.transition = "6s";
+          }
           v.querySelector(
             ".thumbImg img"
           ).style.transform = `translateY(${-ht}px)`;
