@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+body{box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; display: inline-block;}
+span{display: inline-block;}
+
+#wrap{margin: 0 auto; width: 100%;background-color: #000; background-image: url(../images/star-4773.gif);}
+
+.section01{width: 100%; min-height: 100vh;}
+.section01 .section_inner{height: 100vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.section01 .section_inner .text{text-align: center; font-size: 100px; color: #fff;}
+.section01 .section_inner .text p{margin-bottom: 20px;}
+.section01 .section_inner .text p:first-child{font-weight: bold;}
+.section01 .section_inner .text p:last-child{font-size: 50px;}
+
+/* .section01,.section02{} */
+
+
+
+
+.section02{width: 100%; height: 100%;position: relative;}
+.section02 .line{position: absolute;left: 50%;transform: translateX(-50%); width: 2px; height: 100%; background-color: rgba(255,255,255,0.2); z-index: 999;}
+.section02 .section_content{width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;gap:250px;align-items: center;}
+.section02 .section_content .link img{width: 100%; display: block; border-radius: 24px; transform: translateY(0) scale(1); opacity: 1; transition: 2s;}
+.section02 .section_content .txt{color: #fff; text-align: center; border-radius: 24px; padding: 100px;}
+.section02 .section_content .txt p{margin: 10px 0;}
+.section02 .section_content .txt p:nth-child(1){font-size: 120px;}
+.section02 .section_content .txt p:nth-child(2){font-size: 60px;}
+.section02 .section_content .txt p:nth-child(3){font-size: 40px;}
+.section02 .section_content .txt span{font-size: 30px; font-weight: bold; padding: 0 10px;}
+
+
+
+.section03{max-width: 1600px; width: 100%; height: 100vh; margin: 0px auto;}
+.section03 .skill .desc{font-size: 60px; color: #fff; text-align: center; font-weight: bold;}
+
+.section03 .section_con{width: 100%; display: flex; justify-content: center; align-items: center; gap: 10%; margin-top: 50px;}
+.section03 .section_con p{text-align: center;}
+.section03 .section_con p:first-child img{width: 300px;height: 400px;}
+.section03 .section_con p:last-child img{width: 332px;height: 299px;}
+
+
+
+.section03 .skill .cord{display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; width: 100%; height: 616px;}
+.section03 .skill .cord li{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 220px;height: 150px; background-color: #0f0f0f; border-radius: 20px; text-align: center; position: relative; margin-top: 20px;}
+.section03 .skill .cord li p{font-size: 20px; color: #fff; margin-top: 20px;}
+.section03 .skill .cord li img{width: 50px;height: 50px; object-fit: cover;}
+.section03 .skill .cord .line{position: absolute;background-color: #ddd;transition: all 0.3s linear;}
+.section03 .skill .cord .line-top{width: 100%;height: 5px;left: 0; top: 0; transform: scaleX(0);}
+.section03 .skill .cord .line-bottom{width: 100%;height: 5px;left: 0; bottom: 0; transform: scaleX(0);}
+.section03 .skill .cord .line-right{width: 5px;height: 100%;right: 0; top: 0; transform: scaleY(0);}
+.section03 .skill .cord .line-left{width: 5px;height: 100%;top: 0; left: 0; transform: scaleY(0);}
+
+.section03 .skill .cord li:hover .line-top,.section03 .skill .cord li:hover .line-bottom{transform: scaleX(1);transition: all 0.3s linear;}
+.section03 .skill .cord li:hover .line-right,.section03 .skill .cord li:hover .line-left{transform: scaleY(1);transition: all 0.3s linear;}
+
+.section03 .skill .cord li:nth-child(1):hover{background-color: #FB7568; transition: 0.5s;}
+.section03 .skill .cord li:nth-child(2):hover{background-color: #69B6F5; transition: 0.5s;}
+.section03 .skill .cord li:nth-child(3):hover{background-color: #EDF171; transition: 0.5s;}
+.section03 .skill .cord li:nth-child(4):hover{background-color: #3E67B2; transition: 0.5s;}
+.section03 .skill .cord li:nth-child(5):hover{background-color: #E2AA40; transition: 0.5s;}
+.section03 .skill .cord li:nth-child(6):hover{background-color: #652A79; transition: 0.5s;}
+
+
+
