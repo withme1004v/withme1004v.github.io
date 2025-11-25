@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gongcha Clone</title>
+    <style>
+      @font-face {
+        font-family: "omyu_pretty";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      body {
+        font-family: "omyu_pretty";
+        background-color: rgb(255, 238, 238);
+      }
+
+      .head {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+
+      .title {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .title h1 {
+        font-size: 50px;
+        line-height: 1.5;
+      }
+
+      .title > p {
+        font-size: 30px;
+        margin: 0 0 100px 110px;
+      }
+
+      .main {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+      }
+
+      .txt .tit {
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+      .txt .exp {
+        font-size: 26px;
+        margin: 0 0 30px 110px;
+      }
+
+      .skill {
+        display: flex;
+        gap: 30px;
+        font-size: 24px;
+        margin-left: 110px;
+      }
+
+      .img_box img {
+        width: 700px;
+        height: 450px;
+        animation: slide-in-left 1.5s ease-out forwards;
+        opacity: 0;
+      }
+
+      .roll-in {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        opacity: 0;
+        animation: roll-in 1s ease-out forwards;
+      }
+
+      .with-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .slide-up {
+        animation: slide-up 1s ease-out forwards;
+        opacity: 0;
+      }
+
+      @keyframes roll-in {
+        0% {
+          transform: translateX(-100px) rotate(0deg);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) rotate(360deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-in-left {
+        0% {
+          transform: translateX(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="title">
+        <div class="with-icon">
+          <img
+            src="./img/taro.png"
+            alt="아이콘"
+            class="roll-in"
+            style="animation-delay: 0s"
+          />
+          <h1>[공차(Gongcha) 웹사이트 클론 프로젝트]</h1>
+        </div>
+
+        <p>
+          기존 공차 공식 웹사이트를 바탕으로 사용자 중심의 UI/UX를 재구성하여
+          <br />
+          HTML / CSS / JAVA SCRIPT를 활용해 반응형 웹으로 구현했습니다.
+        </p>
+
+        <div class="main">
+          <div class="txt">
+            <div class="with-icon">
+              <img
+                src="./img/greentea.png"
+                alt="아이콘"
+                class="roll-in"
+                style="animation-delay: 1s"
+              />
+              <p class="tit slide-up" style="animation-delay: 1.5s">목적</p>
+            </div>
+            <p class="exp slide-up" style="animation-delay: 2s">
+              브랜드 웹사이트 클론을 통해 시각적 스타일보다 정보 구조와 <br />
+              동작 방식 구현에 중점을 둔 UI/UX 실무 역량을 키운 <br />
+              개인 프로젝트입니다.
+            </p>
+
+            <div class="with-icon">
+              <img
+                src="./img/strawberry.png"
+                alt="아이콘"
+                class="roll-in"
+                style="animation-delay: 2.3s"
+              />
+              <p class="tit slide-up" style="animation-delay: 2.5s">
+                개선 포인트
+              </p>
+            </div>
+            <p class="exp slide-up" style="animation-delay: 3s">
+              반응형 웹으로 리디자인
+            </p>
+
+            <!-- 기술 스택 -->
+            <div class="with-icon">
+              <img
+                src="./img/yogut.png"
+                alt="아이콘"
+                class="roll-in"
+                style="animation-delay: 3s"
+              />
+              <p class="tit slide-up" style="animation-delay: 3.5s">
+                기술 스택
+              </p>
+            </div>
+            <ul class="skill slide-up" style="animation-delay: 4s">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVA SCRIPT</li>
+              <li>Figma</li>
+              <li>Miricanvas</li>
+            </ul>
+          </div>
+
+          <!-- 이미지 -->
+          <div class="img_box">
+            <a href="#">
+              <img
+                src="./img/sub_star.png"
+                alt="공차 서브 이미지"
+                style="animation-delay: 2.5s"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
