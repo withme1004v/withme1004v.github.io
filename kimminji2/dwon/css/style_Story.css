@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+/* 기본설정 */
+html {
+  /* overflow: hidden; */
+  font-family: "Roboto", sans-serif, "Noto Sans KR";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.wrap {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+/* 헤더메뉴 */
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  max-width: 1760px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 60px 10px;
+  box-sizing: border-box;
+}
+
+header .logo img {
+  width: 163px;
+  height: auto;
+}
+header .menu {
+  display: flex;
+  gap: 60px;
+}
+header .menu a {
+  color: #eee;
+}
+header .menu a:hover {
+  color: #ae874e;
+}
+section:not(footer, .HIstory) {
+  height: 100vh;
+}
+
+.CONCEPT,
+.Identity,
+.Taste,
+.Space,
+.HIstory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.CONCEPT {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #1c1717 100%),
+    url(https://www.t-won.com/img/sub/brand_sv.jpg) center/cover;
+}
+.Identity {
+  background: #1c1717;
+}
+.Taste {
+  background: url(https://www.t-won.com/img/sub/brand_banner_bg.jpg)
+    center/cover;
+}
+.Space {
+  background: url(https://www.t-won.com/img/sub/brand_banner_bg2.jpg)
+    center/cover;
+}
+/*-------- mouseimg------- */
+.mouseimg {
+  position: relative;
+}
+.mouseimg p {
+  position: absolute;
+  left: 50%;
+  top: 140px;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move {
+  0% {
+    top: 140px;
+  }
+  100% {
+    top: 170px;
+  }
+}
+/* -------------text-box -------------------*/
+.text-box {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.text-box h3 {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  letter-spacing: 5px;
+}
+.text-box h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3px;
+  height: 1px;
+  width: 90px;
+  background: #fff;
+}
+.text-box h1 {
+  font-size: 46px;
+  margin-top: 10px;
+  color: #fff;
+}
+.text-box p {
+  font-size: 18px;
+  margin-top: 27px;
+  color: #fff;
+}
+/*--------- Identity-------------- */
+.Identity p img {
+  margin-bottom: 40px;
+}
+/*--------------- Taste----- */
+.Taste .text-box {
+  transform: translateY(-140%);
+}
+
+/* -------------------space------------- */
+
+/*-------------------- HIstory----------- */
+.HIstory {
+  position: relative;
+  background: #1c1717;
+}
+.HIstory img {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+}
+.HIstory .text-box {
+  padding-top: 200px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+/*------------------------ timeline ---------------------------------*/
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  bottom: 0;
+  width: 1px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+/* 아이템 기본 스타일 */
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+/* 콘텐츠 공통 스타일 */
+.timeline-item .content {
+  width: 45%;
+  color: #fff;
+}
+
+/* 왼쪽 아이템 */
+.timeline-item.left {
+  flex-direction: row;
+}
+.timeline-item.left .content {
+  text-align: right;
+}
+
+/* 오른쪽 아이템 */
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+.timeline-item.right .content {
+  text-align: left;
+}
+
+/* 동그라미 - 중앙 선에 정확히 맞춤 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background: #ae874e;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* timeline content */
+.content h3 {
+  font-size: 36px;
+}
+.content strong {
+  font-size: 24px;
+  font-weight: normal;
+}
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ----------------boookkkkkk------------- */
+
+.book a {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  padding: 20px 60px 20px 40px; /* 오른쪽 여백 확보 */
+  background: #373332;
+  text-align: center;
+  transition: 0.4s;
+  margin: 150px auto;
+}
+
+.book a::after {
+  content: "";
+  background-image: url("https://www.t-won.com/dowon/img/svg/download.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.book a:hover {
+  background-color: #ae874e;
+  color: #fff;
+}
+.book a:hover 
+/* ---------------footer--------------- */
+footer {
+  width: 100%;
+  background: #151515;
+}
+footer .inner {
+  width: 95%;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .footerlogo ul {
+  width: 90%;
+  max-width: 1600px;
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footermenu {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+  padding: 28px 0;
+  box-sizing: border-box;
+}
+footer .footermenu ul {
+  display: flex;
+  gap: 40px;
+}
+footer .footermenu .menulist li a {
+  color: #999;
+
+  font-size: 16px;
+}
+footer .footermenu .menulist li:nth-child(2) a {
+  color: #ff6600;
+  font-weight: bold;
+}
+footer .text {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 100px;
+  color: #666;
+  font-size: 16px;
+}
+footer .text p:last-child {
+  border: 1px solid #999;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+footer .text p:last-child a {
+  color: #999;
+}
+footer .text p:last-child::after {
+  content: "\2b";
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+/* ---------------------footer-------------------- */
+footer {
+  width: 100%;
+  height: 400px;
+  background: #151515;
+}
+footer .inner {
+  width: 95%;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .footerlogo ul {
+  width: 90%;
+  max-width: 1600px;
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footermenu {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+  padding: 28px 0;
+  box-sizing: border-box;
+}
+footer .footermenu ul {
+  display: flex;
+  gap: 40px;
+}
+footer .footermenu .menulist li a {
+  color: #999;
+
+  font-size: 16px;
+}
+footer .footermenu .menulist li:nth-child(2) a {
+  color: #ff6600;
+  font-weight: bold;
+}
+footer .text {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 100px;
+  color: #666;
+  font-size: 16px;
+}
+footer .text p:last-child {
+  border: 1px solid #999;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+footer .text p:last-child a {
+  color: #999;
+}
+footer .text p:last-child::after {
+  content: "\2b";
+  font-size: 22px;
+  margin-left: 20px;
+}

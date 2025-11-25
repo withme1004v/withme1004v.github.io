@@ -1,0 +1,449 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard-Regular";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+.gnb {
+  display: flex;
+  align-items: center;
+  width: 1304px;
+  margin: 0 auto;
+}
+.gnb .logo {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  margin-left: 150px;
+}
+.gnb .logo a img {
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.gnb .logo.shrink a img {
+  width: 80px;
+}
+
+.menu {
+  width: 1010px;
+  margin: 0 auto;
+  height: 100px;
+}
+.menu ul {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  flex: 1 1 10%;
+  text-align: center;
+  line-height: 100px;
+}
+.menu ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  text-decoration: none;
+}
+.menu ul li a:hover,
+.menu ul li a.on {
+  background: none;
+}
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #222;
+  transition: width 0.3s;
+}
+.menu ul li a:hover::after,
+.menu ul li a.on::after {
+  width: 100%;
+}
+
+.submenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100px;
+  background: rgba(255, 255, 255, 0.9);
+
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.submenu .lnb {
+  width: 1010px;
+  margin: 0 auto;
+}
+.submenu .lnb > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.submenu .lnb > ul > li {
+  flex: 1 1 20%;
+  line-height: 40px;
+  text-align: center;
+}
+.submenu .lnb > ul > li a {
+  color: #555;
+}
+.submenu .lnb > ul > li a:hover {
+  color: #000;
+}
+.gnb .right {
+  position: absolute;
+  right: 0;
+  width: 144px;
+  margin-right: 150px;
+  text-align: center;
+}
+.gnb .right p {
+  background: #f7f7f7;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+/* con1 */
+.con1 {
+  width: 100%;
+  height: 460px;
+  background: url(https://www.hankook.com/default/img/onepixel/images/sub/hero_bg01.jpg)
+    center/cover;
+  position: relative;
+}
+.con1 h1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 44px;
+  color: #fff;
+}
+.con1 ul {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+}
+
+.con1 ul li a {
+  color: #fff;
+}
+.con2 {
+  padding: 120px 0;
+}
+.con2 .inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.con2 .inner h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 42px;
+  font-weight: 600;
+}
+.con2 .inner ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.con2 .inner ul li h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.con2 .inner ul li p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.con2 .inner li:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.con3 {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.con3 p a {
+  display: block;
+  font-size: 24px;
+}
+.con3 p:first-child a {
+  margin-bottom: 20px;
+}
+.con4 {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 50px;
+}
+.con4 .swiper-slide {
+}
+.con4 .text {
+  text-align: center;
+}
+.con4 .text h3 {
+  margin-bottom: 10px;
+}
+.swiper-scrollbar {
+  margin-top: 40px;
+}
+
+/* con5 */
+.con5 {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.con5 h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.con5 p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.con5 p:first-child {
+  margin-bottom: 5px;
+}
+.con5 ul {
+  display: flex;
+  justify-content: space-between;
+}
+.con5 ul li {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.con5 ul li img {
+  width: 98px;
+  margin-bottom: 20px;
+}
+.con5 ul li p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* con6 */
+.con6 {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.con6 h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* con7 */
+.con7 {
+  background: url(https://www.hankook.com/default/img/onepixel/images/sub/sub_bottom_banner2.jpg);
+  height: 350px;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+.con7 .inner {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.con7 .inner img {
+  width: 290px;
+}
+.con7 .inner p a {
+  display: flex;
+  font-size: 23px;
+  color: #fff;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  transition: 0.4s;
+}
+.con7 .inner p:hover a {
+  background: #fff;
+  color: #000;
+}
+/* footer */
+footer {
+  width: 1280px;
+  margin: 0px auto;
+}
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerlogo img {
+  width: 134px;
+}
+footer .left ul li {
+  font-size: 14px;
+  margin-top: 26px;
+
+  color: #797979;
+}
+
+footer .right {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+footer .right .right_menu ul li:first-child a {
+  color: #393939;
+  font-size: 15px;
+}
+footer .right .right_menu ul li {
+  margin-top: 20px;
+  font-size: 14px;
+}
+footer .right .right_menu ul li a {
+  color: #797979;
+}
+/* footer2  */
+.footer2 {
+  width: 1280px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dbdbdb;
+  padding: 25px 0;
+}
+.footer2 .left ul {
+  display: flex;
+  gap: 30px;
+}
+
+.footer2 .left ul li::after {
+  content: "｜";
+  margin-left: 20px;
+}
+.footer2 .left ul li a {
+  color: #797979;
+  font-size: 14px;
+}
+.footer2 .left ul li a:hover {
+  color: #191919;
+}
+.footer2 .left ul li:last-child:after {
+  display: none;
+}
+.footer2 .right p {
+  color: #797979;
+  font-size: 14px;
+}
+
+/* 맨 위에 떠있는거 두개 */
+.floating-buttons {
+  position: fixed;
+  bottom: 30px;
+  right: -100px; /* 처음엔 화면 밖 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  transition: right 0.4s ease;
+}
+
+.floating-buttons.show {
+  right: 30px; /* 나타날 위치 */
+}
+
+/* 나머지 버튼 스타일 */
+.talk-button,
+.top-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.talk-button {
+  background: #ffeb00;
+}
+
+.talk-button img {
+  width: 32px;
+  height: 32px;
+}
+
+.top-button {
+  background: white;
+  border: none;
+  font-size: 24px;
+}
