@@ -8,97 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      ul {
-        list-style: none;
-      }
-      a {
-        text-decoration: none;
-      }
-      body {
-        font-family: "Noto Sans", sans-serif;
-      }
-      .wrap {
-        width: 95%;
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-      .wrap h1 {
-        font-size: 3vw;
-        padding: 5vw 0;
-        color: #052449;
-        text-align: center;
-      }
-      .wrap .inner {
-        display: flex;
-        justify-content: center;
-      }
-      .wrap ul li {
-        padding: 50px 0;
-      }
-      .wrap ul li a {
-        font-size: 2vw;
-        color: #052449;
-        position: relative;
-        display: flex;
-        gap: 50px;
-        width: 100%;
-        z-index: 999;
-      }
-      .wrap ul li .thumb {
-        width: 600px;
-        height: 330px;
-        position: relative;
-        flex-shrink: 0;
-      }
-      .wrap ul li .thumb .thumbImg {
-        width: 80%;
-        height: 100%;
-        border-radius: 5px;
-        position: absolute;
-        left: 10%;
-        top: 10px;
-        overflow: hidden;
-        text-align: center;
-      }
-      .wrap ul li .thumb .thumbImg img {
-        transition: 2s;
-        pointer-events: none;
-      }
-      .wrap ul li .thumb img {
-        width: 100%;
-      }
-      @media screen and (max-width: 900px) {
-        .wrap h1 {
-          font-size: 5vw;
-        }
-        .wrap ul li a {
-          font-size: 30px;
-        }
-        .wrap ul li a {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-      @media screen and (max-width: 500px) {
-        .wrap ul li .thumb {
-          width: 450px;
-          height: 240px;
-        }
-        .wrap ul li .thumb .thumbImg {
-          width: 80%;
-          height: 100%;
-          top: 5px;
-          border-radius: 5px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrap">
@@ -205,32 +115,69 @@
                 </p></div
             ></a>
           </li>
+          <li>
+            <a href="yeri2/index.html" target="_new"
+              ><span># 11 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="yeri2/thumb.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="leejieun2/index.html" target="_new"
+              ><span># 12 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="leejieun2/thumb.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="parkmin2/index.html" target="_new"
+              ><span># 13 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="parkmin2/thumb.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="kimminji2/index.html" target="_new"
+              ><span># 14 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="kimminji2/thumb.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="jeonmiyeon2/index.html" target="_new"
+              ><span># 15 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="jeonmiyeon2/thumb.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
+          <li>
+            <a href="hyuna2/index.html" target="_new"
+              ><span># 16 View Portfolio</span>
+              <div class="thumb">
+                <img src="images/monitor.svg" alt="" />
+                <p class="thumbImg">
+                  <img src="hyuna2/thumb.jpg" alt="" />
+                </p></div
+            ></a>
+          </li>
         </ul>
       </div>
     </div>
-    <script>
-      let list = document.querySelectorAll(".wrap ul li");
-      let thumbht = document.querySelector(".wrap ul li .thumb").clientHeight;
-      list.forEach(function (v, k) {
-        v.querySelector(".thumbImg").onmouseenter = function () {
-          let imght = v.querySelector(".thumbImg img").clientHeight;
-          console.log(imght);
-          let ht = imght - thumbht;
-          if (imght <= 1500) {
-            v.querySelector(".thumbImg img").style.transition = "2s";
-          } else if (imght <= 3000) {
-            v.querySelector(".thumbImg img").style.transition = "4s";
-          } else {
-            v.querySelector(".thumbImg img").style.transition = "6s";
-          }
-          v.querySelector(
-            ".thumbImg img"
-          ).style.transform = `translateY(${-ht}px)`;
-        };
-        v.querySelector(".thumbImg").onmouseleave = function () {
-          v.querySelector(".thumbImg img").style.transform = `translateY(0px)`;
-        };
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
