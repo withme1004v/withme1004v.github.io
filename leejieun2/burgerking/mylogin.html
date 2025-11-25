@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mylogin</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .mytitle {
+        width: 100%;
+        height: 200px;
+        background: url(./images/my/fb8997c7-170d-484c-a48b-fc5e1abe97ba.png)
+          center/cover;
+        text-align: center;
+        line-height: 200px;
+      }
+      #freeboard {
+        max-width: 1700px;
+        width: 100%;
+        margin: 0 auto;
+        background: #fffcf8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="mytitle">로그인</h1>
+    <div id="freeboard">
+      <iframe
+        src="http://monolibrary.dothome.co.kr/gnuboard5/bbs/login.php"
+        id="iframe"
+        style="width: 100%"
+        onload="Height();"
+        frameborder="0"
+        scrolling="no"
+      >
+      </iframe>
+    </div>
+    <script>
+      function Height() {
+        let the_height =
+          document.getElementById("iframe").contentWindow.document.body
+            .scrollHeight;
+        document.getElementById("iframe").height = the_height + 50;
+        document.getElementById("iframe").style.overflow = "hidden";
+      }
+      console.log(document.getElementById("iframe").height);
+    </script>
+  </body>
+</html>
