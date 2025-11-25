@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EAGLES ＜ 구단소개 ＜ 한화이글스 </title>
+  <link rel="stylesheet" href="css/styleSub.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(function(){
+      $("#bg header").hover(function(){
+        $(this).css("background", "rgba(0, 0, 0, .85)")
+      }, function(){
+        $(this).css("background", "transparent")
+      });
+      $(".intro1 li a").eq(0).css("color", "#fff");
+      $(".intro1 li a").eq(0).addClass("on");
+      $(".subIntro li a").eq(0).css("color", "#fff")
+    });
+    $(window).scroll(function(){
+    // Get number of pixels of scroll.
+    var pixel = $(window).scrollTop();
+    console.log(pixel);
+    // When the scroll exceeds 300px, give the [fixed-menu] class.
+    if(pixel > 700){
+      $(".intro1").addClass("on");
+    } else {
+      $(".intro1").removeClass("on");
+    }
+  });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="bg">
+      <header>
+        <div class="logo"><a href="index.html"><img src="images/h_logo.png" alt="h_logo"></a></div>
+        <ul>
+          <li>
+            <a href="#">EAGLES</a>
+            <ul class="sub">
+              <li><a href="#">구단소개</a></li>
+              <li><a href="#">그룹사소개</a></li>
+              <li><a href="#">HISTORY</a></li>
+              <li><a href="#">한화생명 이글스파크</a></li>
+              <li><a href="#">사회공헌</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PLAYER</a>
+            <ul class="sub">
+              <li><a href="#">코칭스탭</a></li>
+              <li><a href="#">투수</a></li>
+              <li><a href="#">포수</a></li>
+              <li><a href="#">내야수</a></li>
+              <li><a href="#">외야수</a></li>
+              <li><a href="#">군입대 선수</a></li>
+              <li><a href="#">응원단</a></li>
+              <li><a href="#">STAFF</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">GAME</a>
+            <ul class="sub">
+              <li><a href="#">1군 경기일정</a></li>
+              <li><a href="#">퓨처스 경기일정</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">FAN</a>
+            <ul class="sub">
+              <li><a href="#">구단소식</a></li>
+              <li><a href="#">키즈클럽</a></li>
+              <li><a href="#">팬 타임즈</a></li>
+              <li><a href="#">갤러리</a></li>
+              <li><a href="#">이글스 아카이브</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">SHOP</a>
+          </li>
+          <li>
+            <a href="#">TICKET</a>
+          </li>
+          <div class="bg"></div>
+        </ul>
+        <p>
+          <a href="#">KO</a>
+          <a href="#">EN</a>
+          <a href="#">LOGIN</a>
+          <a href="#">JOIN US</a>
+        </p>
+      </header>
+      <div class="snsIcon">
+        <p><a href="#"><img src="images/quick_sns_youtube.png" alt="quick_sns_youtube"></a></p>
+        <p><a href="#"><img src="images/quick_sns_facebook.png" alt="quick_sns_facebook"></a></p>
+        <p><a href="#"><img src="images/quick_sns_insta.png" alt="quick_sns_insta"></a></p>
+        <p><a href="#"><img src="images/quick_sns_twitter.png" alt="quick_sns_twitter"></a></p>
+      </div>
+    </div>
+    <div class="gradient"></div>
+    <ul class="intro1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+      <li><a href="#">구단소개</a></li>
+      <li><a href="#">그룹사소개</a></li>
+      <li><a href="#">HISTORY</a></li>
+      <li><a href="#">한화생명 이글스파크</a></li>
+      <li><a href="#">사회공헌</a></li>
+    </ul>
+    <div class="main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+    <h1><span>한화이글스</span>를<br>소개합니다.</h1>
+    <ul class="subIntro">
+      <li><a href="#">구단소개</a></li>
+      <li><a href="#">CI</a></li>
+      <li><a href="#">MASCOT</a></li>
+    </ul>
+    <div class="flex">
+      <div class="dep">
+        <p><img src="images/intro_eagles_logo.png" alt=""></p>
+        <div class="txt">
+          <h1><span>한화이글스</span>는 충청권을 연고로 1985년 한국 프로야구(KBO)의<br>제7구단으로 출범했습니다.</h1>
+          <p>대전광역시 중구 부사동에 위치한 대전 <span>한화생명 EAGLESPARK</span>를 홈 구장으로 이용하고 있으며, 제2구장은 충청북도 청주시 서원구 사직동에 위치한<br> 청주야구장입니다.</p><br>
+          <p>보다 많은 분들이 야구를 관람하며 행복을 느낄 수 있도록 <span>한화이글스</span>는 투혼을 담은 경기를 위해 최선을 다하고 있습니다. 지속적인 강팀으로 발돋움 하고자 내부 육성<br>시스템을 정비, 중장기 계획을 바탕으로 <span>한화이글스</span>의 감독 및 코칭 스태프, 선수, 프런트 모두가 함께 노력하고 있습니다.</p><br>
+          <p>늘 응원해주시는 팬들의 성원과 기대에 부응할 수 있도록 역동적인 경기와 다양한 마케팅을 전개해 팬과 함께 비상하는 구단이 되겠습니다.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div class="left">
+        <h1><a href="#">Hanwha Eagles</a></h1>
+        <p>
+          <span>대전광역시 중구 대종로 373 <b>한화이글스</b></span>
+          <span>대표이사 박종태</span>
+          <span>사업자등록번호 306-81-12757</span>
+          <span>TEL 042-630-8200</span>
+          <span>FAX 042-632-2929</span>
+        </p>
+        <ul>
+          <li><a href="#">법적고지</a></li>
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">고객문의</a></li>
+          <li><a href="#">1:1문의</a></li>
+          <li><a href="#">사이트맵</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="txt">
+          <p><a href="#wrap">TOP</a></p>
+          <p class="list">계열사 바로가기</p>
+          <div id="list">
+            <ul>
+              <li>
+                <p>우주항공·방산·기계</p>
+                <ul>
+                  <li><a href="#">㈜한화</a></li>
+                  <li><a href="#">한화에어로스페이스</a></li>
+                  <li><a href="#">한화시스템</a></li>
+                  <li><a href="#">한화비전</a></li>
+                  <li><a href="#">한화정밀기계</a></li>
+                  <li><a href="#">한화모멘텀</a></li>
+                  <li><a href="#">한화로보틱스</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>에너지·오션</p>
+                <ul>
+                  <li><a href="#">한화솔루션</a></li>
+                  <li><a href="#">한화오션</a></li>
+                  <li><a href="#">한화에너지</a></li>
+                  <li><a href="#">한화임팩트</a></li>
+                  <li><a href="#">한화파워시스템</a></li>
+                  <li><a href="#">한화토탈에너지스</a></li>
+                  <li><a href="#">한화엔진</a></li>
+                  <li><a href="#">한화첨단소개</a></li>
+                  <li><a href="#">여천NCC</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>금융</p>
+                <ul>
+                  <li><a href="#">한화생명</a></li>
+                  <li><a href="#">한화손해보험</a></li>
+                  <li><a href="#">한화자산운용</a></li>
+                  <li><a href="#">한화투자증권</a></li>
+                  <li><a href="#">한화저축은행</a></li>
+                  <li><a href="#">한화생명금융서비스</a></li>
+                  <li><a href="#">캐롯손해보험</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>유통·서비스</p>
+                <ul>
+                  <li><a href="#">한화호텔&리조트</a></li>
+                  <li><a href="#">한화갤러리아</a></li>
+                  <li><a href="#">한화커넥트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h3>© 2014 <span>HANWHA EAGLES</span>. All rights Reserved.</h3>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    AOS.init({
+      easing:"ease",
+			duration: 0,
+			offset: 0,
+    });
+    document.querySelector(".right .txt .list").onclick=function(){
+      document.querySelector(".right .txt .list").classList.toggle("on");
+      document.querySelector(".right #list").classList.toggle("on");
+    }
+  </script>
+</body>
+</html>

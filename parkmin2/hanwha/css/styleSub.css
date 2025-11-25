@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+@font-face {
+  font-family: hanwhaR;
+  src: url(../webfonts/HanwhaR.woff2) format("woff2");
+}
+@font-face {
+  font-family: myriadR;
+  src: url(../webfonts/MyriadPro-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: myriadB;
+  src: url(../webfonts/MyriadPro-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: hanwhagothicEL;
+  src: url(../webfonts/HanwhaGothicEL.woff2) format("woff2");
+}
+@font-face {
+  font-family: hanwhagothicT;
+  src: url(../webfonts/HanwhaGothicT.woff2) format("woff2");
+}
+@font-face {
+  font-family: hanwhagothicR;
+  src: url(../webfonts/HanwhaGothicR.woff2) format("woff2");
+}
+@font-face {
+  font-family: hanwhaL;
+  src: url(../webfonts/HanwhaL.woff2) format("woff2");
+}
+@keyframes tabMove {
+  0% {
+    top: -80px;
+  }
+  100% {
+    top: 0;
+  }
+}
+body{height: auto; background: #000;}
+ul{list-style: none;}
+a{text-decoration: none;}
+#wrap{height: auto; width: 100%;}
+#bg{background: url(../images/bg_header_eagles.jpg) no-repeat 50% 50%; width: 100%; height: 1082px; background-attachment: fixed; position: relative;}
+#bg header{width: 100%; height: 110px; display: flex; position: relative; background: transparent; border-bottom: 1px solid rgba(255,2555,255,0.3); z-index: 1; transition: 0.5s;}
+#bg header .logo{text-align: center; line-height: 100px; padding-left: 60px;}
+#bg header .logo img{width: 92px; height: 60px; vertical-align: middle;}
+#bg header > ul{padding: 25px 0 0 10px;}
+#bg header > ul > li{float: left; padding: 0 20px;}
+#bg header > ul > li:first-child > a{font-family: hanwhaR;}
+#bg header > ul > li > a{display: inline-block; height: 65px; padding-top: 20px; color: #fff;
+  font-size: 18px; position: relative; font-family: myriadR;}
+#bg header > ul > li > a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #f37321;
+  transform: scale(0);
+  transition: 0.3s; 
+  transform-origin: left;
+}
+#bg header > ul > li:hover > a::after{
+  transform: scale(1);
+}
+#bg header > ul > li ul.sub{float: left; position: absolute; height: 0; transition: 0.5s; overflow: hidden;}
+#bg header > ul > li ul.sub li{float: left; position: relative; z-index: 1; padding: 24px 0; left: -20px;}
+#bg header > ul > li:hover ul.sub{height: 50px;}
+
+#bg header > ul > li ul.sub li a{padding: 0 20px; height: 50px; color: #fff; font-size: 16px; font-family: hanwhagothicEL; display: inline-block;}
+#bg header > ul > li ul.sub li:hover a{color: #f37321;}
+
+
+#bg header > ul .bg{width: 100%; height: 70px; position: absolute; bottom: -70px; left: 0; background: rgba(0, 0, 0, 0.8); opacity: 0; transition: 0.5s;}
+#bg header p{position: absolute; right: 0; padding: 43px 30px 0 0; }
+#bg header p a{padding-top: 20px; display: inline-block; color: rgba(255,255,255,0.5); padding: 3px 8px 3px;
+  font-size: 18px; font-family: myriadR; position: relative; }
+#bg header p a:hover{color: #fff;} 
+#bg header p a:first-child::after{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background: #666;
+  right: -2px;
+  top: 5px;
+}
+
+#bg header ul > li:hover .sub{display: block;}
+#bg header ul > li:hover a{color: #f37321;}
+#bg header ul > li:hover ~ .bg{opacity: 1;}
+#bg header ul:hover > li:nth-child(5):hover ~ .bg{opacity: 0;} 
+#bg header ul:hover > li:nth-child(6):hover ~ .bg{opacity: 0;}
+
+
+
+#wrap .snsIcon{position: absolute; right: 50px; top: 300px; z-index: 2;}
+#wrap .snsIcon p{width: 76px; height: 76px; margin-bottom: 5px; background: #000; border-radius: 50%; border: 3px solid transparent;}
+#wrap .snsIcon p:hover{border: 3px solid #f37321;}
+
+
+.main{position: relative; width: 1240px; padding-top: 160px; margin: -400px auto 0; padding-bottom: 230px;}
+#bg::before{content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 782px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);}
+/* scroll fixed 넣기 */
+.intro1.on{position: fixed; top: 0; left: 0; width: 100%; height: 80px; z-index: 999; background: rgba(0, 0, 0, .7); box-shadow: 0 0 15px rgba(0, 0, 0, .5); transition: all 0.25s; animation: tabMove .3s linear 1 normal; padding-left: 340px;}
+
+ul.intro1{position: absolute; top: 70%; left: 340px; width: 1240px; height: 80px; display: flex; margin: 0 auto; align-items: center; gap: 50px; transition: 0.3s; transform-origin: top; z-index: 10;}
+ul.intro1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #707070;
+  }
+ul.intro1 li{}
+ul.intro1 li a{display: block; position: relative; padding: 0 1px; border: 2px solid transparent; font-family: hanwhagothicEL; font-size: 18px; line-height: 80px; color: #b3b3b3; overflow: hidden;}
+ul.intro1 li a:hover{color: #fff;}
+ul.intro1 li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+  }
+ul.intro1 li a.on::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+  }
+ul.intro1 li a:hover:before{
+    left: 0;
+  }
+
+.main > h1{font-size: 60px; color: #fff; font-family: hanwhagothicR; font-weight: normal; margin-bottom: 70px;}
+.main > h1 span{font-family: hanwhaR;}
+
+.main .flex{width: 100%; margin-top: 120px; height: 100%;}
+
+.main ul.subIntro{width: 280px; position: sticky; top: 100px; left: 0; z-index: 10;}
+.main ul.subIntro li{padding: 4px 0;}
+.main ul.subIntro li a{color: #808080; font-family: myriadR;}
+.main ul.subIntro li a:hover{color: #fff;}
+
+.main .dep{background: #000; width: 920px; padding-left: 400px; margin-top: -200px;}
+.main .dep > p{width: 100%; text-align: center;}
+.main .dep > p img{vertical-align: middle;}
+.main .dep .txt{color: #fff;}
+.main .dep .txt h1{font-size: 32px; margin-bottom: 30px; font-weight: normal; line-height: 1.31; font-family: hanwhagothicT; margin-top: 100px;}
+.main .dep .txt h1 span{font-family: hanwhaR;}
+.main .dep .txt > strong{font-family: hanwhaR; font-weight: normal;}
+.main .dep .txt p{color: #808080; font-size: 14px; line-height: 1.57; word-break: keep-all; word-wrap: break-word; font-family: hanwhagothicT;}
+.main .dep .txt p span{font-family: hanwhaL;}
+
+
+
+
+footer{width: 100%; height: 230px; display: flex; justify-content: space-between; 
+  margin: 0 auto; position: relative; background: #000; border-top: 1px solid rgba(255, 255, 255, 0.15);}
+footer > div{padding: 40px 40px 40px 90px;}
+footer .left h1 a{font-size: 30px; color: #fff; font-family: hanwhaR; font-weight: normal;}
+footer .left p{margin-top: 25px; display: flex; flex-wrap: wrap; gap: 30px; width: 600px;
+  line-height: 3px;}
+footer .left p span{color: #808080; font-size: 14px; font-family: hanwhagothicT; 
+  display: inline-block; position: relative;}
+footer .left p span::after{
+  content: "";
+  position: absolute;
+  right: -15px; 
+  top: -5px;
+  width: 1px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.15);
+}
+footer .left p span:nth-child(3)::after{display: none;}
+footer .left p span:nth-child(5)::after{display: none;}
+footer .left ul{display: flex; gap: 40px; margin-top: 25px;}
+footer .left ul li:nth-child(2) a{color: #f37321; font-weight: bold;}
+footer .left ul li a{color: #888; font-family: hanwhagothicT; font-size: 14px;}
+footer .left ul li:hover a{color: #f37321;}
+
+footer .right .txt{display: flex; flex-direction: column; align-items: flex-end;}
+footer .right .txt p{text-align: right; }
+footer .right .txt p:nth-child(2){margin-top: 45px; width: 203px;}
+footer .right .txt p:first-child a{color: #fff; font-size: 15px; font-family: hanwhaR;
+  display: inline-block; position: relative;}
+footer .right .txt p:first-child a::before{
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  background: url(https://www.hanwhaeagles.co.kr/images/common/btn_top.png);
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-size: 23px 20px;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+footer .right .txt p:nth-child(2){color: #fff; font-family: hanwhagothicT; display: block;
+  border-bottom: 1px solid #707070; width: 203px; height: 30px; text-align: left;
+  position: relative; float: right; cursor: pointer;}
+footer .right .txt p:nth-child(2).on{color: #f37321; border-bottom: 1px solid #f37321;}
+footer .right .txt p:nth-child(2):after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background: url(../images/add_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg);
+  width: 20px;
+  height: 20px;
+  transform-origin: center;
+  transition: 0.2s;
+}
+footer .right .txt p:nth-child(2).on::after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/add_24dp_F37321_FILL0_wght400_GRAD0_opsz24.svg);
+  transform: rotate(45deg);
+}
+
+footer .right > h3{color: #888; font-size: 16px; font-family: myriodR; font-weight: normal; margin-top: 20px;}
+footer .right > h3 span{font-size: 14px; font-family: hanwhaR;}
+
+footer .right #list{overflow: hidden; height: 0; z-index: 1; top: 0; left: 0;
+  position: absolute; width: 100%; transition: 0.8s;}
+footer .right #list.on{top: -540px; height: 540px;}
+footer .right #list > ul{display: flex; background: #111; width: 100%;
+  position: absolute; justify-content: center;
+  gap: 30px; padding: 80px 0; box-sizing: border-box;}
+/* footer .right #list > ul.on{height: 504px;} */
+footer .right #list > ul > li{width: 200px; height: 440px;}
+footer .right #list > ul > li p{font-family: hanwhagothicT; color: #fff;  text-align: left;
+  border-bottom: 1px solid #808080; padding-bottom: 24px; box-sizing: border-box;}
+footer .right #list > ul > li ul{padding-top: 15px;}
+footer .right #list > ul > li ul li a{display: inline-block; padding: 8px 0;  
+  font-family: hanwhaL; color: #808080; text-align: left;}
+footer .right #list > ul > li ul li a:hover{color: #f37321;}
