@@ -1,0 +1,486 @@
+/* 폰트 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  font-family: "Pretendard", sans-serif;
+}
+/* 독 메뉴 */
+.aside_menu {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 3;
+}
+.aside_menu > ul {
+  padding: 6px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #000;
+  width: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aside_menu > ul > li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.aside_menu > ul > li > a {
+  display: block;
+  padding: 13px;
+  box-sizing: border-box;
+}
+.aside_menu > ul span.material-symbols-outlined {
+  color: #fff;
+  font-size: 30px;
+}
+.aside_menu > ul > li p.aside_title {
+  color: #fff;
+  font-size: 10px;
+}
+.aside_menu > ul > li > a > p:first-child > img {
+  width: 24px;
+  height: 24px;
+}
+/* .top_wrap 시작*/
+.wrapper > .top_wrap {
+  background-color: #023586;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.wrapper > .top_wrap .top {
+  width: 1420px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.wrapper > .top_wrap .top > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+.wrapper > .top_wrap .top ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.wrapper > .top_wrap .top ul li a::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: 0.2s;
+}
+.wrapper > .top_wrap .top ul.menu_r li:last-child a::before {
+  transform: scaleX(0);
+}
+.wrapper > .top_wrap .top ul li:hover a::before {
+  transform: scaleX(1);
+}
+.wrapper > .top_wrap .top ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+.wrapper > .top_wrap .top ul.menu_r li:last-child a {
+  font-size: 20px;
+}
+/* .top_wrap 끝*/
+/* 메인 비주얼 시작 */
+.con1_wrap {
+  margin-top: 90px;
+  max-width: 1908px;
+}
+.con1_wrap > .swiper {
+  width: 100%;
+}
+
+.con1_wrap .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con1_wrap .swiper-button-next,
+.con1_wrap .swiper-button-prev {
+  color: #efefef;
+}
+.con1_wrap .swiper-pagination {
+  position: relative;
+  bottom: -10px;
+}
+/* 메인 비주얼 끝 */
+/* 슬라이드 배너 */
+.con2_wrap {
+  margin: 80px 0;
+}
+.con2_wrap > .swiper {
+  width: 1420px;
+}
+
+.con2_wrap .swiper-slide img {
+  display: block;
+  width: 1096px;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.con2_wrap .swiper-button-next,
+.con2_wrap .swiper-button-prev {
+  color: #ccc;
+}
+/* 섹션 별 타이틀 */
+.wrapper .title-wrap {
+  font-family: "Paperozi";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.wrapper .title-wrap a {
+  display: block;
+}
+.wrapper .title-wrap h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+.wrapper .title-wrap h4 {
+  font-size: 14px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+}
+/* 섹션 별 타이틀 */
+.wrapper div.con {
+  width: 1420px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+section {
+  /* padding: 30px 0; */
+  margin: 30px 0;
+}
+
+/* 프로모션 슬라이드 */
+section.promotion .swiper-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+section.promotion .item {
+  font-family: "Paperozi";
+  display: flex;
+  flex-direction: column;
+}
+section.promotion .item img {
+  width: 100%;
+}
+section.promotion .item span {
+  background-color: #023586;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  padding: 3px 6px;
+  color: #fff;
+}
+section.promotion .item a:hover {
+  text-decoration: underline;
+}
+section.promotion .item a:nth-child(2) {
+  margin: 20px 0 15px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  font-size: 17px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+section.promotion .item a:nth-child(3) {
+  font-size: 12px;
+  color: #888;
+}
+.con3_wrap .swiper-button-next,
+.con3_wrap .swiper-button-prev {
+  color: #fff;
+}
+/* 프로모션 끝 */
+/* 제품 슬라이드 시작*/
+section.products .swiper {
+  padding: 0 30px;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+/* section.products .item {
+  border: 1px solid;
+} */
+section.products .item img {
+  width: 100%;
+  object-fit: cover;
+}
+section.products .item p:last-child {
+  font-family: "Paperozi";
+  font-size: 14px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+.con4_wrap .swiper-button-next,
+.con4_wrap .swiper-button-prev {
+  color: #ccc;
+}
+.con4_wrap .swiper-button-next {
+  /* right: -10px; */
+}
+/* 제품 끝*/
+/* 파바 스토리 시작 */
+.pb_story ul.story_inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+}
+.pb_story ul.story_inner li {
+  flex: 1 0 40%;
+}
+.pb_story ul.story_inner li .story_item {
+  display: flex;
+  gap: 20px;
+}
+.pb_story ul.story_inner li .story_item > a {
+  width: 50%;
+}
+.pb_story ul.story_inner li .story_item > a img {
+  width: 100%;
+  display: block;
+}
+.pb_story ul.story_inner li .story_item > .item_txt {
+  width: 50%;
+}
+.pb_story ul.story_inner li .story_item > .item_txt > a > p {
+  margin-bottom: 16px;
+}
+.pb_story ul.story_inner li .story_item > .item_txt p:first-child {
+  font-size: 14px;
+  color: #023586;
+}
+.pb_story ul.story_inner li .story_item > .item_txt > a > p:hover {
+  text-decoration: underline;
+}
+.pb_story ul.story_inner li .story_item > .item_txt > a > p:nth-child(2) {
+  font-size: 23px;
+  font-family: "Paperozi";
+  font-weight: 500;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+.pb_story ul.story_inner li .story_item > .item_txt > p:nth-child(2) {
+  font-size: 10px;
+  color: #111;
+}
+.pb_story ul.story_inner li .story_item > .item_txt > a > p:nth-child(3) {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 텍스트를 3줄로 제한 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* 파바 스토리 끝 */
+/* 고객센터 시작 (디자인?보류) */
+section.support {
+  padding-bottom: 0;
+}
+
+.support ul {
+  display: flex;
+}
+.support ul li {
+  flex: 1 0 30%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  /* padding-right: 30px; */
+  border-right: 1px solid #1e73be;
+}
+.support ul li:first-child {
+  padding-left: 0;
+}
+.support ul li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.support ul li p {
+  font-size: 14px;
+  color: #1e73be;
+}
+.support ul li h3 {
+  font-family: "Paperozi";
+  margin-top: 20px;
+  font-weight: 500;
+  word-break: keep-all;
+}
+/* 고객센터 끝 */
+/* 푸터 시작 */
+footer {
+  width: 100%;
+  background: #adccff;
+}
+footer .footer_inner {
+  padding: 70px 0 20px;
+}
+footer .footer_inner div.footer_top {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+footer .footer_inner div.footer_top > div {
+  flex: 1 1 30%;
+}
+
+footer .footer_inner div h2 {
+  font-size: 24px;
+  color: #102e5d;
+  margin-bottom: 20px;
+}
+footer .footer_inner div.info ul li,
+footer .footer_inner div.contact ul li {
+  margin-bottom: 15px;
+}
+footer .footer_inner div.info ul a,
+footer .footer_inner div.contact ul a {
+  font-size: 14px;
+  font-weight: 500;
+}
+footer .footer_inner div.info ul a:hover,
+footer .footer_inner div.contact ul a:hover {
+  text-decoration: underline;
+}
+/* 푸터 로고 */
+footer .footer_inner div.footer_logo p:first-child {
+  margin-bottom: 20px;
+}
+footer .footer_inner div.footer_logo p:not(p:first-child) {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer_inner div.footer_logo p:first-child img {
+  height: 40px;
+}
+footer .footer_inner div.footer_logo p:not(p:first-child) img {
+  height: 34px;
+}
+/* 푸터 sns */
+footer .footer_inner div.footer_sns ul {
+  display: flex;
+  gap: 15px;
+}
+footer .footer_inner div.footer_sns ul li {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+footer .footer_inner div.footer_sns ul li a {
+  width: 100%;
+  height: 100%;
+}
+footer .footer_inner div.footer_sns ul li:first-child img {
+  width: 16px;
+  margin-top: 5px;
+}
+footer .footer_inner div.footer_sns ul li:nth-child(2) img {
+  width: 24px;
+  margin-top: 10px;
+}
+footer .footer_inner div.footer_sns ul li:last-child img {
+  width: 27px;
+  margin-top: 13px;
+}
+
+/* 푸터 하단 */
+footer .footer_inner .footer_bt {
+  text-align: center;
+  font-size: 11px;
+}
+footer .footer_inner .footer_bt ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  border-bottom: 1px solid #777;
+  padding-bottom: 8px;
+}
+footer .footer_inner .footer_bt ul li {
+  position: relative;
+}
+footer .footer_inner .footer_bt ul li::after {
+  content: "|";
+  position: absolute;
+  right: -6px;
+  top: 0;
+}
+footer .footer_inner .footer_bt ul li:last-child:after {
+  content: "";
+}
+footer .footer_inner .footer_bt ul li:nth-child(2) a {
+  color: #ff2013;
+}
+footer .footer_inner .footer_bt > div {
+  padding-top: 8px;
+  color: #102e5d;
+}
+/* 푸터 끝 */

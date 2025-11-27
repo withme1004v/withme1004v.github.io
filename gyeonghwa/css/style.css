@@ -1,0 +1,371 @@
+@charset "utf-8";
+@font-face {
+  font-family: "spinwerad";
+  src: url("../font/spinwerad.woff");
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../font/SUIT-Regular.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #f5f1f0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  font-family: "Pretendard";
+  text-transform: uppercase;
+  position: static;
+}
+.nav .logo {
+  animation: turn 3s infinite;
+}
+.nav .logo img {
+  width: 50px;
+}
+@keyframes turn {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+.nav .menu {
+  display: flex;
+  gap: 50px;
+}
+.nav .menu li a {
+  font-size: 20px;
+}
+.nav .menu li:hover a {
+  color: #267575;
+}
+h1 {
+  font-family: "spinwerad";
+  font-size: 120px;
+  text-align: center;
+  margin-top: 200px;
+  padding-left: 50px;
+  color: #6b4e45;
+}
+.down {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 50px;
+  box-sizing: border-box;
+  /* margin-top: 360px; */
+  margin-top: 190px;
+  font-size: 18px;
+  font-family: "Pretendard";
+}
+.down li img {
+  width: 150px;
+}
+#section {
+  margin-top: 100px;
+}
+#section2 h2 {
+  font-family: "spinwerad";
+  font-size: 60px;
+  text-align: left;
+  padding-left: 50px;
+}
+#section2 .intro {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Pretendard";
+}
+.intro > div:first-child {
+  position: sticky;
+  width: 580px;
+  padding-top: 100px;
+  top: 0;
+  height: 100%;
+}
+.intro > div:first-child p {
+  width: 354px;
+}
+.intro > div:first-child img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+.intro > div:first-child .name {
+  display: flex;
+  gap: 20px;
+}
+.intro > div:first-child .birth {
+  display: flex;
+  gap: 30px;
+}
+.intro > div:first-child span {
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+}
+.intro > div:first-child ul {
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.intro > div:first-child ul li {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #000;
+}
+.intro > div:nth-child(2) {
+  flex: 1;
+}
+.intro > div:nth-child(2) .item {
+  display: flex;
+  gap: 100px;
+  padding-top: 100px;
+}
+.intro > div:nth-child(2) .item h3 {
+  font-size: 25px;
+  margin: 50px 0;
+}
+.intro > div:nth-child(2) .item p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.intro > div:nth-child(2) .item span {
+  color: #ccc;
+}
+.intro > div:nth-child(2) #resume .edu span {
+  font-size: 15px;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.intro > div:nth-child(2) #about p {
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.intro > div:nth-child(2) .item:target > span {
+  color: #267575;
+}
+.intro > div:nth-child(2) .skill ul {
+  display: flex;
+  gap: 20px;
+}
+.intro > div:nth-child(2) #about h4 {
+  font-size: 20px;
+}
+.intro > div:nth-child(2) #about hr {
+  margin: 10px 0;
+}
+.intro > div:nth-child(2) #about p {
+  margin-bottom: 50px;
+}
+.foot {
+  height: 400px;
+}
+#section3 > h2 {
+  font-family: "spinwerad";
+  font-size: 60px;
+  text-align: left;
+  padding-left: 50px;
+}
+#section3 .btn {
+  display: flex;
+  gap: 30px;
+  padding-left: 90px;
+}
+#section3 .btn li a {
+  font-family: "spinwerad";
+  font-size: 30px;
+}
+#section3 .btn:hover {
+  background-color: #000;
+}
+#section3 .btn li a:hover {
+  color: #fff;
+}
+.cursor {
+  display: none;
+  position: fixed;
+  font-family: "Pretendard";
+  z-index: 1000;
+  left: -150px;
+  top: -150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  animation: move 2s infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.project {
+  padding: 100px 0 0 0;
+  font-family: "Pretendard";
+}
+.project .img {
+  width: 1000px;
+}
+.project .img img {
+  width: 100%;
+  object-fit: cover;
+}
+.project .text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.project .text p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.project .text ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: bold;
+}
+.project .text ul li img {
+  width: 20px;
+  object-fit: cover;
+}
+.project .text hr {
+  margin-top: 10px;
+}
+.project > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 200px;
+}
+#section4 > h2 {
+  font-family: "spinwerad";
+  font-size: 60px;
+  text-align: left;
+  padding-left: 50px;
+}
+#section4 ul {
+  display: flex;
+  justify-content: space-around;
+}
+#section4 ul li img {
+  filter: invert(100%);
+}
+#section4 ul li:nth-child(3) img {
+  filter: invert(0);
+}
+#section4 div hr:nth-child(1) {
+  margin-bottom: 50px;
+}
+#section4 div hr:nth-child(2) {
+  margin-top: 50px;
+}
+#section4 p {
+  font-family: "Pretendard";
+  font-size: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 1500px) {
+  .project > div {
+    gap: 30px;
+  }
+  .project > div:nth-child(even) {
+    padding-left: 100px;
+    box-sizing: border-box;
+  }
+  .project > div:nth-child(odd) {
+    padding-right: 100px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .intro {
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  .intro > div:first-child {
+    width: 400px;
+  }
+  #section2 .skill > ul {
+    flex-wrap: wrap;
+  }
+  #section2 .skill > ul li {
+    width: calc((100%-20px * 4) / 6);
+  }
+  /* #section2 .skill > ul li:nth-child(n + 6) {
+          width: calc((100% - 20px * 3) / 4);
+        } */
+  .project > div {
+    gap: 30px;
+  }
+  .project > div:nth-child(even) {
+    padding-left: 100px;
+    box-sizing: border-box;
+  }
+  .project > div:nth-child(odd) {
+    padding-right: 100px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  #section2 {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  #section2 .intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro > div:first-child {
+    position: relative;
+    width: 50%;
+  }
+  .intro > div:nth-child(2) .item {
+    gap: 50px;
+  }
+  .project .img {
+    text-align: center;
+  }
+  .project .img img {
+    width: 70%;
+  }
+  .project > div {
+    flex-direction: column;
+  }
+  .project > div:nth-child(even) {
+    padding-left: 0;
+  }
+  .project > div:nth-child(odd) {
+    padding-right: 0;
+  }
+}

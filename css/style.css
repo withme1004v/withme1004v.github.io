@@ -39,6 +39,10 @@ body {
   width: 100%;
   z-index: 999;
 }
+.wrap ul li a .desc {
+  font-size: 18px;
+  letter-spacing: -1px;
+}
 .wrap ul li .thumb {
   width: 600px;
   height: 330px;

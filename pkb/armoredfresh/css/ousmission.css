@@ -1,0 +1,113 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Archivo";
+  src: url(../font/Archivo/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: "Archivo_midi";
+  src: url(../font/Archivo/Archivo-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  position: relative;
+  top: 6rem;
+  width: 100%;
+}
+.visual {
+  width: 100%;
+  position: relative;
+}
+.visual .bg {
+  width: 100%;
+}
+.visual .bg #loopv {
+  display: none;
+}
+.visual .bg video,
+.visual .bg img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.visual .txt {
+  position: absolute;
+  padding: 0 1.6rem;
+  left: 1.9rem;
+  top: 12.5rem;
+  font-family: "Archivo", sans-serif;
+  color: #353535;
+}
+.visual:first-child .txt h5 {
+  color: #005059;
+  margin-bottom: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.visual:first-child .txt h1 {
+  font-family: "Archivo_midi";
+  color: #272626;
+  font-size: 4.7rem;
+  line-height: 0.9;
+  margin-left: -5px;
+  margin-bottom: 2.5rem;
+  font-weight: 450;
+}
+.visual:first-child .txt p {
+  font-size: 1.3rem;
+  font-weight: 350;
+  line-height: 1;
+  margin-bottom: 1.9rem;
+  color: #353535;
+}
+.visual:nth-child(2) .txt {
+  color: #ffffff;
+}
+.visual:nth-child(2) .txt h1 {
+  font-family: "Archivo_midi";
+  font-size: 4.7rem;
+  line-height: 0.9;
+  margin-left: -5px;
+  margin-bottom: 2.5rem;
+  font-weight: 450;
+}
+.visual:nth-child(2) .txt p {
+  font-size: 1.3rem;
+  font-weight: 350;
+  line-height: 1;
+  margin-bottom: 1.9rem;
+}
+.visual:nth-child(2) .txt h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.visual:nth-child(3) .txt h1 {
+  font-family: "Archivo_midi";
+  font-size: 4.7rem;
+  line-height: 0.9;
+  font-weight: 450;
+  margin-bottom: 2.5rem;
+}
+.visual:nth-child(3) .txt p {
+  font-size: 1.25rem;
+  font-weight: 350;
+  line-height: 1;
+  margin-bottom: 1.9rem;
+}

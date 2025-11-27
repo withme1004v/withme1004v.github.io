@@ -1,0 +1,81 @@
+/* 페이퍼로지 폰트 */
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* 섹션 */
+section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+section .bg {
+  width: 50%;
+}
+section.section1 > div.bg {
+  background-image: url(/selecto_copy/images/selecto_bg_1.jpg);
+}
+section.section2 > div.bg {
+  background-image: url(/selecto_copy/images/selecto_bg_2.jpg);
+}
+section .txt_box {
+  width: 50%;
+  padding-left: 6%;
+  padding-top: 22vh;
+  box-sizing: border-box;
+  color: #ff4713;
+}
+section .txt_box h1 {
+  font-size: 58px;
+}
+.section1 .txt_box p {
+  font-size: 28px;
+}
+.txt_bottm {
+  margin-top: 10%;
+}
+.inner_wrap {
+  height: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.inner_txt > h2 {
+  font-size: 28px;
+}
+.inner_txt > p {
+  margin-top: 1%;
+  font-size: 18px;
+}

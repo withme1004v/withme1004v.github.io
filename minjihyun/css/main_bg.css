@@ -1,0 +1,57 @@
+/* bg */
+.stars {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 50px 200px white, 120px 500px white, 300px 800px white,
+    600px 200px white, 900px 1000px white, 1200px 700px white,
+    1500px 300px white, /* ---- 여기서부터 별 추가 ---- */ 200px 1200px white,
+    400px 1500px white, 1000px 1600px white, 1800px 300px white,
+    1600px 900px white, 1400px 1300px white, 800px 1400px white,
+    500px 1600px white, 300px 1800px white,
+    /* 계속해서 원하는 만큼 추가하면 됨 */ 2000px 100px white,
+    2200px 800px white, 2400px 400px white;
+
+  animation: moveStars 18s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ===========================
+   2층 별 (조금 더 작고 수평 위치 다르게)
+=========================== */
+.stars2 {
+  width: 1.5px;
+  height: 1.5px;
+  box-shadow: 100px 300px white, 400px 900px white, 800px 1200px white,
+    1300px 200px white, 1600px 1500px white, 1900px 1100px white,
+    /* 더 많은 별 추가 */ 50px 1600px white, 500px 1800px white,
+    900px 2000px white, 1300px 1800px white, 1700px 500px white,
+    2100px 900px white, 2300px 1300px white;
+  animation: moveStars 25s linear infinite;
+}
+
+/* ===========================
+   3층 별 (아주 작고 속도 느린 레이어)
+=========================== */
+.stars3 {
+  width: 1px;
+  height: 1px;
+  box-shadow: 200px 1000px white, 600px 1400px white, 1000px 1700px white,
+    1400px 800px white, 1700px 300px white,
+    /* 여기도 더 추가 ↑↑ */ 400px 1900px white, 800px 2100px white,
+    1200px 2200px white;
+  animation: moveStars 35s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+/* bg */

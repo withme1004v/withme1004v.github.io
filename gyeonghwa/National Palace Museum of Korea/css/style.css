@@ -1,0 +1,283 @@
+@charset "utf-8";
+@font-face {
+  font-family: "PyeongchangPeace";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  display: none;
+}
+#fullmenu {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 500px;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+  z-index: 1;
+  padding: 0 2.6% 3.1%;
+  box-sizing: border-box;
+}
+#fullmenu ul {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+#fullmenu ul > li {
+  margin: 25px 0;
+  padding: 5% 10% 5% 2.5%;
+  box-sizing: border-box;
+  border-bottom: 1px dashed #cecece;
+}
+#fullmenu ul > li > a {
+  font-family: "Pretendard";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+#fullmenu ul > li > a > h3 {
+  font-size: 20px;
+}
+#fullmenu ul > li > a > span {
+  font-size: 0.67vw;
+  color: #7e7e7e;
+}
+#fullmenu p {
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
+  font-family: "Pretendard";
+  color: #6e6e6e;
+  padding: 1vw 2vw 1.6vw;
+  margin-top: 50px;
+  text-align: center;
+}
+body {
+  width: 100%;
+  max-width: 1905px;
+  margin: 0 auto;
+  background-image: url(../img/main_background.jpg);
+}
+section.visual nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  color: #000;
+  z-index: 999;
+}
+section.visual nav .logo > a > h1 {
+  font-family: "PyeongchangPeace";
+  font-weight: 300;
+  font-size: 1.6vw;
+  line-height: 1.2;
+  color: #000;
+}
+section.visual nav .logo a > span {
+  display: block;
+  height: 0.9vw;
+  font-size: 0.75vw;
+  font-weight: 400;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #5e5e5e;
+  font-family: "Montserrat";
+  letter-spacing: 0.1rem;
+}
+section.visual nav .right .hambuger {
+  position: relative;
+  z-index: 2;
+}
+section.visual nav .right .hambuger label {
+  cursor: pointer;
+}
+section.visual nav .right .hambuger label span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #000;
+  margin: 9px 0;
+}
+
+#menu:checked ~ section.visual nav .right .hambuger label span.bar1 {
+  transform: translate(0, 11px) rotate(45deg);
+  background: #000;
+}
+#menu:checked ~ section.visual nav .right .hambuger label span.bar2 {
+  opacity: 0;
+}
+#menu:checked ~ section.visual nav .right .hambuger label span.bar3 {
+  transform: translate(0, -11px) rotate(-45deg);
+  background: #000;
+}
+#menu:checked ~ #fullmenu {
+  right: 0;
+}
+#menu:checked ~ section.visual::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 999;
+}
+main ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.7vw;
+  padding: 2vw;
+  margin: 50px 0;
+  box-sizing: border-box;
+}
+main ul li {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 1.3vw;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+#second a {
+  display: block;
+}
+#second .mySwiper {
+  width: 247px;
+  height: 360px;
+  background-image: url(../img/bgimg);
+  background-size: cover;
+  text-align: center;
+  line-height: 360px;
+}
+#second .mySwiper .swiper-slide img {
+  width: 195px;
+  height: 284px;
+  object-fit: cover;
+
+  vertical-align: middle;
+}
+#second a > h3 {
+  margin-top: 100px;
+}
+
+main ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.2vw solid transparent;
+  border-image: linear-gradient(
+      135deg,
+      rgba(255, 254, 248, 0.8) 0%,
+      rgba(155, 155, 155, 0.4) 20%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(155, 155, 155, 0.4) 100%
+    )
+    1;
+}
+main ul li:nth-child(odd):hover {
+  background-image: url(../img/ico-main-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 250px 30px;
+}
+main ul li:nth-child(even):hover {
+  background-image: url(../img/ico-main-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 250px 500px;
+}
+main ul li a > h3 {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Pretendard";
+  margin-bottom: 10px;
+}
+main ul li a > span {
+  font-family: "Pretendard";
+  color: #7e7e7e;
+}
+main ul li p > img {
+  width: 249px;
+  height: 362px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 100px;
+}
+main ul li:nth-child(even) p > img {
+  margin: 0 0 100px;
+}
+footer {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Pretendard";
+  color: #6e6e6e;
+  padding: 1vw 2vw 1.6vw;
+}
+@media screen and (max-width: 1024px) {
+  header ul .logo > a > h1 {
+    font-size: 22px;
+  }
+  header ul .logo a > span {
+    font-size: 10px;
+  }
+
+  main ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  main ul li:before {
+    border: 3px solid transparent;
+    border-image: linear-gradient(
+        135deg,
+        rgba(255, 254, 248, 0.8) 0%,
+        rgba(155, 155, 155, 0.4) 20%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(155, 155, 155, 0.4) 100%
+      )
+      1;
+  }
+  main ul li {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  main ul li:nth-child(odd):hover {
+    background-repeat: no-repeat;
+    background-position: 230px 30px;
+    background-size: 20px;
+  }
+  main ul li:nth-child(even):hover {
+    background-repeat: no-repeat;
+    background-position: 230px 500px;
+    background-size: 20px;
+  }
+}

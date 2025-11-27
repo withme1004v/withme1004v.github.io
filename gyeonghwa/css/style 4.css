@@ -1,0 +1,544 @@
+@charset "utf-8";
+@font-face {
+  font-family: "spinwerad";
+  src: url("../font/spinwerad.woff");
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../font/PlayfairDisplay-VariableFont_wght.woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../font/NotoSansKR-Regular.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f1f0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  font-family: "Pretendard";
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  top: -15px;
+  z-index: 999;
+  background: #f5f1f0;
+  /* position: fixed; */
+}
+.nav .logo {
+  animation: turn 3s infinite;
+}
+.nav .logo img {
+  width: 50px;
+}
+@keyframes turn {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+.nav .menu {
+  display: flex;
+  gap: 50px;
+}
+.nav .menu li a {
+  font-size: 20px;
+}
+.nav .menu li:hover a {
+  color: #6b4e45;
+}
+.nav .menu li:last-child a {
+  border: 1px solid #6b4e45;
+  color: #6b4e45;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+.nav .menu li:last-child:hover a {
+  background-color: #6b4e45;
+  color: #fff;
+}
+#section1 {
+  width: 100%;
+  max-width: 1897px;
+  height: 800px;
+  position: relative;
+}
+#section1 .main {
+  margin-top: 200px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  font-family: "PlayfairDisplay";
+}
+#section1 .main .txt > li:first-child {
+  font-size: 30px;
+  text-align: center;
+}
+#section1 .main .txt > li:nth-child(2) {
+  font-family: "spinwerad";
+  font-size: 100px;
+  /* color: #6b4e45; */
+  text-align: center;
+}
+#section1 .main .txt > li:nth-child(3) {
+  font-size: 100px;
+  font-family: "PlayfairDisplay";
+  text-align: center;
+}
+#section1 .main ul li:nth-child(4) {
+  text-align: center;
+  font-size: 50px;
+  color: #6b4e45;
+}
+#section1 .main li {
+  font-size: 20px;
+}
+#section1 .main .bt {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+#section1 .main .bt li a {
+  border: 1px solid #6b4e45;
+  color: #6b4e45;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-family: "Pretendard";
+  text-align: right;
+  /* position: absolute;
+  top: 150%;
+  left: 40%; */
+}
+#section1 .main .bt li:first-child a {
+  color: #fff;
+  background: #000;
+}
+#section1 .main .bt li:hover a {
+  color: #fff;
+  background: #6b4e45;
+}
+#section1 .main p {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Pretendard";
+  color: #ccc;
+}
+.down {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 50px;
+  box-sizing: border-box;
+  /* margin-top: 360px; */
+  margin-top: 190px;
+  font-size: 18px;
+  font-family: "Pretendard";
+}
+.down li img {
+  width: 150px;
+}
+#section {
+  margin-top: 100px;
+}
+#section2 > h2 {
+  font-family: "spinwerad";
+  font-size: 60px;
+  text-align: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+#section2 > div {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#section2 .imge {
+  margin-top: 100px;
+  position: relative;
+}
+#section2 .imge .me img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+#section2 .imge .me img:hover {
+  filter: grayscale(0);
+}
+#section2 .imge .hwa {
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  border-radius: 100%;
+  position: absolute;
+  left: 55%;
+  top: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section2 .imge .hwa > img {
+  filter: brightness(0) invert(1);
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  animation: turn 3s infinite;
+}
+#section2 .tit {
+  margin: 10px 0 50px 0;
+  font-family: "NotoSansKR";
+}
+#section2 .tit li:first-child {
+  margin: 30px;
+  font-size: 20px;
+}
+#section2 .tit li:last-child {
+  font-size: 18px;
+}
+#section2 .tit li:last-child b {
+  color: #6b4e45;
+}
+#section2 .info {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  text-align: left;
+  font-family: "NotoSansKR";
+}
+#section2 .info li h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#section2 .info li p {
+  font-size: 18px;
+}
+#section2 .info li p > span {
+  color: #6b4e45;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#section2 .info li:first-child {
+  margin-bottom: 50px;
+}
+#section2 .info li p:last-child > span {
+  margin-right: 5px;
+}
+
+#section2 .info h4 {
+  margin-top: 20px;
+}
+#section2 .info .tool div {
+  display: flex;
+  gap: 30px;
+}
+#section2 .info .tool div p {
+  font-size: 16px;
+  color: #1a1a1a;
+}
+#section2 .info li > .cha p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#section2 .info li > .cha p > span {
+  font-size: 12px;
+  font-weight: lighter;
+  border: 1px solid #6b4e45;
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+#section2 .info li > .cha > div h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#section2 .info li > .cha > div {
+  margin-bottom: 30px;
+}
+#section2 .edu {
+  margin: 50px 0;
+}
+#section2 .edu .obj {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: "NotoSansKR";
+}
+#section2 .edu .obj li:first-child {
+  font-size: 45px;
+  font-weight: bold;
+}
+#section2 .edu .obj li:nth-child(2) {
+  color: #6b4e45;
+}
+#section2 .edu > div ul {
+  display: flex;
+  gap: 20%;
+  align-items: flex-start;
+  text-align: left;
+  font-family: "NotosansKR";
+}
+#section2 .edu > div ul li {
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+#section2 .edu > div li > span {
+  color: #6b4e45;
+  font-size: 14px;
+}
+#section2 .edu > div li > p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#section2 .edu > div ul li:first-child {
+  width: 150px;
+}
+#section2 .edu > div ul li:nth-child(2) {
+  width: 350px;
+}
+#section2 .edu > div ul li:last-child {
+  flex: 1;
+}
+.cursor {
+  display: none;
+  position: fixed;
+  font-family: "Pretendard";
+  z-index: 1000;
+  left: -150px;
+  top: -150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  animation: move 2s infinite;
+}
+#section3 {
+  margin: 100px 0;
+}
+#section3 > h2 {
+  font-family: "spinwerad";
+  font-size: 60px;
+  text-align: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+#section3 > div {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#section3 .fir {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 50px 0;
+}
+#section3 .fir li:first-child {
+  font-size: 72px;
+  font-family: "PlayfairDisplay";
+}
+#section3 .fir li:first-child span {
+  color: #6b4e45;
+}
+#section3 .fir li:last-child {
+  color: #aaa;
+  font-family: "NotosansKR";
+}
+.project .museum h2 {
+  font-size: 36px;
+  padding: 0;
+  font-family: "NotosansKR";
+  margin-top: 100px;
+}
+.project .museum h2 span {
+  color: #aaa;
+}
+.project .museum .in {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.project .museum .in .img {
+  width: 700px;
+}
+.project .museum .in .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.project .museum .in .text {
+  flex: 1;
+}
+.project .museum .in .text h3::before {
+  content: "|";
+  position: absolute;
+  left: -10px;
+}
+.project .museum .in .text h3 {
+  font-size: 18px;
+  position: relative;
+  font-family: "NotosansKR";
+  margin-bottom: 20px;
+}
+.project .museum .in .text p {
+  font-size: 16px;
+  font-family: "NotosansKR";
+}
+.project .museum .in .text div {
+  display: flex;
+  gap: 20px;
+}
+.project .museum .in .text div > p {
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+.project .museum .in .text h2 {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.project .museum .in .text .but {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.project .museum .in .text .but li {
+  border: 1px solid;
+  padding: 10px 60px;
+  box-sizing: border-box;
+  font-family: "PlayfairDisplay";
+  background-color: #000;
+}
+.project .museum .in .text .but li:hover {
+  background-color: #6b4e45;
+}
+.project .museum .in .text .but li a {
+  font-size: 22px;
+  display: block;
+  color: #fff;
+}
+.project .museum .in .text .but li a span {
+  margin-left: 20px;
+}
+.project .museum .in .text .but li a span img {
+  width: 16px;
+  filter: brightness(0) invert(1);
+}
+#section4 {
+  width: 100%;
+  max-width: 1897px;
+}
+#section4 .index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+#section4 .index li h2 {
+  font-family: "spinwerad";
+  font-size: 60px;
+  color: #000;
+}
+#section4 .index li {
+  font-family: "PlayfairDisplay";
+  font-size: 30px;
+  color: #6b4e45;
+}
+#section4 .con {
+  margin: 200px 0;
+  padding: 0 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#section4 .con p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #6b4e45;
+  font-family: "PlayfairDisplay";
+}
+#section4 .con > h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-family: "spinwerad";
+}
+#section4 .con h1 {
+  font-size: 6vw;
+  font-family: "PlayfairDisplay";
+  font-weight: inherit;
+}
+#section4 .sns {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+#section4 .sns li a:hover {
+  color: #6b4e45;
+}
+#section4 .bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 14px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  font-family: "NotosansKr";
+}
+
+#section4 .bot li a {
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+#section4 .bot li a:hover {
+  color: #fff;
+  background-color: #6b4e45;
+}
+#section4 .bot li img {
+  margin-right: 220px;
+  width: 50px;
+  animation: turn 3s infinite;
+}

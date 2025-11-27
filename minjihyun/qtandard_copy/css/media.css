@@ -1,0 +1,132 @@
+/* 미디어쿼리 */
+@media screen and (max-width: 1024px) {
+  .header_inner nav ul {
+    display: none;
+  }
+  .header_inner > .login {
+    display: none;
+  }
+  .menu_btn {
+    display: block;
+  }
+
+  .header_inner.on {
+    height: 80px;
+  }
+  .main_banner > .inner_txt {
+    gap: 3vw;
+  }
+  .main_banner > .inner_txt a.start_btn {
+    padding: 2% 10%;
+    font-size: 20px;
+  }
+
+  .foot_wrap .foot_top ul {
+    grid-gap: 0 80px;
+  }
+
+  .main_banner {
+    min-height: 70vmax;
+  }
+  .main_banner > .inner_txt h1 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .foot_wrap .foot_top ul {
+    grid-gap: 0 64px;
+  }
+  .foot_wrap .foot_top ul li a {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main_banner {
+    min-height: 90vh;
+  }
+  .main_banner > .inner_txt h1 {
+    font-size: 46px;
+  }
+  .flex_wrap > div {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin-top: 1.25rem;
+  }
+  .flex_wrap > div:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .flex_wrap > div > div {
+    flex: 1;
+    overflow: hidden;
+  }
+  .flex_wrap > div > div:last-of-type {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  .flex_wrap > div > div:first-of-type {
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .flex_wrap .item_inner_txt > h1 {
+    font-size: 33px;
+  }
+  .flex_wrap .item_inner_txt > p {
+    font-size: 23px;
+  }
+  .foot_wrap .foot_top {
+    flex-direction: column;
+    gap: 10vw;
+    padding-bottom: 10vw;
+  }
+  .foot_wrap .foot_top ul {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+  }
+  .foot_wrap .foot_top ul li a {
+    font-size: 20px;
+  }
+  .foot_wrap .foot_bt {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .foot_wrap .foot_bt > ul {
+    gap: 4vw;
+  }
+  .foot_wrap .foot_bt ul li a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header_inner {
+    border-radius: 1rem;
+    height: 94px;
+    padding: 0 1rem;
+  }
+  .flex_wrap video {
+    display: none;
+  }
+
+  .flex_wrap .m_bg_block {
+    display: block;
+  }
+  .main_banner > .inner_txt h1 {
+    font-size: 35px;
+  }
+  .main_banner > .inner_txt p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .main_banner > .inner_txt a.start_btn {
+    padding: 5% 12%;
+  }
+  .flex_wrap .item_inner_txt > h1 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  .flex_wrap .item_inner_txt > p {
+    font-size: 18px;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+  }
+}

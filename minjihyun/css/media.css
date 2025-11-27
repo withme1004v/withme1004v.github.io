@@ -1,0 +1,147 @@
+@media screen and (max-width: 1280px) {
+  .section1 .txt_center .inner p {
+    font-size: 15vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section1 .con {
+    /* height: auto; */
+    height: 100vh;
+    padding-top: 20vw;
+    overflow: hidden;
+  }
+  .section2 .con2 {
+    height: auto;
+  }
+  .section2 .con2_wrap {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 5vw !important;
+  }
+  .mockup_img {
+    max-width: 450px;
+  }
+  .con .con_item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .desc_txt {
+    align-items: center;
+  }
+  .desc_txt {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section1 .con {
+    padding-top: 30vw;
+  }
+  .m_none {
+    display: none;
+  }
+  .favicon,
+  .favicon img {
+    display: block;
+  }
+  /* .header_inner {
+    justify-content: center;
+  } */
+
+  .section4 > div .th {
+    font-size: 13vw;
+  }
+  .se4_party {
+    width: 3vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section1 .con {
+    align-items: center;
+    padding-top: 2vw;
+  }
+  .partyWrap {
+    width: 95%;
+    transform: translate(-65%, -50%);
+  }
+
+  .party {
+    transform: scale(0.7);
+  }
+  .d_block {
+    display: block;
+  }
+
+  .txt_center {
+    top: 26vw;
+  }
+  .section1 .txt_center .inner p {
+    font-size: 25vw;
+  }
+  .section1 .txt_center .inner .txt_t {
+    left: 10%;
+    bottom: -5%;
+  }
+  .section1 .txt_center .inner .txt_b {
+    top: 0%;
+  }
+  .hello {
+    text-align: center;
+  }
+
+  .con2_wrap {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+  }
+  /* 슬라이드 */
+  .con h1 {
+    /* margin: 1.2vw 0 2vw; */
+    font-size: 80px;
+  }
+  .con_item {
+    flex-direction: column;
+  }
+
+  .con > p {
+    margin: 2vw 0 1vw;
+    font-size: 10vw;
+  }
+
+  .con > p > span {
+    font-size: 15vw;
+    -webkit-text-stroke: 2px #bb86fc;
+  }
+  .desc_txt {
+    align-items: center;
+    text-align: center;
+  }
+  .desc_txt > p.desc_title {
+    font-size: 5vw;
+    margin-bottom: 2.5vw;
+  }
+  .tech {
+    gap: 3vw;
+  }
+  .tech > p {
+    font-size: 16px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 60% !important;
+  }
+
+  .contact {
+    margin-top: 20px;
+  }
+  .contact p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
