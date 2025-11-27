@@ -55,7 +55,6 @@ document.querySelector(".sideMenu span").addEventListener("click", function () {
   sideMenu.classList.remove("on");
 });
 
-
 /******************** 타이핑효과 ********************** */
 window.onload = function () {
   const text0 = document.getElementById("textType"); // 첫 줄
@@ -82,7 +81,7 @@ window.onload = function () {
           });
 
           typewriter2
-            .typeString("퍼블리셔 김주은입니다.")
+            .typeString("퍼블리셔 김**입니다.")
             .callFunction(() => {
               // 타이핑 끝난 후 3초 기다렸다가 커서 천천히 사라지게
               setTimeout(() => {
@@ -144,7 +143,6 @@ function renderRotatingText() {
 
 window.addEventListener("load", renderRotatingText);
 window.addEventListener("resize", renderRotatingText);
-
 
 /******************** 마우스커서 ********************** */
 // 기본적으로 .cursor 보이게
