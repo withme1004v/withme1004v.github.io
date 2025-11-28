@@ -44,10 +44,10 @@ section .bg {
   width: 50%;
 }
 section.section1 > div.bg {
-  background-image: url(/selecto_copy/images/selecto_bg_1.jpg);
+  background-image: url(../images/selecto_bg_1.jpg);
 }
 section.section2 > div.bg {
-  background-image: url(/selecto_copy/images/selecto_bg_2.jpg);
+  background-image: url(../images/selecto_bg_2.jpg);
 }
 section .txt_box {
   width: 50%;

@@ -185,16 +185,16 @@ a {
   background-repeat: no-repeat;
 }
 .menuCon > div:first-child > ul > li:nth-child(1) {
-  background-image: url(/selecto_copy/images/signature_menu_bg1.jpg);
+  background-image: url(../images/signature_menu_bg1.jpg);
 }
 .menuCon > div:first-child > ul > li:nth-child(2) {
-  background-image: url(/selecto_copy/images/beverage_menu_bg2.jpg);
+  background-image: url(../images/beverage_menu_bg2.jpg);
 }
 .menuCon > div:first-child > ul > li:nth-child(3) {
-  background-image: url(/selecto_copy/images/coffee_menu_bg3.png);
+  background-image: url(../images/coffee_menu_bg3.png);
 }
 .menuCon > div:first-child > ul > li:nth-child(4) {
-  background-image: url(/selecto_copy/images/crogle_menu_bg4.jpg);
+  background-image: url(../images/crogle_menu_bg4.jpg);
 }
 .menuCon > div:first-child nav {
   font-family: "Paperozi";
