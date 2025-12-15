@@ -1,0 +1,419 @@
+@charset "utf-8";
+@media screen and (max-width: 1500px) {
+  main .two .left {
+    width: 700px;
+  }
+  main .con .doson {
+    left: 65%;
+    top: 24%;
+  }
+  main .con .orpheon {
+    top: 70%;
+    left: 65%;
+  }
+  main .con .rose {
+    left: 8%;
+  }
+  .fiv .write {
+    width: 850px;
+    margin-top: 100px;
+  }
+  .fiv .write h1 {
+    font-size: 60px;
+  }
+  .fiv .write p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .fiv .write img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  main .two .left {
+    width: 500px;
+    height: 500px;
+    padding-left: 0;
+  }
+  main .con .doson {
+    left: 65%;
+    top: 20%;
+  }
+  main .con .orpheon {
+    top: 65%;
+    left: 65%;
+  }
+  main .con .rose {
+    left: 3%;
+  }
+  .fiv .write {
+    width: 600px;
+    margin-top: 50px;
+  }
+  .seven .contact {
+    gap: 150px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header .con > p {
+    font-size: 15px;
+    width: 150px;
+    left: 75%;
+  }
+  main .two {
+    flex-direction: column;
+    margin: 100px 0;
+  }
+  main .two .left {
+    text-align: center;
+    margin: 0 auto;
+  }
+  main .two .left h3 {
+    font-size: 20px;
+  }
+  main .two .right {
+    width: 500px;
+    margin: 0px 150px;
+  }
+  main .two .right ul {
+    gap: 50px;
+  }
+  .right ul li {
+    overflow: visible;
+  }
+  .right ul li img {
+    width: 300px;
+  }
+  .right ul li:hover img {
+    display: none;
+  }
+  main .two .left p.but {
+    margin: 0 auto;
+  }
+  main .con .doson {
+    width: 200px;
+    padding: 10px;
+    top: 25%;
+    left: 67%;
+  }
+  main .con .doson h3 {
+    font-size: 11px;
+  }
+  main .con .doson p {
+    margin: 20px 0;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  main .con .doson p:last-child {
+    width: 100px;
+  }
+  main .con .rose {
+    width: 200px;
+    padding: 10px;
+    top: 45%;
+    left: 13%;
+  }
+  main .con .rose h3 {
+    font-size: 11px;
+  }
+  main .con .rose p {
+    margin: 20px 0;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  main .con .rose p:last-child {
+    width: 100px;
+  }
+  main .con .orpheon {
+    width: 200px;
+    padding: 10px;
+    top: 75%;
+    left: 67%;
+  }
+  main .con .orpheon h3 {
+    font-size: 11px;
+  }
+  main .con .orpheon p {
+    margin: 20px 0;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  main .con .orpheon p:last-child {
+    width: 100px;
+  }
+  .fiv .write {
+    width: 500px;
+  }
+  .fiv .write h1 {
+    font-size: 30px;
+  }
+  .fiv .write p {
+    font-size: 15px;
+  }
+  .fiv .write span {
+    width: 150px;
+    font-size: 15px;
+  }
+  .fiv .write img {
+    width: 100px;
+  }
+  .seven .contact {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .con .doson {
+    left: 67%;
+  }
+  main .con .orpheon {
+    top: 70%;
+    left: 67%;
+  }
+  main .con .rose {
+    left: 11%;
+  }
+  .fiv .write {
+    width: 400px;
+    margin-top: 25px;
+  }
+  .fiv .write p {
+    margin-bottom: 50px;
+    white-space: nowrap;
+  }
+  .fiv .write span {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 860px) {
+  header nav {
+    padding: 0 10px;
+  }
+  header nav ul {
+    gap: 10px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  main .two .right {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .seven .contact {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 758px) {
+  div#line img {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  #mobile {
+    opacity: 1;
+  }
+  header .con > p {
+    left: 70%;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container h3 {
+    font-size: 15px;
+  }
+  main .two {
+    text-align: center;
+  }
+  main .two .left {
+    padding: 0;
+  }
+  main .two .left p.but {
+    margin: 0 auto;
+  }
+  main .two .right ul {
+    flex-direction: column;
+  }
+  main .two .right ul img {
+    width: 100%;
+  }
+  main .con .doson {
+    top: 15%;
+    left: 70%;
+  }
+  main .con .rose {
+    top: 40%;
+    left: 5%;
+  }
+  main .con .orpheon {
+    top: 60%;
+    left: 70%;
+  }
+  .fiv .write {
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 50px auto;
+  }
+  .fiv .photo {
+    display: none;
+  }
+  .seven .des {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .seven .des li img {
+    width: 70%;
+  }
+  .seven .des li p {
+    font-size: 5px;
+  }
+  .seven .contact {
+    gap: 20px;
+  }
+  .seven .contact li h3 {
+    font-size: 20px;
+  }
+  .seven .contact li p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .seven .contact li span {
+    font-size: 12px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  main .con .doson {
+    width: 150px;
+    top: 5%;
+  }
+  main .con .doson p:last-child {
+    width: 80px;
+  }
+  main .con .doson h3 {
+    font-size: 8px;
+  }
+  main .con .doson p {
+    margin: 20px 0;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  main .con .rose {
+    width: 150px;
+  }
+  main .con .rose p:last-child {
+    width: 80px;
+  }
+  main .con .rose h3 {
+    font-size: 8px;
+  }
+  main .con .rose p {
+    margin: 20px 0;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  main .con .orpheon {
+    width: 150px;
+    top: 55%;
+  }
+  main .con .orpheon p:last-child {
+    width: 80px;
+  }
+  main .con .orpheon h3 {
+    font-size: 8px;
+  }
+  main .con .orpheon p {
+    margin: 20px 0;
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  .seven .contact li p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item_img {
+    width: 300px;
+  }
+  header .con > p {
+    left: 50%;
+  }
+  main .two .left {
+    width: 400px;
+    height: 400px;
+  }
+  main .two .left h1 {
+    font-size: 50px;
+  }
+  main .two .left h2 {
+    font-size: 30px;
+  }
+  main .two .left h3 {
+    font-size: 15px;
+  }
+  main .two .left p.but {
+    margin: 0;
+    font-size: 12px;
+    width: 150px;
+  }
+  main .for #button p {
+    display: none;
+  }
+  main .con .doson {
+    opacity: 0;
+  }
+  main .con .rose {
+    opacity: 0;
+  }
+  main .con .orpheon {
+    opacity: 0;
+  }
+  .fiv .write p {
+    font-size: 15px;
+    margin-bottom: 50px;
+    white-space: nowrap;
+  }
+  .fiv .write span {
+    margin-bottom: 50px;
+  }
+  #section9 div h1 {
+    font-size: 30px;
+  }
+  .seven .des li p {
+    font-size: 6px;
+  }
+  .seven .contact li h3 {
+    font-size: 12px;
+  }
+  .seven .contact li p {
+    font-size: 6px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .two .left {
+    width: 300px;
+    height: 300px;
+  }
+  main .two .left p.but {
+    width: 100px;
+    padding: 5px;
+  }
+  .seven .contact {
+    gap: 30px;
+  }
+  .seven .contact li p {
+    display: none;
+  }
+  .seven .contact li h3 {
+    margin-bottom: 10px;
+  }
+  .seven .contact li span {
+    width: 60px;
+    font-size: 8px;
+    padding: 5px;
+  }
+}

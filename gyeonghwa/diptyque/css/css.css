@@ -1,0 +1,606 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../font/NotoSansKR-Regular.woff");
+}
+@font-face {
+  font-family: "DiptyqueSaintGermain";
+  src: url("../font/DiptyqueSaintGermain-Regular.fca2a43.woff");
+}
+@font-face {
+  font-family: "Hamchorom";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/HANBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.wrap {
+  width: 100%;
+  max-width: 1897px;
+  margin: 0 auto;
+  font-family: "DiptyqueSaintGermain";
+}
+div#line {
+  width: 100%;
+  height: 30px;
+  background-color: #d1aa5f;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 5px 50px;
+  box-sizing: border-box;
+}
+header nav {
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+header nav ul li a {
+  font-size: 20px;
+}
+header nav ul li:nth-child(1) a {
+  color: #d1aa5f;
+}
+header .txt {
+  margin-top: 150px;
+  font-size: 35px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+header .txt h1 {
+  background-image: url(../img/gold-texture.gif);
+  background-clip: text;
+  color: transparent;
+}
+header .con {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  /* left: -150px;
+  top: 350px; */
+}
+header .con video {
+  width: 100%;
+  object-fit: cover;
+}
+header .con > p {
+  font-size: 20px;
+  width: 200px;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  font-family: "NotosansKR";
+  cursor: pointer;
+}
+input {
+  display: none;
+}
+#fullmenu {
+  position: fixed;
+  right: 100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 99;
+  padding: 30px 100px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#fullmenu li a {
+  display: block;
+  font-size: 35px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+#fullmenu li:hover a {
+  color: #d1aa5f;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+#fullmenu .logo {
+  margin-bottom: 30px;
+  text-align: right;
+}
+#fullmenu .logo img {
+  width: 80px;
+}
+#mobile {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  /* background-color: #fff;
+  width: 100%;
+  height: 82px;
+  z-index: 1; */
+}
+#mobile .sns {
+  filter: brightness(0);
+  display: flex;
+  gap: 10px;
+}
+header .hambuger {
+  position: relative;
+  z-index: 100;
+}
+header .hambuger label {
+  cursor: pointer;
+  z-index: 999;
+}
+header .hambuger label span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #000;
+  margin: 9px 0;
+}
+#menu:checked ~ #mobile .hambuger label span.bar1 {
+  transform: translate(0, 11px) rotate(45deg);
+  background: #000;
+}
+#menu:checked ~ #mobile .hambuger label span.bar2 {
+  opacity: 0;
+}
+#menu:checked ~ #mobile .hambuger label span.bar3 {
+  transform: translate(0, -11px) rotate(-45deg);
+  background: #000;
+}
+#menu:checked ~ #fullmenu {
+  right: 0;
+}
+main .one {
+  width: 100%;
+  height: 900px;
+  background-image: url(../img/paper-wrap.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+main .one > #right,
+main .one > #left {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  transition: transform 3s ease-in-out;
+}
+main .one #left img,
+main .one #right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .one #left {
+  left: 0;
+  transform: translateX(0);
+}
+main .one #right {
+  right: 0;
+  transform: translateX(0);
+}
+main .one #left.open {
+  transform: translateX(-80%);
+}
+main .one #right.open {
+  transform: translateX(80%);
+}
+main .one .content {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  color: #222;
+}
+.container {
+  max-width: 800px;
+  padding: 200px 2rem 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.container h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  background-image: url(../img/gold-texture.gif);
+  background-clip: text;
+  color: transparent;
+  font-family: serif;
+  font-weight: 200;
+}
+.container h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: "NotoSansKR";
+  font-weight: lighter;
+}
+.container p.button {
+  font-size: 20px;
+  width: 200px;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid;
+  margin: 0 auto;
+  font-family: "NotoSansKR";
+  font-weight: lighter;
+  cursor: pointer;
+}
+.container p > img {
+  margin-top: 150px;
+  width: 300px;
+}
+main .two {
+  width: 100%;
+  display: flex;
+  padding: 0 50px;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 200px 0;
+}
+main .two .left {
+  width: 900px;
+  height: 600px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+main .two .left h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+main .two .left h2 {
+  font-size: 50px;
+  background-image: url(../img/gold-texture.gif);
+  background-clip: text;
+  color: transparent;
+}
+main .two .left h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "NotoSansKR";
+  font-weight: lighter;
+}
+main .two .left p.but {
+  font-size: 20px;
+  width: 200px;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid;
+  text-align: center;
+  font-family: "NotoSansKR";
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+main .two .right {
+  flex: 1;
+}
+main .two .right ul {
+  display: flex;
+  gap: 20px;
+}
+.right ul li {
+  overflow: hidden;
+  position: relative;
+}
+
+.right ul li p {
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  font-size: 15px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid;
+  margin: 0 auto;
+  font-family: "NotoSansKR";
+  font-weight: lighter;
+}
+.right ul li img {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 2s;
+  cursor: pointer;
+}
+.right ul li:hover img {
+  transform: scale(1.1);
+}
+main .for {
+  margin-top: 100px;
+  position: relative;
+}
+main .for p > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main .for #button p {
+  font-size: 40px;
+  border: 1px solid;
+  border-radius: 100%;
+  background: #fff;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* left: 0;
+  top: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
+}
+
+main .for #button .line1 {
+  left: 60%;
+  top: 20%;
+}
+main .for #button .line2 {
+  left: 35%;
+  top: 40%;
+}
+main .for #button .line3 {
+  left: 60%;
+  top: 70%;
+}
+#button input {
+  display: none;
+}
+
+#c1:checked + p.line1 {
+  transform: rotate(45deg);
+}
+#c2:checked + p.line2 {
+  transform: rotate(45deg);
+}
+#c3:checked + p.line3 {
+  transform: rotate(45deg);
+}
+main .con {
+  font-family: "NotoSansKR";
+  font-weight: lighter;
+}
+main .con h3 {
+  font-family: serif;
+  font-weight: 500;
+}
+main .con p {
+  color: #aaa;
+}
+main .con .doson {
+  position: absolute;
+  top: 25%;
+  left: 63%;
+  width: 400px;
+  border: 1px solid;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  display: none;
+}
+main .con .doson p {
+  margin: 20px 0;
+}
+main .con .doson p:last-child {
+  width: 150px;
+  border: 1px solid;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+main .con .rose {
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  width: 400px;
+  border: 1px solid;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  display: none;
+}
+main .con .rose p {
+  margin: 20px 0;
+}
+main .con .rose p:last-child {
+  width: 150px;
+  border: 1px solid;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+main .con .orpheon {
+  position: absolute;
+  top: 75%;
+  left: 63%;
+  width: 400px;
+  border: 1px solid;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  display: none;
+}
+main .con .orpheon p {
+  margin: 20px 0;
+}
+main .con .orpheon p:last-child {
+  width: 150px;
+  border: 1px solid;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.fiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fiv .write {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "NotosansKR";
+  font-weight: lighter;
+}
+.fiv .write h1 {
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-family: serif;
+  font-weight: 100;
+}
+.fiv .write p {
+  font-size: 25px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.fiv .write span {
+  display: block;
+  font-size: 20px;
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid;
+  text-align: center;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+.fiv .write img {
+  width: 100%;
+  object-fit: cover;
+}
+.fiv .photo {
+  flex: 1;
+}
+.fiv .photo li img {
+  width: 100%;
+  object-fit: cover;
+}
+#parallax {
+  overflow: hidden;
+}
+section:nth-child(2n) {
+  background: #222;
+}
+.item {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_img {
+  width: 900px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 1vw;
+}
+.item_text {
+  font-size: 5vw;
+}
+#section9 .item_img {
+  background-image: url("../img/Wallpaper-to-downlaod-3840_x_2160.webp");
+  border-radius: 30px;
+}
+#section9 div h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.seven > h3 {
+  text-align: center;
+  font-size: 28px;
+  margin: 50px 0;
+  font-family: serif;
+  font-weight: 100;
+}
+.seven .des {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px 0;
+}
+.seven .des li img {
+  width: 99px;
+  margin-bottom: 10px;
+}
+.seven .des li p {
+  font-size: 12px;
+  text-align: center;
+  font-family: "NotosansKR";
+  font-weight: lighter;
+}
+.seven .contact {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 50px 0;
+  font-family: "NotosansKR";
+  font-weight: lighter;
+}
+.seven .contact li h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: serif;
+  font-weight: 100;
+}
+.seven .contact li p {
+  margin-bottom: 30px;
+}
+.seven .contact li span {
+  display: block;
+  font-size: 15px;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid;
+  text-align: center;
+}
