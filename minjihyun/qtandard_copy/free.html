@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(112deg, #a7e8af, #d8bcdb);
+        text-align: center;
+        line-height: 300px;
+        color: rgb(29, 29, 29);
+        font-weight: 700;
+        font-family: "Fahkwang", sans-serif;
+      }
+      .con {
+        width: 1200px;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Community Board</h1>
+    <div class="con">
+      <iframe
+        src="https://minja02.dothome.co.kr/gnuboard5/bbs/board.php?bo_table=free"
+        id="iframe"
+        style="width: 100%; overflow: hidden"
+        onload="Height();"
+        frameborder="0"
+        scrolling="no"
+        height="383"
+      ></iframe>
+    </div>
+    <script>
+      function Height() {
+        let the_height =
+          document.getElementById("iframe").contentWindow.document.body
+            .scrollHeight;
+        document.getElementById("iframe").height = the_height + 50;
+        document.getElementById("iframe").style.overflow = "hidden";
+      }
+    </script>
+  </body>
+</html>
