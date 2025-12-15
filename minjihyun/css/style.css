@@ -312,6 +312,9 @@ body {
   text-transform: uppercase;
   font-family: "DM Serif Text", serif;
 }
+.work0 > p {
+  color: #dc5a25;
+}
 .work1 > p {
   color: #20cf70;
 }
