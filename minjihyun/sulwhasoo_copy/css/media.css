@@ -1,0 +1,178 @@
+@media screen and (max-width: 1170px) {
+  .footer_sns {
+    position: relative;
+    top: 70px;
+  }
+  .go_top_btn {
+    transition: 0.5s;
+    right: 7%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .header_top .lan,
+  header .header_top .links > .search_store,
+  header .header_top .links > .buy,
+  header .header_top .links > .search,
+  nav.menu {
+    display: none !important;
+  }
+  header .header_top .links a.search_mo {
+    display: block !important;
+  }
+  .header {
+    margin-top: 0;
+    padding: 0 2%;
+  }
+  .header .header_top {
+    height: 68px;
+  }
+  .header .header_top .logo img {
+    width: 112px;
+  }
+  .header .header_top {
+    align-items: center;
+  }
+  .hamburger_btn {
+    display: block;
+  }
+  /* 설화수 추천 */
+  .item_txt .txt_name {
+    font-size: 16px;
+  }
+  .item_txt .txt_body,
+  .item_txt .txt_price {
+    font-size: 12px;
+  }
+
+  /* 베스트셀러 */
+  .con > h1 {
+    font-size: 20px;
+  }
+  .best_seller_txt > h1 {
+    font-size: 24px;
+  }
+  .best_seller_txt > .bs_txt_body {
+    font-size: 14px;
+  }
+  .best_seller_txt > .bs_txt_btn {
+    font-size: 10px;
+  }
+  /* 설화수 시즌 추천 */
+  .season_txt.ab_txt {
+    left: 30px;
+  }
+  .season_txt.center_txt > h4,
+  .season_txt.ab_txt > h4 {
+    font-size: 16px;
+  }
+  .season_txt.center_txt > p,
+  .season_txt.ab_txt > p {
+    font-size: 12px;
+  }
+  /* 스토어 */
+  .store_inner .store_inner_list .store_txt > p:first-child {
+    font-size: 20px;
+  }
+  .store_inner .store_inner_list .store_txt > p:last-child {
+    font-size: 10px;
+  }
+  /* 푸터 */
+  .footer_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_top > .footer_con {
+    flex-direction: column-reverse;
+  }
+  .footer_sns {
+    position: static;
+  }
+  .footer_info > ul li a,
+  .footer_con > p:first-child {
+    font-size: 13px;
+  }
+  .footer_bt {
+    text-align: center;
+  }
+  .footer_bt .footer_con > p:last-child {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .slide_mo {
+    display: block;
+  }
+  .slide_pc,
+  .slide_pc img {
+    display: none;
+  }
+  .swiper_btn {
+    display: none;
+  }
+  .slide_txt {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35vw;
+    text-align: center;
+  }
+  .slide_txt > p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .slide_txt > h1 {
+    font-size: 24px;
+  }
+  .controls {
+    bottom: 5%;
+    left: 5%;
+  }
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    max-width: 400px;
+  }
+
+  .bestseller_inner {
+    width: 100%;
+    padding-top: 131.2%;
+    background-image: url(../images/sulwhasoo_main_bestseller_mo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .season_list_item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .item {
+    flex: 1 0 40%;
+  }
+  .season_list_item .item:nth-child(1) {
+    order: 2;
+  }
+  .season_list_item .item:nth-child(2) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+  .season_list_item .item:nth-child(3) {
+    order: 3;
+  }
+  .season_txt.ab_txt > h4 {
+    font-size: 20px;
+  }
+  .season_txt.ab_txt > p {
+    font-size: 14px;
+  }
+  .season_txt.center_txt {
+    padding-bottom: 40px;
+  }
+  .store_inner {
+    flex-direction: column;
+    gap: 5vw;
+  }
+  .store_inner .store_inner_list .store_txt > p:last-child {
+    font-size: 11px;
+  }
+}
